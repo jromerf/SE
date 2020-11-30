@@ -1,0 +1,285 @@
+/*
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+/*
+ * 
+ *
+ * This file is a generated sample test application.
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * SDK application project when you run the "Generate Libraries" menu item.
+ *
+ */
+
+
+
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xbram.h"
+#include "bram_header.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+#include "xuartlite_l.h"
+#include <xstatus.h>
+#include <stdlib.h>
+
+/*
+ * LEDs; configured as Salida
+ * SWITCHes; configured as Entrada
+ */
+
+#define XPAR_RS232_UART_1_BASEADDR 0x84000000
+
+int getNumber (){
+
+	Xuint8 byte;
+	Xuint8 uartBuffer[16];
+	Xboolean validNumber;
+	int digitIndex;
+	int digit, number, sign;
+	int c;
+
+	while(1){
+		byte = 0x00;
+		digit = 0;
+		digitIndex = 0;
+		number = 0;
+		validNumber = XTRUE;
+
+		//get bytes from uart until RETURN is entered
+
+		while(byte != 0x0d && byte != 0x0A){
+
+			byte = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+
+			//byte = XUartLite_RecvByte(XPAR_XPS_UARTLITE_0_BASEADDR);
+
+			uartBuffer[digitIndex] = byte;
+
+			XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,byte);
+
+			//XUartLite_SendByte(XPAR_XPS_UARTLITE_0_BASEADDR,byte);
+
+			digitIndex++;
+
+			//xil_printf("byte -> = %d\n", byte);
+
+		}
+
+		//calculate number from string of digits
+
+		for(c = 0; c < (digitIndex - 1); c++){
+			if(c == 0){
+				//check if first byte is a "-"
+				if(uartBuffer[c] == 0x2D){
+					sign = -1;
+					digit = 0;
+				}
+				//check if first byte is a digit
+				else if((uartBuffer[c] >> 4) == 0x03){
+					sign = 1;
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else
+					validNumber = XFALSE;
+			}
+			else{
+				//check byte is a digit
+				if((uartBuffer[c] >> 4) == 0x03){
+					digit = (uartBuffer[c] & 0x0F);
+				}
+				else
+					validNumber = XFALSE;
+			}
+			number = (number * 10) + digit;
+
+			//xil_printf("numero -> : %d\n", number);
+
+		}
+		number *= sign;
+		if(validNumber == XTRUE){
+			return number;
+		}
+		print("This is not a valid number.\n\r");
+		////number = atoi(byte);
+		//xil_printf("lo tranformamos a numero -> : %d", number);
+		//return number;
+	}
+}
+
+int operando1 = 0, operando2 = 0, suma = 0;
+int terminar = 0;
+char opcion;
+
+int main()
+{
+
+	int exit = 0, option = 0, opa=0,opb=0,resul = 0;
+
+	while(exit == 0){
+		print(" MENU: \n\r");
+		print(" 1 - Introduce first number. \n\r");
+		print(" 2 - Introduce second number. \n\r");
+		print(" 3 - Add and show on leds . \n\r");
+		print(" 4 - Read from switches. \n\r");
+		print(" 5 - EXIT \n\r");
+
+		option = getNumber();
+		print("\r\n");
+
+		switch(option){
+		case 1:
+			/*if(XGpio_Initialize(&GpioOutput,XPAR_XPS_GPIO_0_LEDS_DEVICE_ID) == XST_SUCCESS){
+
+			}*/
+			xil_printf("Introduce a number from 0 to 9: \r\n");
+			opa = getNumber();
+			XGpio_Initialize(&GpioOutput,XPAR_XPS_GPIO_0_LEDS_DEVICE_ID);
+			XGpio_SetDataDirection(&GpioOutput, LED_CHANNEL, OUTPUT);
+			XGpio_DiscreteWrite(&GpioOutput, 1, opa);
+			break;
+		case 2:
+			xil_printf("Introduce a number from 0 to 9: \r\n");
+			opb = getNumber();
+			XGpio_Initialize(&GpioOutput,XPAR_XPS_GPIO_0_LEDS_DEVICE_ID);
+			XGpio_SetDataDirection(&GpioOutput, 1, 0x00);
+			XGpio_DiscreteWrite(&GpioOutput, 1, opb);
+			break;
+		case 3:
+			resul = opa + opb;
+			xil_printf("Your result is: %d\r\n",resul);
+
+			XGpio_Initialize(&GpioOutput, XPAR_XPS_GPIO_0_LEDS_DEVICE_ID);
+			XGpio_SetDataDirection(&GpioOutput, 1, 0x00);
+			XGpio_DiscreteWrite(&GpioOutput, 1, resul);
+			break;
+		case 4:
+			//0
+			XGpio_Initialize(&GpioOutput, XPAR_XPS_GPIO_0_LEDS_DEVICE_ID);
+			XGpio_SetDataDirection(&GpioOutput, 1, 0x00);
+			// 1
+			XGpio_Initialize(&GpioInput, XPAR_XPS_GPIO_0_SWITCHES_DEVICE_ID);
+			XGpio_SetDataDirection(&GpioInput, 1, 0xFF);
+
+			u32 Data = XGpio_DiscreteRead(&GpioInput, XPAR_XPS_GPIO_0_SWITCHES_DEVICE_ID);
+			XGpio_DiscreteWrite(&GpioOutput, 1, Data);
+			xil_printf("Switches: %d\r\n", Data);
+
+			print("\r\n");
+			break;
+		case 5:
+			print("Exit terminal\r\n");
+			exit = 1;
+			break;
+		}
+	}
+	print("-- Exiting main() --\r\n");
+	return 0;
+
+	/*
+	while(terminar == 0){
+		print(" MENU: \n\r");
+		print(" 1 - Introducir primer operando. \n\r");
+		print(" 2 - Introducir segundo operando. \n\r");
+		print(" 3 - Sumar y visualizar el resultado en los leds y en la pantalla. \n\r");
+		print(" 4 - Lectura de los Switches. \n\r");
+		print(" 5 - Salir \n\r");
+
+		opcion = XUartLite_RecvByte(XPAR_RS232_UART_1_BASEADDR);
+		XUartLite_SendByte(XPAR_RS232_UART_1_BASEADDR,opcion);
+		print("\r\n");
+
+		if (opcion == 'a'){
+
+			XGpio GPIO_LEDs;
+
+			print("Introduce un numero\n\r");
+			operando1 = getNumber();
+			print("\r\n");
+
+
+			XGpio_Initialize(&GPIO_LEDs, 0);
+			XGpio_SetDataDirection(&GPIO_LEDs, 1, 0x00000000);
+
+			XGpio_DiscreteWrite(&GPIO_LEDs, 1, operando1);
+
+		}
+		else if (opcion == 'b'){
+			print("Introduce un numero\n\r");
+			operando2 = getNumber();
+			print("\r\n");
+
+			XGpio GPIO_LEDs;
+
+			XGpio_Initialize(&GPIO_LEDs, XPAR_LEDS_GPIO_DEVICE_ID);
+			XGpio_SetDataDirection(&GPIO_LEDs, 1, 0x00);
+
+			XGpio_DiscreteWrite(&GPIO_LEDs, 1, operando2);
+
+		}
+		else if (opcion == 'c'){
+			print("Resultado\n\r");
+			suma = operando1 + operando2;
+			xil_printf("El resultado es: %d\n\r", suma);
+
+			XGpio GPIO_LEDs;
+
+			XGpio_Initialize(&GPIO_LEDs, XPAR_LEDS_GPIO_DEVICE_ID);
+			XGpio_SetDataDirection(&GPIO_LEDs, 1, 0x00);
+
+			XGpio_DiscreteWrite(&GPIO_LEDs, 1, suma);
+
+   	   }
+	   else if (opcion == 'd'){
+		   XGpio GPIO_LEDs;
+		   XGpio GPIO_SWITCHes;
+		   //0
+		   XGpio_Initialize(&GPIO_LEDs, XPAR_LEDS_GPIO_DEVICE_ID);
+		   XGpio_SetDataDirection(&GPIO_LEDs, 1, 0x00);
+		   // 1
+		   XGpio_Initialize(&GPIO_SWITCHes, XPAR_SWITCHES_GPIO_DEVICE_ID);
+		   XGpio_SetDataDirection(&GPIO_SWITCHes, 1, 0xFF);
+
+		   u32 Data = XGpio_DiscreteRead(&GPIO_SWITCHes, 1);
+		   XGpio_DiscreteWrite(&GPIO_LEDs, 1, Data);
+		   xil_printf("Switches: %d\n\r", Data);
+
+		   print("\r\n");
+   	   }
+	   else if (opcion == 's'){
+		   print("Saliendo\n\r");
+		   terminar = 1;
+	   }
+	   else{
+		   print("dato incorrecto \n\r");
+	   }
+	}
+	print("-- Exiting main() --\r\n");
+	return 0;*/
+}
+
+
+
+
+
+
