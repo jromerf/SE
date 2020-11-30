@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml system.twx
+system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2012-04-23)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk_pin
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.336(R)|   -0.210(R)|Clk_pin_BUFGP     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clk_pin to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+TX_pin      |    6.523(R)|Clk_pin_BUFGP     |   0.000|
+leds<0>     |   11.747(R)|Clk_pin_BUFGP     |   0.000|
+leds<1>     |   12.804(R)|Clk_pin_BUFGP     |   0.000|
+leds<2>     |   12.396(R)|Clk_pin_BUFGP     |   0.000|
+leds<3>     |   12.442(R)|Clk_pin_BUFGP     |   0.000|
+leds<4>     |   13.063(R)|Clk_pin_BUFGP     |   0.000|
+leds<5>     |   12.597(R)|Clk_pin_BUFGP     |   0.000|
+leds<6>     |   12.157(R)|Clk_pin_BUFGP     |   0.000|
+leds<7>     |   11.837(R)|Clk_pin_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk_pin
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_pin        |    9.946|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switches<0>    |leds<0>        |   13.012|
+switches<0>    |leds<1>        |   12.562|
+switches<0>    |leds<2>        |   13.760|
+switches<0>    |leds<3>        |   13.768|
+switches<0>    |leds<4>        |   14.761|
+switches<0>    |leds<5>        |   15.030|
+switches<0>    |leds<6>        |   13.994|
+switches<0>    |leds<7>        |   13.649|
+switches<1>    |leds<0>        |   11.123|
+switches<1>    |leds<1>        |   11.545|
+switches<1>    |leds<2>        |   11.879|
+switches<1>    |leds<3>        |   12.311|
+switches<1>    |leds<4>        |   14.254|
+switches<1>    |leds<5>        |   14.013|
+switches<1>    |leds<6>        |   12.977|
+switches<1>    |leds<7>        |   12.632|
+switches<2>    |leds<0>        |   11.633|
+switches<2>    |leds<1>        |   11.964|
+switches<2>    |leds<2>        |   12.298|
+switches<2>    |leds<3>        |   12.105|
+switches<2>    |leds<4>        |   14.089|
+switches<2>    |leds<5>        |   14.432|
+switches<2>    |leds<6>        |   13.396|
+switches<2>    |leds<7>        |   13.051|
+switches<3>    |leds<0>        |   11.928|
+switches<3>    |leds<1>        |   11.879|
+switches<3>    |leds<2>        |   12.161|
+switches<3>    |leds<3>        |   12.206|
+switches<3>    |leds<4>        |   14.347|
+switches<3>    |leds<5>        |   14.295|
+switches<3>    |leds<6>        |   13.259|
+switches<3>    |leds<7>        |   13.043|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Dec 01 00:25:12 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4552 MB
+
+
+

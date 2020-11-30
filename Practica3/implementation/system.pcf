@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Tue Dec 01 00:24:19 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clk_pin" LOCATE = SITE "P8" LEVEL 1;
+COMP "Rst_pin" LOCATE = SITE "K4" LEVEL 1;
+COMP "switches<0>" LOCATE = SITE "P12" LEVEL 1;
+COMP "switches<1>" LOCATE = SITE "J1" LEVEL 1;
+COMP "switches<2>" LOCATE = SITE "H1" LEVEL 1;
+COMP "switches<3>" LOCATE = SITE "H3" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "L5" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "N2" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "N1" LEVEL 1;
+COMP "leds<4>" LOCATE = SITE "T13" LEVEL 1;
+COMP "leds<5>" LOCATE = SITE "L15" LEVEL 1;
+COMP "leds<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "leds<7>" LOCATE = SITE "H15" LEVEL 1;
+COMP "RX_pin" LOCATE = SITE "G5" LEVEL 1;
+COMP "TX_pin" LOCATE = SITE "J2" LEVEL 1;
+NET "Clk_pin_BUFGP/IBUFG" BEL "Clk_pin_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
