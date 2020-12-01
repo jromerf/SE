@@ -139,6 +139,20 @@ architecture IMP of user_logic is
 				  cout : out  STD_LOGIC_VECTOR (7 downto 0));
 	end component;
 	signal resul_contador : std_logic_vector(7 downto 0);
+	
+	
+	component divisor1 is 
+		port (
+			  rst: in STD_LOGIC;
+			  clk_in: in STD_LOGIC;
+			  clk_out: out STD_LOGIC
+		 );
+	end component;
+	signal div_out : std_logic;
+	
+	signal resultado: std_logic_vector(0 to C_SLV_DWIDTH-1);
+	signal i,cnt_limit : std_logic_vector(7 downto 0);
+	
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -155,10 +169,10 @@ architecture IMP of user_logic is
 begin
 
   --USER logic implementation added here
+	DVSOR: divisor1 port map(Bus2IP_Reset,Bus2IP_Clk,div_out);
+	CNT: contador port map (div_out,Bus2IP_Reset,resul_contador);
 	
-	CNT: contador port map (Bus2IP_Clk,Bus2IP_Reset,resul_contador);
-	
-	
+
 	
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
@@ -183,8 +197,7 @@ begin
   slv_write_ack     <= Bus2IP_WrCE(0) or Bus2IP_WrCE(1) or Bus2IP_WrCE(2) or Bus2IP_WrCE(3);
   slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
 
-  -- implement slave model software accessible register(s)
-  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
+  proc_escritura : process( Bus2IP_Clk ) is
   begin
 
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
@@ -224,7 +237,54 @@ begin
       end if;
     end if;
 
-  end process SLAVE_REG_WRITE_PROC;
+  end process proc_escritura;
+
+
+
+
+
+  -- implement slave model software accessible register(s)
+--  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
+--  begin
+--
+--    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+--      if Bus2IP_Reset = '1' then
+--        slv_reg0 <= (others => '0');
+--        slv_reg1 <= (others => '0');
+--        slv_reg2 <= (others => '0');
+--        slv_reg3 <= (others => '0');
+--      else
+--        case slv_reg_write_sel is
+--          when "1000" =>
+--            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+--              if ( Bus2IP_BE(byte_index) = '1' ) then
+--                slv_reg0(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
+--              end if;
+--            end loop;
+--          when "0100" =>
+--            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+--              if ( Bus2IP_BE(byte_index) = '1' ) then
+--                slv_reg1(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
+--              end if;
+--            end loop;
+--          when "0010" =>
+--            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+--              if ( Bus2IP_BE(byte_index) = '1' ) then
+--                slv_reg2(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
+--              end if;
+--            end loop;
+--          when "0001" =>
+--            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+--              if ( Bus2IP_BE(byte_index) = '1' ) then
+--                slv_reg3(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
+--              end if;
+--            end loop;
+--          when others => null;
+--        end case;
+--      end if;
+--    end if;
+--
+--  end process SLAVE_REG_WRITE_PROC;
 
   -- implement slave model software accessible register(s) read mux
   SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2, slv_reg3 ) is
@@ -240,26 +300,64 @@ begin
 
   end process SLAVE_REG_READ_PROC;
   
+  ------------------------------------------
+  -- Apartado a
+  ------------------------------------------
+  APA: process(slv_reg1,slv_reg2,slv_reg3,Bus2IP_Clk) is
+  begin
+  
+  if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+		if Bus2IP_Reset = '1' then
+			slv_reg3 <= (others=>'0');
+		else
+			if slv_reg0(31) = '0' then
+				slv_reg3 <= unsigned(slv_reg1) + unsigned(slv_reg2);
+			else
+				slv_reg3 <= unsigned(slv_reg1) - unsigned(slv_reg2);
+			end if;
+		end if;
+  end if; 
+  end process APA;
+  
   
   ------------------------------------------
   -- Apartado b
   ------------------------------------------
   
-  leds<= slv_reg3 when switches = "1000" else
-			slv_reg2 when switches = "0100" else
-			slv_reg1 when switches = "0010" else
-			slv_reg0;
+  APB: process (switches, slv_reg0,slv_reg1,slv_reg2,slv_reg3) is 
+  begin
   
+  if switches = "0000" then 
+		leds <= slv_reg0;
+  elsif switches = "0010" then
+		leds <= slv_reg1;
+  elsif switches = "0100" then
+		leds <= slv_reg2;
+  elsif switches = "1000" then
+		cnt_limit <= resul_contador; 
+		i <= (others=>'0');
+		while ( i < cnt_limit) loop
+			leds <= i;
+			i <= i + 1; 
+		end loop;
+  end if;
+  end process APB;
+  
+--  leds<= slv_reg3(0 to 7) when switches = "1000" else
+--			slv_reg2(0 to 7) when switches = "0100" else
+--			slv_reg1(0 to 7) when switches = "0010" else
+--			slv_reg0(0 to 7);
+--  
   
 
-  ------------------------------------------
-  -- Example code to drive IP to Bus signals
-  ------------------------------------------
-  IP2Bus_Data  <= slv_ip2bus_data when slv_read_ack = '1' else
-                  (others => '0');
-
-  IP2Bus_WrAck <= slv_write_ack;
-  IP2Bus_RdAck <= slv_read_ack;
-  IP2Bus_Error <= '0';
+--  ------------------------------------------
+--  -- Example code to drive IP to Bus signals
+--  ------------------------------------------
+--  IP2Bus_Data  <= slv_ip2bus_data when slv_read_ack = '1' else
+--                  (others => '0');
+--
+--  IP2Bus_WrAck <= slv_write_ack;
+--  IP2Bus_RdAck <= slv_read_ack;
+--  IP2Bus_Error <= '0';
 
 end IMP;
