@@ -192,55 +192,10 @@ begin
   --                     "0001"   C_BASEADDR + 0xC
   -- 
   ------------------------------------------
-  slv_reg_write_sel <= Bus2IP_WrCE(0 to 3);
-  slv_reg_read_sel  <= Bus2IP_RdCE(0 to 3);
-  slv_write_ack     <= Bus2IP_WrCE(0) or Bus2IP_WrCE(1) or Bus2IP_WrCE(2) or Bus2IP_WrCE(3);
-  slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
-
-  proc_escritura : process( Bus2IP_Clk ) is
-  begin
-
-    if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-      if Bus2IP_Reset = '1' then
-        slv_reg0 <= (others => '0');
-        slv_reg1 <= (others => '0');
-        slv_reg2 <= (others => '0');
-        slv_reg3 <= (others => '0');
-      else
-        case slv_reg_write_sel is
-          when "1000" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg0(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
-          when "0100" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg1(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
-          when "0010" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg2(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
-          when "0001" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg3(byte_index*8 to byte_index*8+7) <= Bus2IP_Data(byte_index*8 to byte_index*8+7);
-              end if;
-            end loop;
-          when others => null;
-        end case;
-      end if;
-    end if;
-
-  end process proc_escritura;
-
-
-
+--  slv_reg_write_sel <= Bus2IP_WrCE(0 to 3);
+--  slv_reg_read_sel  <= Bus2IP_RdCE(0 to 3);
+--  slv_write_ack     <= Bus2IP_WrCE(0) or Bus2IP_WrCE(1) or Bus2IP_WrCE(2) or Bus2IP_WrCE(3);
+--  slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
 
 
   -- implement slave model software accessible register(s)
@@ -285,20 +240,20 @@ begin
 --    end if;
 --
 --  end process SLAVE_REG_WRITE_PROC;
-
-  -- implement slave model software accessible register(s) read mux
-  SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2, slv_reg3 ) is
-  begin
-
-    case slv_reg_read_sel is
-      when "1000" => slv_ip2bus_data <= slv_reg0;
-      when "0100" => slv_ip2bus_data <= slv_reg1;
-      when "0010" => slv_ip2bus_data <= slv_reg2;
-      when "0001" => slv_ip2bus_data <= slv_reg3;
-      when others => slv_ip2bus_data <= (others => '0');
-    end case;
-
-  end process SLAVE_REG_READ_PROC;
+--
+--  -- implement slave model software accessible register(s) read mux
+--  SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1, slv_reg2, slv_reg3 ) is
+--  begin
+--
+--    case slv_reg_read_sel is
+--      when "1000" => slv_ip2bus_data <= slv_reg0;
+--      when "0100" => slv_ip2bus_data <= slv_reg1;
+--      when "0010" => slv_ip2bus_data <= slv_reg2;
+--      when "0001" => slv_ip2bus_data <= slv_reg3;
+--      when others => slv_ip2bus_data <= (others => '0');
+--    end case;
+--
+--  end process SLAVE_REG_READ_PROC;
   
   ------------------------------------------
   -- Apartado a
@@ -328,12 +283,12 @@ begin
   begin
   
   if switches = "0000" then 
-		leds <= slv_reg0;
+		leds <= slv_reg0(0 to 7);
   elsif switches = "0010" then
-		leds <= slv_reg1;
+		leds <= slv_reg1(0 to 7);
   elsif switches = "0100" then
-		leds <= slv_reg2;
-  elsif switches = "1000" then
+		leds <= slv_reg2(0 to 7);
+  elsif switches = "1000" then --lo que hay en el contador o reg3 ¿?
 		cnt_limit <= resul_contador; 
 		i <= (others=>'0');
 		while ( i < cnt_limit) loop

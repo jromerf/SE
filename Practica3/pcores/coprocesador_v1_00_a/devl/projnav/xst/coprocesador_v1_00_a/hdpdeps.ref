@@ -1,24 +1,24 @@
 V3 13
 FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd 2020/11/30.23:05:18 P.15xf
-EN coprocesador_v1_00_a/coprocesador 1606824757 \
+EN coprocesador_v1_00_a/coprocesador 1606825083 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1606824732 \
-      PB proc_common_v3_00_a/ipif_pkg 1606824744 LB plbv46_slave_single_v1_01_a \
-      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1606824753 \
-      LB coprocesador_v1_00_a EN coprocesador_v1_00_a/user_logic 1606824755
-AR coprocesador_v1_00_a/coprocesador/IMP 1606824758 \
+      PB proc_common_v3_00_a/proc_common_pkg 1606825058 \
+      PB proc_common_v3_00_a/ipif_pkg 1606825070 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1606825079 \
+      LB coprocesador_v1_00_a EN coprocesador_v1_00_a/user_logic 1606825081
+AR coprocesador_v1_00_a/coprocesador/IMP 1606825084 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd \
-      EN coprocesador_v1_00_a/coprocesador 1606824757 \
+      EN coprocesador_v1_00_a/coprocesador 1606825083 \
       CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
       CP coprocesador_v1_00_a/user_logic
-FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd 2020/12/01.13:12:06 P.15xf
-EN coprocesador_v1_00_a/user_logic 1606824755 \
+FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd 2020/12/01.13:17:32 P.15xf
+EN coprocesador_v1_00_a/user_logic 1606825081 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
       PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
-      PB proc_common_v3_00_a/proc_common_pkg 1606824732
-AR coprocesador_v1_00_a/user_logic/IMP 1606824756 \
+      PB proc_common_v3_00_a/proc_common_pkg 1606825058
+AR coprocesador_v1_00_a/user_logic/IMP 1606825082 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd \
-      EN coprocesador_v1_00_a/user_logic 1606824755 CP divisor1 CP contador
+      EN coprocesador_v1_00_a/user_logic 1606825081 CP divisor1 CP contador
