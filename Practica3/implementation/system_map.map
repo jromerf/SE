@@ -9,9 +9,24 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 01 00:23:36 2020
+Mapped Date    : Tue Dec 01 22:35:37 2020
 
 Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
 Writing file system_map.ngm...
 Running directed packing...
 Running delay-based LUT packing...
@@ -21,89 +36,42 @@ Total REAL time at the beginning of Placer: 7 secs
 Total CPU  time at the beginning of Placer: 6 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:c4b3f934) REAL time: 9 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:124a9fac) REAL time: 9 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:c4b3f934) REAL time: 9 secs 
+Phase 2.7  Design Feasibility Check (Checksum:124a9fac) REAL time: 9 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:c4b3f934) REAL time: 9 secs 
+Phase 3.31  Local Placement Optimization (Checksum:124a9fac) REAL time: 9 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:7e7a117c) REAL time: 10 secs 
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
 
-Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:7e7a117c) REAL time: 10 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:391fea0e) REAL time: 10 secs 
 
-Phase 6.4  Local Placement Optimization
-......................................
-............
-Phase 6.4  Local Placement Optimization (Checksum:7e7a117c) REAL time: 14 secs 
-
-Phase 7.28  Local Placement Optimization
-Phase 7.28  Local Placement Optimization (Checksum:7e7a117c) REAL time: 14 secs 
-
-Phase 8.8  Global Placement
-.....................................
-...........
-...........
-............................................................
-........................................
-......................................
-Phase 8.8  Global Placement (Checksum:80a9d680) REAL time: 23 secs 
-
-Phase 9.29  Local Placement Optimization
-Phase 9.29  Local Placement Optimization (Checksum:80a9d680) REAL time: 23 secs 
-
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:80a9d680) REAL time: 23 secs 
-
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:24aa8e9c) REAL time: 42 secs 
-
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:24aa8e9c) REAL time: 42 secs 
-
-Total REAL time to Placer completion: 43 secs 
-Total CPU  time to Placer completion: 41 secs 
-Running post-placement packing...
-
-Design Summary
---------------
-
-Design Summary:
-Number of errors:      0
-Number of warnings:    0
-Logic Utilization:
-  Number of Slice Flip Flops:         1,201 out of  15,360    7%
-  Number of 4 input LUTs:             2,296 out of  15,360   14%
-Logic Distribution:
-  Number of occupied Slices:          1,601 out of   7,680   20%
-    Number of Slices containing only related logic:   1,601 out of   1,601 100%
-    Number of Slices containing unrelated logic:          0 out of   1,601   0%
-      *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,337 out of  15,360   15%
-    Number used as logic:             1,828
-    Number used as a route-thru:         41
-    Number used for Dual Port RAMs:     384
-      (Two LUTs used per Dual Port RAM)
-    Number used as Shift registers:      84
-
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
-
-  Number of bonded IOBs:                 16 out of     173    9%
-    IOB Flip Flops:                       4
-  Number of RAMB16s:                     16 out of      24   66%
-  Number of MULT18X18s:                   3 out of      24   12%
-  Number of BUFGMUXs:                     1 out of       8   12%
-
-Average Fanout of Non-Clock Nets:                4.09
-
-Peak Memory Usage:  4509 MB
-Total REAL time to MAP completion:  44 secs 
-Total CPU time to MAP completion:   42 secs 
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 9 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Mapping completed.
 See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4

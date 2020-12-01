@@ -1,4 +1,4 @@
-AR divisor1 divisor1_arch D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd sub00/vhpl03 1606825074
-EN divisor1 NULL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd sub00/vhpl02 1606825073
-EN contador NULL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd sub00/vhpl00 1606825075
-AR contador behavioral D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd sub00/vhpl01 1606825076
+AR divisor1 divisor1_arch D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd sub00/vhpl03 1606851271
+EN divisor1 NULL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd sub00/vhpl02 1606851270
+EN contador NULL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd sub00/vhpl00 1606854770
+AR contador behavioral D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd sub00/vhpl01 1606854771

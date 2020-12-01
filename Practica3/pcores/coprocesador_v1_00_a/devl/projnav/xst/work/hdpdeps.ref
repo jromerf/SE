@@ -1,15 +1,16 @@
-V3 6
+V3 7
 FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd 2020/11/30.23:52:26 P.15xf
-EN work/contador 1606825075 \
+EN work/contador 1606854770 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
-AR work/contador/Behavioral 1606825076 \
+AR work/contador/Behavioral 1606854771 \
       FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd \
-      EN work/contador 1606825075
-FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd 2014/07/18.18:26:24 P.15xf
-EN work/divisor1 1606825073 \
-      FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd \
+      EN work/contador 1606854770
+FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd 2014/07/18.18:26:24 P.15xf
+EN work/divisor1 1606851270 \
+      FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd \
       PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
-AR work/divisor1/divisor1_arch 1606825074 \
-      FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd \
-      EN work/divisor1 1606825073
+AR work/divisor1/divisor1_arch 1606851271 \
+      FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd \
+      EN work/divisor1 1606851270
+FL D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/divisor1Hz.vhd 2014/07/18.18:26:24 P.15xf

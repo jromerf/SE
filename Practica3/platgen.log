@@ -23,7 +23,7 @@ Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
   (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
   (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
-  (0xcd000000-0xcd00ffff) coprocesador_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
@@ -149,6 +149,8 @@ Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
 D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
 implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
 D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
 implementation netlist
@@ -157,6 +159,9 @@ D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
 D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
 implementation netlist
 
 Elaborating instances ...
@@ -169,7 +174,7 @@ Inserting wrapper level ...
 Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -182,8 +187,6 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 21 -
-Running XST synthesis
 INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
 Running XST synthesis
 
@@ -194,4 +197,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 90.00 seconds
+Total run time: 42.00 seconds

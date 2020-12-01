@@ -5,9 +5,9 @@
  PORT Rst_pin = plb_v46_0_SYS_Rst, DIR = I, SIGIS = RST
  PORT RX_pin = xps_uartlite_0_RX, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
- PORT switches = coprocesador_0_switches, DIR = I, VEC = [0:3]
- PORT leds = coprocesador_0_leds, DIR = O, VEC = [0:7]
  PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT leds = coprocesador_0_leds, DIR = O, VEC = [0:7]
+ PORT switches = net_coprocesador_0_switches_pin, DIR = I, VEC = [0:3]
 
 
 BEGIN microblaze
@@ -56,10 +56,10 @@ END
 BEGIN coprocesador
  PARAMETER INSTANCE = coprocesador_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0xcd000000
- PARAMETER C_HIGHADDR = 0xcd00ffff
+ PARAMETER C_BASEADDR = 0xCD000000
+ PARAMETER C_HIGHADDR = 0xCD0000FF
  BUS_INTERFACE SPLB = plb_v46_0
- PORT switches = coprocesador_0_switches
  PORT leds = coprocesador_0_leds
+ PORT switches = net_coprocesador_0_switches_pin
 END
 

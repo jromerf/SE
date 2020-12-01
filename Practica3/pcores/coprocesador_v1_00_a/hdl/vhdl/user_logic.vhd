@@ -98,8 +98,8 @@ entity user_logic is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-	 leds : out std_logic_vector(7 downto 0);
-	 switches : in std_logic_vector(3 downto 0);
+	 leds : out std_logic_vector(0 to 7);
+	 switches : in std_logic_vector(0 to 3);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -133,26 +133,27 @@ architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
   
-	component contador is 
-	  Port ( clk : in  STD_LOGIC;
-				  reset : in  STD_LOGIC;
-				  cout : out  STD_LOGIC_VECTOR (7 downto 0));
-	end component;
+--	component contador is 
+--	  Port ( clk : in  STD_LOGIC;
+--				  reset : in  STD_LOGIC;
+--				  cout : out  STD_LOGIC_VECTOR (7 downto 0));
+--	end component;
 	signal resul_contador : std_logic_vector(7 downto 0);
 	
 	
-	component divisor1 is 
-		port (
-			  rst: in STD_LOGIC;
-			  clk_in: in STD_LOGIC;
-			  clk_out: out STD_LOGIC
-		 );
-	end component;
+--	component divisor1 is 
+--		port (
+--			  rst: in STD_LOGIC;
+--			  clk_in: in STD_LOGIC;
+--			  clk_out: out STD_LOGIC
+--		 );
+--	end component;
 	signal div_out : std_logic;
 	
 	signal resultado: std_logic_vector(0 to C_SLV_DWIDTH-1);
-	signal i,cnt_limit : std_logic_vector(7 downto 0);
-	
+	signal cnt_aux : std_logic_vector(7 downto 0);
+	SIGNAL cuenta: std_logic_vector(26 downto 0);
+   --SIGNAL clk, clk_aux: std_logic;
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -169,8 +170,8 @@ architecture IMP of user_logic is
 begin
 
   --USER logic implementation added here
-	DVSOR: divisor1 port map(Bus2IP_Reset,Bus2IP_Clk,div_out);
-	CNT: contador port map (div_out,Bus2IP_Reset,resul_contador);
+--	DVSOR: divisor1 port map(Bus2IP_Reset,Bus2IP_Clk,div_out);
+--	CNT: contador port map (div_out,Bus2IP_Reset,resul_contador);
 	
 
 	
@@ -258,45 +259,81 @@ begin
   ------------------------------------------
   -- Apartado a
   ------------------------------------------
-  APA: process(slv_reg1,slv_reg2,slv_reg3,Bus2IP_Clk) is
+  APA: process(slv_reg1,slv_reg2,slv_reg3,Bus2IP_Clk,Bus2IP_Reset) is
   begin
-  
-  if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
 		if Bus2IP_Reset = '1' then
 			slv_reg3 <= (others=>'0');
 		else
-			if slv_reg0(31) = '0' then
-				slv_reg3 <= unsigned(slv_reg1) + unsigned(slv_reg2);
-			else
-				slv_reg3 <= unsigned(slv_reg1) - unsigned(slv_reg2);
+			if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+				if slv_reg0(31) = '0' then
+					slv_reg3 <= unsigned(slv_reg1) + unsigned(slv_reg2);
+				else
+					slv_reg3 <= unsigned(slv_reg1) - unsigned(slv_reg2);
+				end if;
 			end if;
-		end if;
-  end if; 
+		end if; 
   end process APA;
   
   
   ------------------------------------------
   -- Apartado b
+  --
+	--  0 0 x 0
+	--  0 1 x 0
+	--  1 0 x 0
+	--  1 1 x 0
   ------------------------------------------
   
-  APB: process (switches, slv_reg0,slv_reg1,slv_reg2,slv_reg3) is 
+  APB: process (switches, slv_reg0,slv_reg1,slv_reg2,slv_reg3,resul_contador) is 
   begin
-  
-  if switches = "0000" then 
-		leds <= slv_reg0(0 to 7);
-  elsif switches = "0010" then
-		leds <= slv_reg1(0 to 7);
-  elsif switches = "0100" then
-		leds <= slv_reg2(0 to 7);
-  elsif switches = "1000" then --lo que hay en el contador o reg3 ¿?
-		cnt_limit <= resul_contador; 
-		i <= (others=>'0');
-		while ( i < cnt_limit) loop
-			leds <= i;
-			i <= i + 1; 
-		end loop;
+  if switches(3) = '0' then 
+		if switches(0 to 1) = "00"  then 
+			leds <= slv_reg0(0 to 7);
+		elsif switches(0 to 1) = "01" then
+			leds <= slv_reg1(0 to 7);
+		elsif switches(0 to 1) = "10" then
+			leds <= slv_reg2(0 to 7);
+		elsif switches(0 to 1) = "11" then --lo que hay en el contador o reg3 ¿?
+			leds <= slv_reg3(0 to 7);
+		end if;
+	elsif switches(3) = '1' then	 
+		cnt_aux <= resul_contador; 
+		leds <= cnt_aux;
   end if;
   end process APB;
+  
+ divisor: process(Bus2IP_Clk,Bus2IP_Reset) is
+	begin
+		IF (Bus2IP_Reset='1') THEN
+			cuenta<= (OTHERS=>'0');
+		ELSIF(Bus2IP_Clk'EVENT AND Bus2IP_Clk='1') THEN
+		IF (cuenta="101111101011110000100000000") THEN
+			div_out <= not div_out;
+		  cuenta<= (OTHERS=>'0');
+		ELSE
+		  cuenta <= cuenta+'1';
+		END IF;
+		END IF;
+		 
+	end process divisor;
+ 
+	 contador : process(div_out,Bus2IP_Reset)
+		begin
+			
+			if Bus2IP_Reset = '1' then
+				resul_contador <= (others=>'0');
+			elsif div_out'event and div_out='1' then --clk divisor
+				if resul_contador = "11111111" then
+					resul_contador<="00000000";
+				else
+					resul_contador<= unsigned(resul_contador)+1;
+				end if;
+			end if;
+			
+		end process contador;
+
+
+  
   
 --  leds<= slv_reg3(0 to 7) when switches = "1000" else
 --			slv_reg2(0 to 7) when switches = "0100" else

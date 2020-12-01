@@ -129,8 +129,8 @@ begin
 
   coprocesador_0 : coprocesador
     generic map (
-      C_BASEADDR => X"cd000000",
-      C_HIGHADDR => X"cd00ffff",
+      C_BASEADDR => X"CD000000",
+      C_HIGHADDR => X"CD0000FF",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

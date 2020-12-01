@@ -123,8 +123,7 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
 pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd \
-pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd \
-pcores/coprocesador_v1_00_a/hdl/vhdl/contador.vhd
+pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd
 
 WRAPPER_NGC_FILES = implementation/system_microblaze_0_wrapper.ngc \
 implementation/system_plb_v46_0_wrapper.ngc \

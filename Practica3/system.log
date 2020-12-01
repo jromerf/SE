@@ -2057,3 +2057,2775 @@ Done writing filter settings to:
 	D:\hlocal\SE\Practicas\practica3\etc\system.filters
 Done writing Tab View settings to:
 	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.1 Build EDK_P.15xf
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 19:48:38 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd00ffff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 43.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+ERROR:NgdBuild:604 - logical block
+   'coprocesador_0/coprocesador_0/USER_LOGIC_I/DVSOR' with type 'divisor1' could
+   not be resolved. A pin name misspelling can cause this, a missing edif or ngc
+   file, case mismatch between the block name and the edif or ngc file name, or
+   the misspelling of a type name. Symbol 'divisor1' is not supported in target
+   'spartan3'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     1
+  Number of warnings:   5
+
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "system.bld"...
+ERROR:Xflow - Program ngdbuild returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+ERROR:EDK:1405 - File not found in any repository 'coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd'
+
+********************************************************************************
+At Local date and time: Tue Dec 01 19:57:49 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+ERROR:EDK:1405 - File not found in any repository
+   'coprocesador_v1_00_a/hdl/vhdl/divisor1.vhd'
+ERROR:EDK:440 - platgen failed with errors!
+make: *** [implementation/system.bmm] Error 2
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 20:01:07 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 43.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  23 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 8 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:124a9fac) REAL time: 10 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:124a9fac) REAL time: 10 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:124a9fac) REAL time: 10 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:391fea0e) REAL time: 12 secs 
+
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 10 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.1/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+Warning - plb_v46_0 port M_ABus width [128] does not match net coprocesador_0_leds width [8]
+Warning - coprocesador_0 port switches width [4] does not match net coprocesador_0_leds width [8]
+Can't rename external port coprocesador_0_switches_pin to switches (already used)
+Can't rename external port coprocesador_0_switches_pin to switches (already used)
+WARNING:EDK - UCF file has reference to the following nonexistent external port(s), please revise UCF file.
+   switches
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 20:45:36 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 42.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:391fea0e) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 10 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 21:39:59 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 1.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 43.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  23 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:7053104b) REAL time: 11 secs 
+
+Total REAL time to Placer completion: 11 secs 
+Total CPU  time to Placer completion: 10 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+
+********************************************************************************
+At Local date and time: Tue Dec 01 21:48:06 2020
+ make -f system.make bits started...
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:7053104b) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 10 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 22:02:27 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 43.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:24e8cec6) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:7053104b) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 9 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.filters
+Done writing Tab View settings to:
+	D:\hlocal\SE\Practicas\practica3\etc\system.gui
+
+********************************************************************************
+At Local date and time: Tue Dec 01 22:28:50 2020
+ make -f system.make bits started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst system.mhs
+
+Release 14.1 - platgen Xilinx EDK 14.1 Build EDK_P.15xf
+ (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock 'Clk_pin' is not specified.
+   Clock DRCs will not be performed for IPs connected to that clock port, unless
+   they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
+  (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
+  (0xcd000000-0xcd0000ff) coprocesador_0	plb_v46_0
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_NUM_SLAVES value to 3 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_MID_WIDTH value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
+   PARAMETER C_PLBV46_DWIDTH value to 32 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
+   \plb_v46_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:bram_block_0 - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x8000 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 76 
+INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\xps_uartlite_v1_02_a
+   \data\xps_uartlite_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 27 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 28 
+INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
+   r_v2_1_0.mpd line 29 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 3 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
+   will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 412 
+WARNING:EDK:4180 - PORT: EXT_NM_BRK, CONNECTOR: Ext_NM_BRK - No driver found.
+   Port will be driven to GND -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 413 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: microblaze_0, PARAMETER: C_FREQ - Did not implement
+   clock DRCs for the parameter. Top-level frequency could not be propagated to
+   this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: xps_uartlite_0, PARAMETER: C_SPLB_CLK_FREQ_HZ - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: coprocesador_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did
+   not implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 230 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 231 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_LMB value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 234 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 334 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_30_a\d
+   ata\microblaze_v2_1_0.mpd line 364 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:microblaze INSTANCE:microblaze_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
+line 21 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+implementation netlist
+IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+implementation netlist
+IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+implementation netlist
+IPNAME:coprocesador INSTANCE:coprocesador_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:bram_block_0 -
+D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
+Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Running NGCBUILD ...
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 42.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+"XST completed"
+"*********************************************"
+"Running Xilinx Implementation tools.."
+"*********************************************"
+xflow -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc
+Release 14.1 - Xflow P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc3s1000ft256-5 -implement xflow.opt system.ngc 
+ 
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Using Flow File: D:/hlocal/SE/Practicas/practica3/implementation/fpga.flw 
+Using Option File(s): 
+ D:/hlocal/SE/Practicas/practica3/implementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc3s1000ft256-5 -nt timestamp -bm system.bmm
+"D:/hlocal/SE/Practicas/practica3/implementation/system.ngc" -uc system.ucf
+system.ngd 
+#----------------------------------------------#
+Release 14.1 - ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/spartan3/data/spartan3.acd> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/spartan3/data/spartan3.acd>
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+D:/hlocal/SE/Practicas/practica3/implementation/system.ngc -uc system.ucf
+system.ngd
+
+Reading NGO file "D:/hlocal/SE/Practicas/practica3/implementation/system.ngc"
+...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_microblaze_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_plb_v46_0_wrapper.ngc"..
+.
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_bram_block_0_wrapper.ngc
+"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_bram_if_cntlr_0_wrap
+per.ngc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_xps_uartlite_0_wrapper.n
+gc"...
+Loading design module
+"D:/hlocal/SE/Practicas/practica3/implementation/system_coprocesador_0_wrapper.n
+gc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  22 sec
+Total CPU time to NGDBUILD completion:   21 sec
+
+Writing NGDBUILD log file "system.bld"...
+
+NGDBUILD done.
+
+
+
+#----------------------------------------------#
+# Starting program map
+# map -o system_map.ncd -pr b -ol high -timing -detail system.ngd system.pcf 
+#----------------------------------------------#
+Release 14.1 - Map P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.1/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
+<C:/Xilinx/14.1/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
+Using target part "3s1000ft256-5".
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal switches<0> connected to top level port switches<0>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<1> connected to top level port switches<1>
+   has been removed.
+WARNING:MapLib:701 - Signal switches<2> connected to top level port switches<2>
+   has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_switches_3_BUFGP/switches_3_BUFGP/BUFG" (output
+   signal=switches_3_BUFGP) has a mix of clock and non-clock loads. Some of the
+   non-clock loads are (maximum of 5 listed):
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<0>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<1>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<2>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<3>1
+   Pin I0 of coprocesador_0/coprocesador_0/USER_LOGIC_I/leds<4>1
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 6 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:124a9fac) REAL time: 9 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+.......................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are
+   not placed at an optimal clock IOB / clock site pair. The clock component
+   <switches_3_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component
+   <switches<3>> is placed at site <H3>.  This will not allow the use of the
+   fast path between the IO and the Clock buffer. If this sub optimal condition
+   is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE
+   constraint in the .ucf file to demote this message to a WARNING and allow
+   your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended
+   that this error condition be corrected in the design. A list of all the
+   COMP.PINs used in this clock placement rule is listed below. These examples
+   can be used directly in the .ucf file to override this clock rule.
+   < NET "switches<3>" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:391fea0e) REAL time: 10 secs 
+
+Total REAL time to Placer completion: 10 secs 
+Total CPU  time to Placer completion: 9 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   4
+ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+make: *** [__xps/system_routed] Error 1
+Done!
