@@ -6,20 +6,24 @@ Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
 ../src/testperiph.c: In function 'getNumber':
-../src/testperiph.c:130:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:123:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:182:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c:158:5: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c:133:41: warning: unused variable 'resul' [-Wunused-variable]
+../src/testperiph.c:132:33: warning: unused variable 'aux_resul' [-Wunused-variable]
+../src/testperiph.c:132:27: warning: unused variable 'aux_b' [-Wunused-variable]
+../src/testperiph.c:132:21: warning: unused variable 'aux_a' [-Wunused-variable]
 Finished building: ../src/testperiph.c
 ' '
 Building target: peripheral_tests_0.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"peripheral_tests_0.elf"  ./src/testperiph.o ./src/xbram_example.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_0/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"peripheral_tests_0.elf"  ./src/coprocesador.o ./src/coprocesador_selftest.o ./src/testperiph.o ./src/xbram_example.o ./src/xgpio_tapp_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: peripheral_tests_0.elf
 ' '
 Invoking: MicroBlaze Print Size
 mb-size peripheral_tests_0.elf  |tee "peripheral_tests_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  12854	    400	   2208	  15462	   3c66	peripheral_tests_0.elf
+  14554	    400	   2214	  17168	   4310	peripheral_tests_0.elf
 Finished building: peripheral_tests_0.elf.size
 ' '
 Invoking: Xilinx ELF Check

@@ -13,8 +13,8 @@ entity system_stub is
     RX_pin : in std_logic;
     TX_pin : out std_logic;
     Clk_pin : in std_logic;
-    leds : out std_logic_vector(0 to 7);
-    switches : in std_logic_vector(0 to 3)
+    switches : in std_logic_vector(0 to 3);
+    leds : out std_logic_vector(0 to 7)
   );
 end system_stub;
 
@@ -26,8 +26,8 @@ architecture STRUCTURE of system_stub is
       RX_pin : in std_logic;
       TX_pin : out std_logic;
       Clk_pin : in std_logic;
-      leds : out std_logic_vector(0 to 7);
-      switches : in std_logic_vector(0 to 3)
+      switches : in std_logic_vector(0 to 3);
+      leds : out std_logic_vector(0 to 7)
     );
   end component;
 
@@ -42,8 +42,8 @@ begin
       RX_pin => RX_pin,
       TX_pin => TX_pin,
       Clk_pin => Clk_pin,
-      leds => leds,
-      switches => switches
+      switches => switches,
+      leds => leds
     );
 
 end architecture STRUCTURE;

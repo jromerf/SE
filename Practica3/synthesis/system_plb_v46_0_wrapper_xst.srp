@@ -1,10 +1,10 @@
 Release 14.1 - xst P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3.1\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_plb_v46_0_wrapper_xst.prj"
-Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3.1\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1000ft256-5
@@ -289,7 +289,7 @@ Entity <plb_arbiter_logic> (Architecture <implementation>) compiled.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/hdl/vhdl/plb_v46.vhd" in Library plb_v46_v1_05_a.
 Entity <plb_v46> compiled.
 Entity <plb_v46> (Architecture <simulation>) compiled.
-Compiling vhdl file "D:/hlocal/SE/Practicas/practica3/hdl/system_plb_v46_0_wrapper.vhd" in Library work.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica3.1/hdl/system_plb_v46_0_wrapper.vhd" in Library work.
 Entity <system_plb_v46_0_wrapper> compiled.
 Entity <system_plb_v46_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -1085,7 +1085,7 @@ Unit <plb_v46> synthesized.
 
 
 Synthesizing Unit <system_plb_v46_0_wrapper>.
-    Related source file is "D:/hlocal/SE/Practicas/practica3/hdl/system_plb_v46_0_wrapper.vhd".
+    Related source file is "D:/hlocal/SE/Practicas/practica3.1/hdl/system_plb_v46_0_wrapper.vhd".
 Unit <system_plb_v46_0_wrapper> synthesized.
 
 
@@ -1368,12 +1368,12 @@ Delay:               3.722ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 40.46 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 33.30 secs
  
 --> 
 
-Total memory usage is 4869036 kilobytes
+Total memory usage is 4869020 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  160 (   0 filtered)

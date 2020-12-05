@@ -42,16 +42,9 @@
 #include "xuartlite_l.h"
 #include <xstatus.h>
 #include <stdlib.h>
+#include "coprocesador.h"
 
-/*
- * LEDs; configured as Salida
- * SWITCHes; configured as Entrada
- */
-
-
-#define CHANNEL 1
-#define OUTPUT 0x00000000
-#define INPUT 0xFFFFFFFF
+#define address 0xCD000000
 
 
 #define XPAR_RS232_UART_1_BASEADDR 0x84000000
@@ -136,77 +129,116 @@ int getNumber (){
 
 int main()
 {
-	XGpio GPIO_LEDS,GPIO_SWITCHES;
-	int exit = 0, option = 0, opa=0,opb=0,resul = 0;
+	Xuint32 Reg32Value,aux_a,aux_b,aux_resul;
+		int exit = 0, option = 0, opa=0,opb=0,resul = 0;
+	   Xil_ICacheEnable();
+	   Xil_DCacheEnable();
 
-	//CLEAN LEDS
-	XGpio_Initialize(&GPIO_LEDS,XPAR_LEDS_GPIO_DEVICE_ID);
-	XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-	XGpio_DiscreteWrite(&GPIO_LEDS, 1, 0);
-	while(exit == 0){
-		print(" MENU: \n\r");
-		print(" 1 - Introduce first number. \n\r");
-		print(" 2 - Introduce second number. \n\r");
-		print(" 3 - Add and show on leds . \n\r");
-		print(" 4 - Read from switches. \n\r");
-		print(" 5 - EXIT \n\r");
+	   print("---Entering main---\n\r");
 
-		option = getNumber();
+	  // COPROCESADOR_SelfTest(COPROCESADOR_USER_SLV_SPACE_OFFSET);
 
-		switch(option){
-		case 1:
-			/*if(XGpio_Initialize(&GpioOutput,XPAR_XPS_GPIO_0_LEDS_DEVICE_ID) == XST_SUCCESS){
+	    while(exit == 0){
+	    	print(" MENU: \n\r");
+			print(" 1 - Introduce first number. \n\r");
+			print(" 2 - Introduce second number. \n\r");
+			print(" 3 - Result from reg3 . \n\r");
+			print(" 4 - suma 0 resta 1. \n\r");
+			print(" 5 - EXIT \n\r");
 
-			}*/
-			XGpio_Initialize(&GPIO_LEDS,XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, 0);
-			print("Introduce a number from 0 to 9: \n\r");
-			opa = getNumber();
-			XGpio_Initialize(&GPIO_LEDS,XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, opa);
-			break;
-		case 2:
-			XGpio_Initialize(&GPIO_LEDS,XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, 0);
-			print("Introduce a number from 0 to 9: \n\r");
-			opb = getNumber();
-			XGpio_Initialize(&GPIO_LEDS,XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, opb);
-			break;
-		case 3:
-			resul = opa + opb;
-			xil_printf("Your result is: %d\n\r",resul);
+			option = getNumber();
 
-			XGpio_Initialize(&GPIO_LEDS, XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, resul);
-			break;
-		case 4:
-			//0
-			XGpio_Initialize(&GPIO_LEDS, XPAR_LEDS_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_LEDS, CHANNEL, OUTPUT);
-			// 1
-			XGpio_Initialize(&GPIO_SWITCHES, XPAR_SWITCHES_GPIO_DEVICE_ID);
-			XGpio_SetDataDirection(&GPIO_SWITCHES, CHANNEL, INPUT);
+			switch(option){
 
-			u32 Data = XGpio_DiscreteRead(&GPIO_SWITCHES, XPAR_SWITCHES_GPIO_DEVICE_ID);
-			XGpio_DiscreteWrite(&GPIO_LEDS, CHANNEL, Data);
-			xil_printf("Data readed from switches: %d\n\r", Data);
-			break;
-		case 5:
-			print("Exit terminal\n\r");
-			exit = 1;
-			break;
-		default:
-			print("Wrong number, enter again\n\r");
-		}
-	}
-	print("-- Exiting main() --\n\r");
-	return 0;
+			case 1:
+				print("Introduce a number from 0 to 9: \n\r");
+				opa = getNumber();
+				COPROCESADOR_mWriteSlaveReg1(COPROCESADOR_USER_SLV_SPACE_OFFSET,0,opa);
+				Reg32Value = COPROCESADOR_mReadSlaveReg1(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 1\n\r", Reg32Value);
+				break;
+			case 2:
+				print("Introduce a number from 0 to 9: \n\r");
+				opb = getNumber();
+				COPROCESADOR_mWriteSlaveReg2(COPROCESADOR_USER_SLV_SPACE_OFFSET,0,opb);
+				Reg32Value = COPROCESADOR_mReadSlaveReg2(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 2\n\r", Reg32Value);
+				break;
+			case 3:
+				//no tiene q tener ninguna suma aqui pq lo hace el hw
+				//COPROCESADOR_mWriteSlaveReg3(COPROCESADOR_USER_SLV_SPACE_OFFSET,COPROCESADOR_SLV_REG3_OFFSET,resul);
+				//Reg32Value = COPROCESADOR_mReadSlaveReg3(COPROCESADOR_USER_SLV_SPACE_OFFSET, COPROCESADOR_SLV_REG3_OFFSET);
+				//xil_printf(" read %d from register 3\n\r", Reg32Value);
+
+				Reg32Value = COPROCESADOR_mReadSlaveReg0(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 0\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg1(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 1\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg2(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 2\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg3(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 3\n\r", Reg32Value);
+
+				break;
+			case 4:
+
+				print("Introduce a number from 0 or 1: \n\r");
+				opa = getNumber();
+				//COPROCESADOR_mWriteSlaveReg3(COPROCESADOR_USER_SLV_SPACE_OFFSET,COPROCESADOR_SLV_REG3_OFFSET,8);
+
+				if(opa == 0 )
+					COPROCESADOR_mWriteSlaveReg0(COPROCESADOR_USER_SLV_SPACE_OFFSET,0,0);
+				else
+					COPROCESADOR_mWriteSlaveReg0(COPROCESADOR_USER_SLV_SPACE_OFFSET,0,1);
+
+
+				Reg32Value = COPROCESADOR_mReadSlaveReg0(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 0\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg1(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 1\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg2(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 2\n\r", Reg32Value);
+				Reg32Value = COPROCESADOR_mReadSlaveReg3(COPROCESADOR_USER_SLV_SPACE_OFFSET, 0);
+				xil_printf(" read %d from register 3\n\r", Reg32Value);
+				break;
+			default:
+						print("Wrong number, enter again\n\r");
+			}
+
+
+	    }
+
+
+
+	   {
+	      int status;
+
+	      print("\r\nRunning Bram Example() for xps_bram_if_cntlr_0...\r\n");
+
+	      status = BramExample(XPAR_XPS_BRAM_IF_CNTLR_0_DEVICE_ID);
+
+	      if (status == 0) {
+	         xil_printf("Bram Example PASSED.\r\n");
+	      }
+	      else {
+	         print("Bram Example FAILED.\r\n");
+	      }
+
+	   }
+
+
+	   /*
+	    * Peripheral SelfTest will not be run for xps_uartlite_0
+	    * because it has been selected as the STDOUT device
+	    */
+
+
+	   print("---Exiting main---\n\r");
+
+	   Xil_DCacheDisable();
+	   Xil_ICacheDisable();
+
+	   return 0;
 
 }
 

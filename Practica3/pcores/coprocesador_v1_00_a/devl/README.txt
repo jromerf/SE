@@ -10,7 +10,7 @@ TABLE OF CONTENTS
 ================================================================================
 Peripheral Summary:
 
-  XPS project / EDK repository               : D:\hlocal\SE\Practicas\practica3
+  XPS project / EDK repository               : D:\hlocal\SE\Practicas\practica3.1
   logical library name                       : coprocesador_v1_00_a
   top name                                   : coprocesador
   version                                    : 1.00.a
@@ -139,7 +139,7 @@ proc_common_v3_00_a
 	No documentation for this library
 
 plbv46_slave_single_v1_01_a
-	D:\hlocal\SE\Practicas\practica3\C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plbv46_slave_single_v1_01_a\doc\plbv46_slave_single.pdf
+	D:\hlocal\SE\Practicas\practica3.1\C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plbv46_slave_single_v1_01_a\doc\plbv46_slave_single.pdf
 
 Bus2IP_Clk
     Synchronization clock provided to the user logic. All IPIC signals are 
@@ -288,5 +288,5 @@ proc_common_v3_00_a
 	No documentation for this library
 
 plbv46_slave_single_v1_01_a
-	D:\hlocal\SE\Practicas\practica3\C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plbv46_slave_single_v1_01_a\doc\plbv46_slave_single.pdf
+	D:\hlocal\SE\Practicas\practica3.1\C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plbv46_slave_single_v1_01_a\doc\plbv46_slave_single.pdf
 

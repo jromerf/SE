@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="20" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="26" y="26">
 <fastViewData fastViewLocation="1024"/>
-<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -34,16 +33,50 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/hlocal/SE/Practicas/practica3/SDK/practica2_hw_platform/system.xml" title="system.xml" tooltip="practica2_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/hlocal/SE/Practicas/practica2/SDK/practica2_hw_platform/system.xml" title="system.xml" tooltip="practica2_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica2_hw_platform/system.xml"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="D:/hlocal/SE/Practicas/practica3/SDK/peripheral_tests_0/src/testperiph.c" title="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/hlocal/SE/Practicas/practica2/SDK/peripheral_tests_bsp_0/system.mss" title="system.mss" tooltip="peripheral_tests_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/system.mss"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_0/src/testperiph.c" title="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/testperiph.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3584" selectionTopPixel="2889"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5077" selectionTopPixel="2916"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite_l.c" partName="xuartlite_l.c" path="D:/hlocal/SE/Practicas/practica2/SDK/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c" title="xuartlite_l.c" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="4692" selectionTopPixel="1419"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador.c" partName="coprocesador.c" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_0/src/coprocesador.c" title="coprocesador.c" tooltip="peripheral_tests_0/src/coprocesador.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/coprocesador.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador.h" partName="coprocesador.h" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_0/src/coprocesador.h" title="coprocesador.h" tooltip="peripheral_tests_0/src/coprocesador.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/coprocesador.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="28" selectionOffset="1046" selectionTopPixel="867"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" partName="xil_io.h" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_bsp_0/microblaze_0/include/xil_io.h" title="xil_io.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xil_io.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/microblaze_0/include/xil_io.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="7055" selectionTopPixel="3145"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" partName="xil_io.h" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h" title="xil_io.h" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="7055" selectionTopPixel="5236"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador_selftest.c" partName="coprocesador_selftest.c" path="D:/hlocal/SE/Practicas/practica3.1/SDK/peripheral_tests_0/src/coprocesador_selftest.c" title="coprocesador_selftest.c" tooltip="peripheral_tests_0/src/coprocesador_selftest.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/coprocesador_selftest.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="2603" selectionTopPixel="654"/>
 </editor>
 </editors>
 <views>
@@ -139,10 +172,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings (5 items)"/>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -153,12 +182,6 @@
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="file:///C:/Xilinx/14.1/ISE_DS/EDK/eclipse/nt64/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
-<standbyPart/>
-</viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
@@ -232,7 +255,6 @@
 <view id="org.eclipse.tm.terminal.view.TerminalView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
-<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -248,13 +270,11 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@465f3bad" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
@@ -291,70 +311,171 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica2_hw_platform/system.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/peripheral_tests_bsp_0/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/testperiph.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica2_hw_platform/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/include/xil_io.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/coprocesador_selftest.c"/>
 </editors>
-<item historyLabel="system.xml" index="0"/>
-<item historyLabel="system.mss" index="1"/>
-<item historyLabel="testperiph.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="5031" y="0"/>
 </item>
-<item historyLabel="xgpio_sinit.c" index="3">
+<item historyLabel="xgpio_sinit.c" index="1">
 <position info="not_deleted" x="5271" y="16"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1244" y="0"/>
 </item>
-<item historyLabel="xgpio_sinit.c" index="3">
+<item historyLabel="xgpio_sinit.c" index="1">
 <position info="not_deleted" x="5271" y="16"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1244" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1649" y="9"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="2007" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1606" y="26"/>
 </item>
-<item historyLabel="xuartlite.h" index="4">
+<item historyLabel="xuartlite.h" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1606" y="26"/>
 </item>
-<item historyLabel="xuartlite_l.c" index="5">
+<item historyLabel="xuartlite_l.c" index="3">
 <position info="not_deleted" x="4692" y="18"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="1984" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="3062" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="3064" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
+<item historyLabel="testperiph.c" index="0">
 <position info="not_deleted" x="3256" y="0"/>
 </item>
-<item historyLabel="testperiph.c" index="2">
-<position info="not_deleted" x="2716" y="0"/>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3502" y="0"/>
 </item>
-<item historyLabel="system.xml" index="6"/>
-<item active="true" historyLabel="testperiph.c" index="2">
+<item historyLabel="coprocesador.c" index="4">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="coprocesador.h" index="5">
+<position info="not_deleted" x="989" y="34"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3374" y="34"/>
+</item>
+<item historyLabel="coprocesador.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="coprocesador.h" index="7">
+<position info="not_deleted" x="3586" y="0"/>
+</item>
+<item historyLabel="xil_io.h" index="8">
+<position info="not_deleted" x="7055" y="9"/>
+</item>
+<item historyLabel="coprocesador.h" index="7">
+<position info="not_deleted" x="3588" y="0"/>
+</item>
+<item historyLabel="xil_io.h" index="9">
+<position info="not_deleted" x="7055" y="9"/>
+</item>
+<item historyLabel="coprocesador.h" index="7">
+<position info="not_deleted" x="3588" y="0"/>
+</item>
+<item historyLabel="coprocesador.c" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="5931" y="0"/>
+</item>
+<item historyLabel="coprocesador.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="coprocesador.h" index="13">
+<position info="not_deleted" x="1046" y="28"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position/>
+</item>
+<item historyLabel="coprocesador.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="coprocesador.h" index="13">
+<position info="not_deleted" x="1046" y="28"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="3958" y="1"/>
+</item>
+<item historyLabel="coprocesador.h" index="13">
+<position info="not_deleted" x="1046" y="28"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="3958" y="1"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="5038" y="34"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="5725" y="0"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="5573" y="0"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="5573" y="0"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="4276" y="0"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="3869" y="1"/>
+</item>
+<item historyLabel="coprocesador_selftest.c" index="14">
+<position info="not_deleted" x="2603" y="8"/>
+</item>
+<item active="true" historyLabel="testperiph.c" index="11">
+<position info="not_deleted" x="3869" y="1"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -373,8 +494,20 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c">
-<persistable path="/peripheral_tests_0/src/testperiph.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador_selftest.c" tooltip="peripheral_tests_0/src/coprocesador_selftest.c">
+<persistable path="/peripheral_tests_0/src/coprocesador_selftest.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/libsrc/standalone_v3_05_a/src/xil_io.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xil_io.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xil_io.h">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/include/xil_io.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador.h" tooltip="peripheral_tests_0/src/coprocesador.h">
+<persistable path="/peripheral_tests_0/src/coprocesador.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coprocesador.c" tooltip="peripheral_tests_0/src/coprocesador.c">
+<persistable path="/peripheral_tests_0/src/coprocesador.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite_l.c" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c">
 <persistable path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
@@ -384,6 +517,9 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio_sinit.c" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c">
 <persistable path="/peripheral_tests_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c">
+<persistable path="/peripheral_tests_0/src/testperiph.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="peripheral_tests_bsp_0/system.mss">
 <persistable path="/peripheral_tests_bsp_0/system.mss"/>

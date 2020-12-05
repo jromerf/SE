@@ -35,7 +35,7 @@
 -- Filename:          coprocesador.vhd
 -- Version:           1.00.a
 -- Description:       Top level design, instantiates library components and user logic.
--- Date:              Mon Nov 30 22:50:45 2020 (by Create and Import Peripheral Wizard)
+-- Date:              Sat Dec 05 20:17:26 2020 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -163,8 +163,8 @@ entity coprocesador is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-	 leds: out std_logic_vector(0 to 7);
-	 switches: in std_logic_vector(0 to 3);
+	 leds : out std_logic_vector(0 to 7);
+	 switches : in std_logic_vector(0 to 3);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------

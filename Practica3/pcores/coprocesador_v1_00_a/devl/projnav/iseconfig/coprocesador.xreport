@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-12-01T20:29:31</DateModified>
+  <DateModified>2020-12-05T20:19:11</DateModified>
   <ModuleName>coprocesador</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/devl/projnav/iseconfig/coprocesador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
-  <DateInitialized>2020-11-30T22:54:09</DateInitialized>
+  <SavedFilePath>D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/devl/projnav/iseconfig/coprocesador.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/devl/projnav</ImplementationReportsDirectory>
+  <DateInitialized>2020-12-05T20:19:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

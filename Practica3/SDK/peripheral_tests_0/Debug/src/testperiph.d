@@ -18,7 +18,9 @@ src/testperiph.d: ../src/testperiph.c \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xgpio.h \
  ../../peripheral_tests_bsp_0/microblaze_0/include/xgpio_l.h \
  ../src/gpio_header.h \
- ../../peripheral_tests_bsp_0/microblaze_0/include/xuartlite_l.h
+ ../../peripheral_tests_bsp_0/microblaze_0/include/xuartlite_l.h \
+ ../src/coprocesador.h \
+ ../../peripheral_tests_bsp_0/microblaze_0/include/xil_io.h
 
 ../../peripheral_tests_bsp_0/microblaze_0/include/xparameters.h:
 
@@ -59,3 +61,7 @@ src/testperiph.d: ../src/testperiph.c \
 ../src/gpio_header.h:
 
 ../../peripheral_tests_bsp_0/microblaze_0/include/xuartlite_l.h:
+
+../src/coprocesador.h:
+
+../../peripheral_tests_bsp_0/microblaze_0/include/xil_io.h:

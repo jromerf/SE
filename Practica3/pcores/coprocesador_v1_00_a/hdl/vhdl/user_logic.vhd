@@ -26,7 +26,7 @@
 -- Filename:          user_logic.vhd
 -- Version:           1.00.a
 -- Description:       User logic.
--- Date:              Mon Nov 30 22:50:45 2020 (by Create and Import Peripheral Wizard)
+-- Date:              Sat Dec 05 20:17:26 2020 (by Create and Import Peripheral Wizard)
 -- VHDL Standard:     VHDL'93
 ------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -132,28 +132,12 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
-  
---	component contador is 
---	  Port ( clk : in  STD_LOGIC;
---				  reset : in  STD_LOGIC;
---				  cout : out  STD_LOGIC_VECTOR (7 downto 0));
---	end component;
 	signal resul_contador : std_logic_vector(7 downto 0);
-	
-	
---	component divisor1 is 
---		port (
---			  rst: in STD_LOGIC;
---			  clk_in: in STD_LOGIC;
---			  clk_out: out STD_LOGIC
---		 );
---	end component;
 	signal div_out : std_logic;
 	
 	signal resultado: std_logic_vector(0 to C_SLV_DWIDTH-1);
 	signal cnt_aux : std_logic_vector(7 downto 0);
 	SIGNAL cuenta: std_logic_vector(26 downto 0);
-   --SIGNAL clk, clk_aux: std_logic;
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -169,37 +153,13 @@ architecture IMP of user_logic is
 
 begin
 
-  --USER logic implementation added here
---	DVSOR: divisor1 port map(Bus2IP_Reset,Bus2IP_Clk,div_out);
---	CNT: contador port map (div_out,Bus2IP_Reset,resul_contador);
-	
-
-	
-  ------------------------------------------
-  -- Example code to read/write user logic slave model s/w accessible registers
-  -- 
-  -- Note:
-  -- The example code presented here is to show you one way of reading/writing
-  -- software accessible registers implemented in the user logic slave model.
-  -- Each bit of the Bus2IP_WrCE/Bus2IP_RdCE signals is configured to correspond
-  -- to one software accessible register by the top level template. For example,
-  -- if you have four 32 bit software accessible registers in the user logic,
-  -- you are basically operating on the following memory mapped registers:
-  -- 
-  --    Bus2IP_WrCE/Bus2IP_RdCE   Memory Mapped Register
-  --                     "1000"   C_BASEADDR + 0x0
-  --                     "0100"   C_BASEADDR + 0x4
-  --                     "0010"   C_BASEADDR + 0x8
-  --                     "0001"   C_BASEADDR + 0xC
-  -- 
-  ------------------------------------------
 --  slv_reg_write_sel <= Bus2IP_WrCE(0 to 3);
 --  slv_reg_read_sel  <= Bus2IP_RdCE(0 to 3);
 --  slv_write_ack     <= Bus2IP_WrCE(0) or Bus2IP_WrCE(1) or Bus2IP_WrCE(2) or Bus2IP_WrCE(3);
 --  slv_read_ack      <= Bus2IP_RdCE(0) or Bus2IP_RdCE(1) or Bus2IP_RdCE(2) or Bus2IP_RdCE(3);
-
-
-  -- implement slave model software accessible register(s)
+--
+--
+--   --implement slave model software accessible register(s)
 --  SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
 --  begin
 --
@@ -255,101 +215,87 @@ begin
 --    end case;
 --
 --  end process SLAVE_REG_READ_PROC;
-  
-  ------------------------------------------
-  -- Apartado a
-  ------------------------------------------
-  APA: process(slv_reg1,slv_reg2,slv_reg3,Bus2IP_Clk,Bus2IP_Reset) is
-  begin
-		if Bus2IP_Reset = '1' then
-			slv_reg3 <= (others=>'0');
-		else
-			if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-				if slv_reg0(31) = '0' then
-					slv_reg3 <= unsigned(slv_reg1) + unsigned(slv_reg2);
-				else
-					slv_reg3 <= unsigned(slv_reg1) - unsigned(slv_reg2);
-				end if;
-			end if;
-		end if; 
-  end process APA;
-  
-  
-  ------------------------------------------
-  -- Apartado b
-  --
-	--  0 0 x 0
-	--  0 1 x 0
-	--  1 0 x 0
-	--  1 1 x 0
-  ------------------------------------------
-  
-  APB: process (switches, slv_reg0,slv_reg1,slv_reg2,slv_reg3,resul_contador) is 
-  begin
-  if switches(3) = '0' then 
-		if switches(0 to 1) = "00"  then 
-			leds <= slv_reg0(0 to 7);
-		elsif switches(0 to 1) = "01" then
-			leds <= slv_reg1(0 to 7);
-		elsif switches(0 to 1) = "10" then
-			leds <= slv_reg2(0 to 7);
-		elsif switches(0 to 1) = "11" then --lo que hay en el contador o reg3 ¿?
-			leds <= slv_reg3(0 to 7);
-		end if;
-	elsif switches(3) = '1' then	 
-		cnt_aux <= resul_contador; 
-		leds <= cnt_aux;
-  end if;
-  end process APB;
-  
- divisor: process(Bus2IP_Clk,Bus2IP_Reset) is
-	begin
-		IF (Bus2IP_Reset='1') THEN
-			cuenta<= (OTHERS=>'0');
-		ELSIF(Bus2IP_Clk'EVENT AND Bus2IP_Clk='1') THEN
-		IF (cuenta="101111101011110000100000000") THEN
-			div_out <= not div_out;
-		  cuenta<= (OTHERS=>'0');
-		ELSE
-		  cuenta <= cuenta+'1';
-		END IF;
-		END IF;
-		 
-	end process divisor;
- 
-	 contador : process(div_out,Bus2IP_Reset)
-		begin
-			
-			if Bus2IP_Reset = '1' then
-				resul_contador <= (others=>'0');
-			elsif div_out'event and div_out='1' then --clk divisor
-				if resul_contador = "11111111" then
-					resul_contador<="00000000";
-				else
-					resul_contador<= unsigned(resul_contador)+1;
-				end if;
-			end if;
-			
-		end process contador;
-
-
-  
-  
---  leds<= slv_reg3(0 to 7) when switches = "1000" else
---			slv_reg2(0 to 7) when switches = "0100" else
---			slv_reg1(0 to 7) when switches = "0010" else
---			slv_reg0(0 to 7);
 --  
-  
-
---  ------------------------------------------
---  -- Example code to drive IP to Bus signals
---  ------------------------------------------
+--  
 --  IP2Bus_Data  <= slv_ip2bus_data when slv_read_ack = '1' else
 --                  (others => '0');
 --
 --  IP2Bus_WrAck <= slv_write_ack;
 --  IP2Bus_RdAck <= slv_read_ack;
 --  IP2Bus_Error <= '0';
+--  
+
+	APD: process(Bus2IP_Clk,slv_reg0,slv_reg1,slv_reg2,slv_reg3,switches,resul_contador, Bus2IP_Reset) is 
+	  begin 
+		if Bus2IP_Reset = '1' then
+			slv_reg0 <= (others=>'0');
+			slv_reg1 <= (others=>'0');
+			slv_reg2 <= (others=>'0');
+			slv_reg3 <= (others=>'0');
+		else 
+			if  Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+				if switches(3) = '1' then 
+					leds <= cnt_aux;
+				else 
+					if switches(2) = '0' then
+						if slv_reg0(30) = '1' then
+							slv_reg3<= cnt_aux;
+						else
+							if slv_reg0(31) = '1' then
+								slv_reg3 <= slv_reg1 - slv_reg2;
+								--slv_reg3(0 to 7) <= "00000001" + "00000001";
+							else
+								slv_reg3 <= slv_reg1 + slv_reg2;
+								--slv_reg3(0 to 7) <= "00000001" - "00000001";
+							end if;
+						end if;
+					else
+						if switches(0 to 1) = "00" then
+							leds<=slv_reg0;
+						elsif switches(0 to 1) = "10" then
+							leds <= slv_reg1;
+						elsif switches(0 to 1) = "01" then
+							leds<=slv_reg2;
+						elsif switches(0 to 1) = "11" then
+							leds<=slv_reg3;
+						end if;
+					end if;
+				end if;
+			end if;
+		end if;
+	  end process APD;
+  
+  	cnt_aux <= resul_contador;
+
+
+	divisor: process(Bus2IP_Clk,Bus2IP_Reset) is
+	begin
+		IF (Bus2IP_Reset='1') THEN
+			cuenta<= (OTHERS=>'0');
+		ELSIF(Bus2IP_Clk'EVENT AND Bus2IP_Clk='1') THEN
+			IF (cuenta="101111101011110000100000000") THEN
+				div_out <= not div_out;
+			  cuenta<= (OTHERS=>'0');
+			ELSE
+			  cuenta <= cuenta+'1';
+			END IF;
+		END IF;
+	 
+	end process divisor;
+
+	contador : process(div_out,Bus2IP_Reset)
+	begin
+		
+		if Bus2IP_Reset = '1' then
+			resul_contador <= (others=>'0');
+		elsif div_out'event and div_out='1' then --clk divisor
+			if resul_contador = "11111111" then
+				resul_contador<="00000000";
+			else
+				resul_contador<= unsigned(resul_contador)+1;
+			end if;
+		end if;
+		
+	end process contador;
 
 end IMP;

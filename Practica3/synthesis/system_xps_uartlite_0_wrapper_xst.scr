@@ -1,4 +1,4 @@
-set -tmpdir D:\hlocal\SE\Practicas\practica3\synthesis\xst_temp_dir\
+set -tmpdir D:\hlocal\SE\Practicas\practica3.1\synthesis\xst_temp_dir\
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -11,4 +11,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {../implementation}
--vlgincdir {"D:\hlocal\SE\Practicas\practica3\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"D:\hlocal\SE\Practicas\practica3.1\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

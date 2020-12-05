@@ -1,6 +1,6 @@
 CipWiz::SetVersion "14.1";
 CipWiz::SetFlow "CREATE";
-CipWiz::SetParameter "ProjectDir" "D:\hlocal\SE\Practicas\practica3";
+CipWiz::SetParameter "ProjectDir" "D:\hlocal\SE\Practicas\practica3.1";
 CipWiz::SetParameter "IpName" "coprocesador";
 CipWiz::SetParameter "IpVersion" "1.00.a";
 CipWiz::SetParameter "HdlLanguage" "1";

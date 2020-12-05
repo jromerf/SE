@@ -13,8 +13,8 @@ entity system is
     RX_pin : in std_logic;
     TX_pin : out std_logic;
     Clk_pin : in std_logic;
-    leds : out std_logic_vector(0 to 7);
-    switches : in std_logic_vector(0 to 3)
+    switches : in std_logic_vector(0 to 3);
+    leds : out std_logic_vector(0 to 7)
   );
 end system;
 
@@ -899,7 +899,7 @@ architecture STRUCTURE of system is
   -- Internal signals
 
   signal coprocesador_0_leds : std_logic_vector(0 to 7);
-  signal net_coprocesador_0_switches_pin : std_logic_vector(0 to 3);
+  signal coprocesador_0_switches : std_logic_vector(0 to 3);
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 downto 0);
   signal net_gnd2 : std_logic_vector(1 downto 0);
@@ -1008,8 +1008,8 @@ begin
   xps_uartlite_0_RX <= RX_pin;
   TX_pin <= xps_uartlite_0_TX;
   plb_v46_0_PLB_Clk <= Clk_pin;
+  coprocesador_0_switches <= switches;
   leds <= coprocesador_0_leds;
-  net_coprocesador_0_switches_pin <= switches;
   net_gnd0 <= '0';
   net_gnd1(0 downto 0) <= B"0";
   net_gnd10(0 to 9) <= B"0000000000";
@@ -1885,7 +1885,7 @@ begin
       Sl_MWrErr => plb_v46_0_Sl_MWrErr(4 to 5),
       Sl_MRdErr => plb_v46_0_Sl_MRdErr(4 to 5),
       Sl_MIRQ => plb_v46_0_Sl_MIRQ(4 to 5),
-      switches => net_coprocesador_0_switches_pin,
+      switches => coprocesador_0_switches,
       leds => coprocesador_0_leds
     );
 

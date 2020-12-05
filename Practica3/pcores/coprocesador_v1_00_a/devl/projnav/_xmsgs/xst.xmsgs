@@ -26,10 +26,34 @@
 <msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
 </msg>
 
-<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">IP2Bus_WrAck</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">242</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">slv_reg3</arg>&gt; has a width of <arg fmt="%d" index="4">32</arg> bits but assigned expression is <arg fmt="%d" index="5">8</arg>-bit wide.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">switches&lt;2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">254</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">leds</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">256</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">leds</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">258</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">leds</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+</msg>
+
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd</arg>&quot; line <arg fmt="%d" index="2">260</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">leds</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">32</arg>-bit wide.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">slv_reg0</arg>&gt; in unit &lt;<arg fmt="%s" index="2">user_logic</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">slv_reg1</arg>&gt; in unit &lt;<arg fmt="%s" index="2">user_logic</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">slv_reg2</arg>&gt; in unit &lt;<arg fmt="%s" index="2">user_logic</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">slv_reg3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">user_logic</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">IP2Bus_WrAck</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="1305" delta="old" >Output &lt;<arg fmt="%s" index="1">IP2Bus_Error</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
@@ -62,22 +86,10 @@
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg_read_sel</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg3&lt;8:31&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">slv_reg3&lt;0:23&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000000</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg0&lt;0:7&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
-</msg>
-
-<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg0&lt;8:30&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg0&lt;31&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_reg0</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">slv_read_ack</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -87,9 +99,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">resultado</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">cnt_aux</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">A</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -224,9 +233,6 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ipif_Bus2IP_Addr</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-</msg>
-
 <msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">I_DECODER</arg>&gt;.
 It will be removed from the design.
 </msg>
@@ -351,151 +357,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">sl_rddbus_i_16</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">I_SLAVE_ATTACHMENT</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">USER_LOGIC_I</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">decode_hit_reg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">I_DECODER</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">slv_reg3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">user_logic</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">addr_out_s_h_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">plb_address_decoder</arg>&gt;.
@@ -505,30 +367,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">addr_cntl_cs_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_slave_attachment</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;addr_cycle_flush&gt; </arg>
-</msg>
-
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">slv_reg3_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">user_logic</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">coprocesador</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

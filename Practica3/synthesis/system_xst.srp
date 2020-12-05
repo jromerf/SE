@@ -1,10 +1,10 @@
 Release 14.1 - xst P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3.1\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_xst.prj"
-Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3.1\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1000ft256-5
@@ -58,7 +58,7 @@ Cores Search Directories           : {../implementation}
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" in Library work.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" in Library work.
 Entity <system> compiled.
 Entity <system> (Architecture <STRUCTURE>) compiled.
 
@@ -72,354 +72,354 @@ Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTU
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'INTERRUPT_ACK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'MB_Halted' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'MB_Error' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'LOCKSTEP_OUT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'INSTR_ADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'IFETCH' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'I_AS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DATA_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DATA_ADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'D_AS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'READ_STROBE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'WRITE_STROBE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'BYTE_ENABLE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WSTRB' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_BREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARADDR' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARLEN' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARBURST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARPROT' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARQOS' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARUSER' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_RREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DBG_TDO' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Instruction' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Valid_Instr' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_PC' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Reg_Write' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Reg_Addr' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MSR_Reg' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_PID_Reg' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_New_Reg_Value' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Exception_Taken' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Exception_Kind' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Jump_Taken' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Delay_Slot' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Address' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Access' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Read' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Write' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Write_Value' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Byte_Enable' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Req' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Rdy' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Read' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Req' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Rdy' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_OF_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_EX_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MEM_PipeRun' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MB_Halted' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Jump_Hit' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_S_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_S_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S0_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S1_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S2_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S3_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S4_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S5_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S6_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S7_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S8_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S9_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S10_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S11_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S12_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S13_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S14_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'S15_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'MPLB_Rst' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_dcrAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_dcrDBus' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SaddrAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMRdErr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMWrErr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMBusy' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdBTerm' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdComp' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdDAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdDBus' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdWdAddr' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Srearbitrate' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Sssize' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Swait' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrBTerm' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrComp' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrDAck' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1623: Unconnected output port 'Bus_Error_Det' of component 'system_plb_v46_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1724: Unconnected output port 'BRAM_Din_B' of component 'system_bram_block_0_wrapper'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd" line 1795: Unconnected output port 'Interrupt' of component 'system_xps_uartlite_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'INTERRUPT_ACK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'MB_Error' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'LOCKSTEP_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'INSTR_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'IFETCH' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'I_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DATA_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DATA_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'D_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'READ_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'WRITE_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'BYTE_ENABLE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_IC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M_AXI_DC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DBG_TDO' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Instruction' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Valid_Instr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_PC' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Reg_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Reg_Addr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MSR_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_PID_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_New_Reg_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Exception_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Exception_Kind' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Jump_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Delay_Slot' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Address' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Access' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Write_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Data_Byte_Enable' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_DCache_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_ICache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_OF_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_EX_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MEM_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'Trace_Jump_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL0_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL1_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL2_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL3_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL4_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL5_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL6_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL7_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL8_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL9_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL10_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL11_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL12_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL13_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL14_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'FSL15_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M0_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S0_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M1_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S1_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M2_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S2_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M3_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S3_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M4_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S4_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M5_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S5_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M6_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S6_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M7_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S7_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M8_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S8_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M9_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S9_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M10_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S10_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M11_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S11_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M12_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S12_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M13_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S13_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M14_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S14_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'M15_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'S15_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1022: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'MPLB_Rst' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_dcrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_dcrDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SaddrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMRdErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMWrErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SMBusy' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SrdWdAddr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Srearbitrate' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Sssize' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_Swait' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'PLB_SwrDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1623: Unconnected output port 'Bus_Error_Det' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1724: Unconnected output port 'BRAM_Din_B' of component 'system_bram_block_0_wrapper'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd" line 1795: Unconnected output port 'Interrupt' of component 'system_xps_uartlite_0_wrapper'.
 Entity <system> analyzed. Unit <system> generated.
 
 
@@ -430,7 +430,7 @@ Entity <system> analyzed. Unit <system> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <system>.
-    Related source file is "D:/hlocal/SE/Practicas/practica3/hdl/system.vhd".
+    Related source file is "D:/hlocal/SE/Practicas/practica3.1/hdl/system.vhd".
 Unit <system> synthesized.
 
 
@@ -542,14 +542,14 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 3000
+# BELS                             : 3001
 #      GND                         : 22
 #      INV                         : 28
 #      LUT1                        : 102
 #      LUT2                        : 198
 #      LUT2_D                      : 12
 #      LUT2_L                      : 20
-#      LUT3                        : 784
+#      LUT3                        : 785
 #      LUT3_D                      : 26
 #      LUT3_L                      : 28
 #      LUT4                        : 879
@@ -564,23 +564,22 @@ Cell Usage :
 # FlipFlops/Latches                : 1747
 #      FD                          : 5
 #      FDC                         : 35
-#      FDE                         : 200
+#      FDE                         : 208
 #      FDR                         : 705
 #      FDRE                        : 701
 #      FDRS                        : 13
 #      FDRSE                       : 3
 #      FDS                         : 33
 #      FDSE                        : 44
-#      LD                          : 8
 # RAMS                             : 208
 #      RAM16X1D                    : 192
 #      RAMB16                      : 16
 # Shift Registers                  : 84
 #      SRL16E                      : 84
-# Clock Buffers                    : 2
-#      BUFGP                       : 2
-# IO Buffers                       : 14
-#      IBUF                        : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 6
 #      OBUF                        : 9
 # MULTs                            : 3
 #      MULT18X18S                  : 3
@@ -591,17 +590,17 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1716  out of   7680    22%  
+ Number of Slices:                     1710  out of   7680    22%  
  Number of Slice Flip Flops:           1747  out of  15360    11%  
- Number of 4 input LUTs:               2600  out of  15360    16%  
-    Number used as logic:              2132
+ Number of 4 input LUTs:               2601  out of  15360    16%  
+    Number used as logic:              2133
     Number used as Shift registers:      84
     Number used as RAMs:                384
  Number of IOs:                          16
  Number of bonded IOBs:                  16  out of    173     9%  
  Number of BRAMs:                        16  out of     24    66%  
  Number of MULT18X18s:                    3  out of     24    12%  
- Number of GCLKs:                         2  out of      8    25%  
+ Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -624,9 +623,8 @@ Clock Information:
 --------------------------------------------------+------------------------------------------------------------------+-------+
 Clock Signal                                      | Clock buffer(FF name)                                            | Load  |
 --------------------------------------------------+------------------------------------------------------------------+-------+
-Clk_pin                                           | BUFGP                                                            | 2026  |
+Clk_pin                                           | BUFGP                                                            | 2034  |
 N0                                                | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)    | 16    |
-switches<3>                                       | BUFGP                                                            | 8     |
 coprocesador_0/coprocesador_0/USER_LOGIC_I/div_out| NONE(coprocesador_0/coprocesador_0/USER_LOGIC_I/resul_contador_7)| 8     |
 --------------------------------------------------+------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -647,8 +645,8 @@ Speed Grade: -5
 
    Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
    Minimum input arrival time before clock: 4.387ns
-   Maximum output required time after clock: 7.471ns
-   Maximum combinational path delay: 7.772ns
+   Maximum output required time after clock: 6.216ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
@@ -657,7 +655,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
   Clock period: 11.888ns (frequency: 84.119MHz)
-  Total number of paths / destination ports: 177060 / 6764
+  Total number of paths / destination ports: 177068 / 6772
 -------------------------------------------------------------------------
 Delay:               11.888ns (Levels of Logic = 6)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
@@ -713,7 +711,7 @@ Delay:               5.064ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 32 / 24
 -------------------------------------------------------------------------
 Offset:              4.387ns (Levels of Logic = 2)
   Source:            Clk_pin (PAD)
@@ -724,7 +722,7 @@ Offset:              4.387ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     BUFGP:I->O         2027   0.357   3.854  Clk_pin_BUFGP (Clk_pin_BUFGP)
+     BUFGP:I->O         2035   0.357   3.854  Clk_pin_BUFGP (Clk_pin_BUFGP)
      begin scope: 'microblaze_0'
      FDR:D                     0.176          microblaze_0/LOCKSTEP_Out_593
     ----------------------------------------
@@ -733,7 +731,7 @@ Offset:              4.387ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 9 / 9
 -------------------------------------------------------------------------
 Offset:              6.216ns (Levels of Logic = 2)
   Source:            xps_uartlite_0/xps_uartlite_0/UARTLITE_CORE_I/UARTLITE_TX_I/TX (FF)
@@ -752,56 +750,14 @@ Offset:              6.216ns (Levels of Logic = 2)
                                        (89.0% logic, 11.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'switches<3>'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              7.471ns (Levels of Logic = 3)
-  Source:            coprocesador_0/coprocesador_0/USER_LOGIC_I/cnt_aux_7 (LATCH)
-  Destination:       leds<0> (PAD)
-  Source Clock:      switches<3> falling
-
-  Data Path: coprocesador_0/coprocesador_0/USER_LOGIC_I/cnt_aux_7 to leds<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.551   0.851  coprocesador_0/USER_LOGIC_I/cnt_aux_7 (coprocesador_0/USER_LOGIC_I/cnt_aux<7>)
-     LUT2:I1->O            1   0.479   0.681  coprocesador_0/USER_LOGIC_I/leds<0>1 (leds<0>)
-     end scope: 'coprocesador_0'
-     OBUF:I->O                 4.909          leds_0_OBUF (leds<0>)
-    ----------------------------------------
-    Total                      7.471ns (5.939ns logic, 1.532ns route)
-                                       (79.5% logic, 20.5% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               7.772ns (Levels of Logic = 4)
-  Source:            switches<3> (PAD)
-  Destination:       leds<0> (PAD)
-
-  Data Path: switches<3> to leds<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     BUFGP:I->O           16   0.357   1.346  switches_3_BUFGP (switches_3_BUFGP)
-     begin scope: 'coprocesador_0'
-     LUT2:I0->O            1   0.479   0.681  coprocesador_0/USER_LOGIC_I/leds<7>1 (leds<7>)
-     end scope: 'coprocesador_0'
-     OBUF:I->O                 4.909          leds_7_OBUF (leds<7>)
-    ----------------------------------------
-    Total                      7.772ns (5.745ns logic, 2.027ns route)
-                                       (73.9% logic, 26.1% route)
-
-=========================================================================
 
 
-Total REAL time to Xst completion: 336.00 secs
-Total CPU time to Xst completion: 335.73 secs
+Total REAL time to Xst completion: 331.00 secs
+Total CPU time to Xst completion: 331.42 secs
  
 --> 
 
-Total memory usage is 4563400 kilobytes
+Total memory usage is 4563428 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  348 (   0 filtered)

@@ -1,10 +1,10 @@
 Release 14.1 - xst P.15xf (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica3.1\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_coprocesador_0_wrapper_xst.prj"
-Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"D:\hlocal\SE\Practicas\practica3.1\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc3s1000ft256-5
@@ -244,13 +244,13 @@ Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
 Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
 Entity <plbv46_slave_single> compiled.
 Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
-Compiling vhdl file "D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" in Library coprocesador_v1_00_a.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" in Library coprocesador_v1_00_a.
 Entity <user_logic> compiled.
 Entity <user_logic> (Architecture <IMP>) compiled.
-Compiling vhdl file "D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd" in Library coprocesador_v1_00_a.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd" in Library coprocesador_v1_00_a.
 Entity <coprocesador> compiled.
 Entity <coprocesador> (Architecture <IMP>) compiled.
-Compiling vhdl file "D:/hlocal/SE/Practicas/practica3/hdl/system_coprocesador_0_wrapper.vhd" in Library work.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica3.1/hdl/system_coprocesador_0_wrapper.vhd" in Library work.
 Entity <system_coprocesador_0_wrapper> compiled.
 Entity <system_coprocesador_0_wrapper> (Architecture <STRUCTURE>) compiled.
 
@@ -470,6 +470,14 @@ Analyzing generic Entity <user_logic> in library <coprocesador_v1_00_a> (Archite
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:1610 - "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" line 242: Width mismatch. <slv_reg3> has a width of 32 bits but assigned expression is 8-bit wide.
+WARNING:Xst:1610 - "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" line 254: Width mismatch. <leds> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" line 256: Width mismatch. <leds> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" line 258: Width mismatch. <leds> has a width of 8 bits but assigned expression is 32-bit wide.
+WARNING:Xst:1610 - "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd" line 260: Width mismatch. <leds> has a width of 8 bits but assigned expression is 32-bit wide.
+INFO:Xst:2679 - Register <slv_reg0> in unit <user_logic> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <slv_reg1> in unit <user_logic> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <slv_reg2> in unit <user_logic> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 
@@ -478,11 +486,11 @@ Entity <user_logic> analyzed. Unit <user_logic> generated.
 =========================================================================
 
 Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <slv_reg3> in unit <user_logic> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <user_logic>.
-    Related source file is "D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd".
+    Related source file is "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/user_logic.vhd".
 WARNING:Xst:1305 - Output <IP2Bus_WrAck> is never assigned. Tied to value 0.
-WARNING:Xst:647 - Input <switches<2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <IP2Bus_Error> is never assigned. Tied to value 0.
 WARNING:Xst:647 - Input <Bus2IP_Data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <Bus2IP_RdCE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -493,25 +501,18 @@ WARNING:Xst:1305 - Output <IP2Bus_Data> is never assigned. Tied to value 0000000
 WARNING:Xst:1780 - Signal <slv_write_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <slv_reg_write_sel> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <slv_reg_read_sel> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <slv_reg3<8:31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <slv_reg2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
-WARNING:Xst:653 - Signal <slv_reg1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
-WARNING:Xst:653 - Signal <slv_reg0<0:7>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
-WARNING:Xst:1780 - Signal <slv_reg0<8:30>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <slv_reg0<31>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <slv_reg3<0:23>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <slv_reg0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <slv_read_ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <slv_ip2bus_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <resultado> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:737 - Found 8-bit latch for signal <cnt_aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit register for signal <leds>.
     Found 27-bit up counter for signal <cuenta>.
     Found 1-bit register for signal <div_out>.
     Found 8-bit up counter for signal <resul_contador>.
-    Found 32-bit register for signal <slv_reg3>.
-    Found 32-bit addsub for signal <slv_reg3$mux0001>.
     Summary:
 	inferred   2 Counter(s).
-	inferred  33 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
 Unit <user_logic> synthesized.
 
 
@@ -645,7 +646,7 @@ Unit <plbv46_slave_single> synthesized.
 
 
 Synthesizing Unit <coprocesador>.
-    Related source file is "D:/hlocal/SE/Practicas/practica3/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd".
+    Related source file is "D:/hlocal/SE/Practicas/practica3.1/pcores/coprocesador_v1_00_a/hdl/vhdl/coprocesador.vhd".
 WARNING:Xst:646 - Signal <ipif_Bus2IP_RNW> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ipif_Bus2IP_CS<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ipif_Bus2IP_Addr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -653,27 +654,23 @@ Unit <coprocesador> synthesized.
 
 
 Synthesizing Unit <system_coprocesador_0_wrapper>.
-    Related source file is "D:/hlocal/SE/Practicas/practica3/hdl/system_coprocesador_0_wrapper.vhd".
+    Related source file is "D:/hlocal/SE/Practicas/practica3.1/hdl/system_coprocesador_0_wrapper.vhd".
 Unit <system_coprocesador_0_wrapper> synthesized.
 
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 32-bit addsub                                         : 1
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
 # Registers                                            : 41
  1-bit register                                        : 31
  3-bit register                                        : 1
- 32-bit register                                       : 5
+ 32-bit register                                       : 4
  4-bit register                                        : 4
-# Latches                                              : 1
- 8-bit latch                                           : 1
+ 8-bit register                                        : 1
 
 =========================================================================
 
@@ -681,30 +678,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2677 - Node <slv_reg3_31> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_30> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_29> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_28> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_27> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_26> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_25> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_24> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_23> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_22> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_21> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_20> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_19> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_18> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_17> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_16> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_15> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_14> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_13> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_12> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_11> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_10> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_9> of sequential type is unconnected in block <user_logic>.
-WARNING:Xst:2677 - Node <slv_reg3_8> of sequential type is unconnected in block <user_logic>.
 WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <plb_address_decoder>.
 WARNING:Xst:2677 - Node <addr_out_s_h_2> of sequential type is unconnected in block <plb_address_decoder>.
 
@@ -712,15 +685,11 @@ WARNING:Xst:2677 - Node <addr_out_s_h_2> of sequential type is unconnected in bl
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 32-bit addsub                                         : 1
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
 # Registers                                            : 184
  Flip-Flops                                            : 184
-# Latches                                              : 1
- 8-bit latch                                           : 1
 
 =========================================================================
 
@@ -728,14 +697,6 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
-WARNING:Xst:1710 - FF/Latch <slv_reg3_7> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_6> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_5> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_4> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_3> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_2> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_1> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <slv_reg3_0> (without init value) has a constant value of 0 in block <user_logic>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <system_coprocesador_0_wrapper> ...
 
@@ -888,8 +849,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 76
- Flip-Flops                                            : 76
+# Registers                                            : 84
+ Flip-Flops                                            : 84
 
 =========================================================================
 
@@ -917,12 +878,12 @@ Design Statistics
 # IOs                              : 213
 
 Cell Usage :
-# BELS                             : 190
+# BELS                             : 191
 #      GND                         : 1
 #      INV                         : 5
 #      LUT1                        : 33
 #      LUT2                        : 41
-#      LUT3                        : 9
+#      LUT3                        : 10
 #      LUT4                        : 14
 #      LUT4_D                      : 2
 #      MUXCY                       : 49
@@ -930,10 +891,9 @@ Cell Usage :
 #      XORCY                       : 35
 # FlipFlops/Latches                : 84
 #      FDC                         : 35
-#      FDE                         : 1
+#      FDE                         : 9
 #      FDR                         : 36
 #      FDRE                        : 4
-#      LD                          : 8
 =========================================================================
 
 Device utilization summary:
@@ -943,7 +903,7 @@ Selected Device : 3s1000ft256-5
 
  Number of Slices:                       77  out of   7680     1%  
  Number of Slice Flip Flops:             84  out of  15360     0%  
- Number of 4 input LUTs:                104  out of  15360     0%  
+ Number of 4 input LUTs:                105  out of  15360     0%  
  Number of IOs:                         213
  Number of bonded IOBs:                   0  out of    173     0%  
 
@@ -968,9 +928,8 @@ Clock Information:
 -----------------------------------+---------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                             | Load  |
 -----------------------------------+---------------------------------------------------+-------+
-switches<3>                        | NONE(coprocesador_0/USER_LOGIC_I/cnt_aux_7)       | 8     |
-SPLB_Clk                           | NONE(coprocesador_0/USER_LOGIC_I/cuenta_26)       | 68    |
 coprocesador_0/USER_LOGIC_I/div_out| NONE(coprocesador_0/USER_LOGIC_I/resul_contador_7)| 8     |
+SPLB_Clk                           | NONE(coprocesador_0/USER_LOGIC_I/cuenta_26)       | 76    |
 -----------------------------------+---------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -988,42 +947,12 @@ Speed Grade: -5
 
    Minimum period: 6.532ns (Maximum Frequency: 153.093MHz)
    Minimum input arrival time before clock: 2.347ns
-   Maximum output required time after clock: 1.881ns
-   Maximum combinational path delay: 0.774ns
+   Maximum output required time after clock: 0.626ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 6.532ns (frequency: 153.093MHz)
-  Total number of paths / destination ports: 1244 / 38
--------------------------------------------------------------------------
-Delay:               6.532ns (Levels of Logic = 9)
-  Source:            coprocesador_0/USER_LOGIC_I/cuenta_8 (FF)
-  Destination:       coprocesador_0/USER_LOGIC_I/div_out (FF)
-  Source Clock:      SPLB_Clk rising
-  Destination Clock: SPLB_Clk rising
-
-  Data Path: coprocesador_0/USER_LOGIC_I/cuenta_8 to coprocesador_0/USER_LOGIC_I/div_out
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   1.040  coprocesador_0/USER_LOGIC_I/cuenta_8 (coprocesador_0/USER_LOGIC_I/cuenta_8)
-     LUT3:I0->O            1   0.479   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0>)
-     MUXCY:S->O            1   0.435   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0>)
-     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5>)
-     MUXCY:CI->O          28   0.265   1.726  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<6> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000)
-     LUT2:I1->O            1   0.479   0.681  coprocesador_0/USER_LOGIC_I/div_out_and00001 (coprocesador_0/USER_LOGIC_I/div_out_and0000)
-     FDE:CE                    0.524          coprocesador_0/USER_LOGIC_I/div_out
-    ----------------------------------------
-    Total                      6.532ns (3.085ns logic, 3.447ns route)
-                                       (47.2% logic, 52.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'coprocesador_0/USER_LOGIC_I/div_out'
@@ -1056,8 +985,38 @@ Delay:               5.064ns (Levels of Logic = 9)
                                        (64.3% logic, 35.7% route)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 6.532ns (frequency: 153.093MHz)
+  Total number of paths / destination ports: 1244 / 38
+-------------------------------------------------------------------------
+Delay:               6.532ns (Levels of Logic = 9)
+  Source:            coprocesador_0/USER_LOGIC_I/cuenta_8 (FF)
+  Destination:       coprocesador_0/USER_LOGIC_I/div_out (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: coprocesador_0/USER_LOGIC_I/cuenta_8 to coprocesador_0/USER_LOGIC_I/div_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  coprocesador_0/USER_LOGIC_I/cuenta_8 (coprocesador_0/USER_LOGIC_I/cuenta_8)
+     LUT3:I0->O            1   0.479   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          28   0.265   1.726  coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<6> (coprocesador_0/USER_LOGIC_I/cuenta_cmp_eq0000)
+     LUT2:I1->O            1   0.479   0.681  coprocesador_0/USER_LOGIC_I/div_out_and00001 (coprocesador_0/USER_LOGIC_I/div_out_and0000)
+     FDE:CE                    0.524          coprocesador_0/USER_LOGIC_I/div_out
+    ----------------------------------------
+    Total                      6.532ns (3.085ns logic, 3.447ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 74 / 74
+  Total number of paths / destination ports: 106 / 90
 -------------------------------------------------------------------------
 Offset:              2.347ns (Levels of Logic = 1)
   Source:            SPLB_Rst (PAD)
@@ -1076,7 +1035,7 @@ Offset:              2.347ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
 Offset:              0.626ns (Levels of Logic = 0)
   Source:            coprocesador_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rearbitrate_i (FF)
@@ -1093,52 +1052,16 @@ Offset:              0.626ns (Levels of Logic = 0)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'switches<3>'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              1.881ns (Levels of Logic = 1)
-  Source:            coprocesador_0/USER_LOGIC_I/cnt_aux_7 (LATCH)
-  Destination:       leds<0> (PAD)
-  Source Clock:      switches<3> falling
-
-  Data Path: coprocesador_0/USER_LOGIC_I/cnt_aux_7 to leds<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.551   0.851  coprocesador_0/USER_LOGIC_I/cnt_aux_7 (coprocesador_0/USER_LOGIC_I/cnt_aux_7)
-     LUT2:I1->O            0   0.479   0.000  coprocesador_0/USER_LOGIC_I/leds<0>1 (leds<0>)
-    ----------------------------------------
-    Total                      1.881ns (1.030ns logic, 0.851ns route)
-                                       (54.8% logic, 45.2% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               0.774ns (Levels of Logic = 1)
-  Source:            switches<3> (PAD)
-  Destination:       leds<0> (PAD)
-
-  Data Path: switches<3> to leds<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LUT2:I0->O            0   0.479   0.000  coprocesador_0/USER_LOGIC_I/leds<7>1 (leds<7>)
-    ----------------------------------------
-    Total                      0.774ns (0.774ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
-
-=========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 29.54 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.71 secs
  
 --> 
 
-Total memory usage is 4756700 kilobytes
+Total memory usage is 4740512 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  241 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :  208 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

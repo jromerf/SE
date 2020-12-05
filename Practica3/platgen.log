@@ -5,7 +5,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Command Line: platgen -p xc3s1000ft256-5 -lang vhdl -intstyle default -msg
 __xps/ise/xmsgprops.lst system.mhs 
 
-Parse D:/hlocal/SE/Practicas/practica3/system.mhs ...
+Parse D:/hlocal/SE/Practicas/practica3.1/system.mhs ...
 
 Read MPD definitions ...
 
@@ -50,16 +50,16 @@ INFO:EDK:4130 - IPNAME: xps_uartlite, INSTANCE:xps_uartlite_0 - tool is
    \data\xps_uartlite_v2_1_0.mpd line 83 
 INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
    overriding PARAMETER C_SPLB_DWIDTH value to 32 -
-   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
-   r_v2_1_0.mpd line 27 
+   D:\hlocal\SE\Practicas\practica3.1\pcores\coprocesador_v1_00_a\data\coprocesa
+   dor_v2_1_0.mpd line 27 
 INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
    overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
-   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
-   r_v2_1_0.mpd line 28 
+   D:\hlocal\SE\Practicas\practica3.1\pcores\coprocesador_v1_00_a\data\coprocesa
+   dor_v2_1_0.mpd line 28 
 INFO:EDK:4130 - IPNAME: coprocesador, INSTANCE:coprocesador_0 - tool is
    overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
-   D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\data\coprocesado
-   r_v2_1_0.mpd line 29 
+   D:\hlocal\SE\Practicas\practica3.1\pcores\coprocesador_v1_00_a\data\coprocesa
+   dor_v2_1_0.mpd line 29 
 
 Checking platform address map ...
 
@@ -147,26 +147,27 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 13 - Copying cache
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 13 - Copying cache
 implementation netlist
-IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica3\system.mhs
-line 21 - Copying cache implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 21 - Copying cache
+implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - Copying cache
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 28 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 34 - Copying cache
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 34 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 44 - Copying cache
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 44 - Copying cache
 implementation netlist
 IPNAME:coprocesador INSTANCE:coprocesador_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 56 - Copying cache
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 56 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-D:\hlocal\SE\Practicas\practica3\system.mhs line 28 - elaborating IP
+D:\hlocal\SE\Practicas\practica3.1\system.mhs line 28 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -187,8 +188,8 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3\system.mhs line 56 -
-Running XST synthesis
+INSTANCE:coprocesador_0 - D:\hlocal\SE\Practicas\practica3.1\system.mhs line 56
+- Running XST synthesis
 
 Running NGCBUILD ...
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
@@ -197,4 +198,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 42.00 seconds
+Total run time: 37.00 seconds

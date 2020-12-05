@@ -2,10 +2,10 @@ run
 -opt_level 2
 -opt_mode speed
 -ifmt mixed
--ifn "D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\devl\synthesis\coprocesador_xst.prj"
+-ifn "D:\hlocal\SE\Practicas\practica3.1\pcores\coprocesador_v1_00_a\devl\synthesis\coprocesador_xst.prj"
 -top coprocesador
 -p virtex6
--ofn "D:\hlocal\SE\Practicas\practica3\pcores\coprocesador_v1_00_a\devl\synthesis\coprocesador_xst.ngc"
+-ofn "D:\hlocal\SE\Practicas\practica3.1\pcores\coprocesador_v1_00_a\devl\synthesis\coprocesador_xst.ngc"
 -iobuf NO
 -rtlview YES
 -hierarchy_separator /

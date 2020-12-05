@@ -1,7 +1,7 @@
 -batch 
 -create coprocesador 
 -ver 1.00.a 
--dir "D:\hlocal\SE\Practicas\practica3" 
+-dir "D:\hlocal\SE\Practicas\practica3.1" 
 -lang vhdl 
 -bus plbv46 s 
 -reg 4 
