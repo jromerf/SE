@@ -172,7 +172,7 @@ D:\hlocal\SE\Practicas\practica3.5\system.mhs line 28 - elaborating IP
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -198,4 +198,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 38.00 seconds
+Total run time: 41.00 seconds

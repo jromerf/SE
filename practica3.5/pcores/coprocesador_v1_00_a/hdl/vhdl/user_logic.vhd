@@ -259,22 +259,7 @@ begin
 	APD: process(Bus2IP_Clk,slv_reg0,slv_reg1,slv_reg2,slv_reg3,switches,resul_contador, Bus2IP_Reset) is 
 	  begin 
 			if  Bus2IP_Clk'event and Bus2IP_Clk = '1' then
---				if switches(3) = '1' then 
---					leds <= cnt_aux;
---				else 
---					if switches(2) = '0' then
---						if slv_reg0(30) = '1' then
---							slv_reg3<= cnt_aux;
---						else--slv_reg(30)=0 
---							if slv_reg0(31) = '1' then
---								slv_reg3 <= unsigned(slv_reg1) - unsigned(slv_reg2);
---								--slv_reg3(0 to 7) <= "00000001" + "00000001";
---							else
---								slv_reg3 <= unsigned(slv_reg1) + unsigned(slv_reg2);
---								--slv_reg3(0 to 7) <= "00000001" - "00000001";
---							end if;
---						end if;
---					else--switches(2) = '1'
+	
 						case switches is 
 							when "0000" => leds <= slv_reg0(24 to 31);
 							when "0100" => leds <= slv_reg0(24 to 31);
@@ -286,38 +271,13 @@ begin
 							when "0111" => leds <= slv_reg3(24 to 31);
 							when others => leds <= cnt_aux;
 						end case;
---					end if;
---				end if;
 			end if;
---		end if;
+
 	  end process APD;
 
 ----------------------------------------------------------
 ---- Realizar la suma y la resta
 ----------------------------------------------------------
-
---	process(Bus2IP_Clk,Bus2IP_Reset,switches,slv_reg0,slv_reg1,slv_reg2,slv_reg3) is
---	begin
---		
-----		if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
-----			if Bus2IP_Reset = '1' then
-----				slv_reg3_aux <= (others=>'0');
-----			else		
-----				if (switches(2) = '0' and slv_reg0(C_SLV_DWIDTH-2) = '1') then
-----				 slv_reg3_aux <= resul_contador;
-----				elsif (slv_reg0(C_SLV_DWIDTH-1) = '0') then
-----				 slv_reg3_aux <= unsigned(slv_reg1) + unsigned(slv_reg2);
-----				else
-----				 slv_reg3_aux <= unsigned(slv_reg1) - unsigned(slv_reg2);
-----				end if;
-----			end if;
---		--end if;
---		
---		case slv_reg0(31) is
---			when '0' => slv_reg3_aux <= unsigned(slv_reg1) + unsigned(slv_reg2);
---			when others=> slv_reg3_aux <= unsigned(slv_reg1) - unsigned(slv_reg2);
---		end case;
---	end process;
 
 	process(Bus2IP_Clk,slv_reg0,slv_reg1,slv_reg2) is 
 	begin 
@@ -327,9 +287,9 @@ begin
 				when others => slv_reg3_aux <= 	unsigned(slv_reg1) - unsigned(slv_reg2);
 			end case; 
 		end if;
-	end process;
+	end process; 
   
-	slv_reg3<=slv_reg3_aux;--estaba comentado
+	slv_reg3<=slv_reg3_aux;
   
 ----------------------------------------------------------
 ---- Contador desde 0 hasta valor de reg3
@@ -349,7 +309,6 @@ begin
 
 	maxValor <= slv_reg3(24 to 31);
 	cnt_aux <= resul_contador;
-	--maxValor<="101111101011110000100000000111111";
   
 ----------------------------------------------------------
 ---- Divisor de frecuencia
@@ -369,40 +328,5 @@ begin
 	 
 	end process divisor; 
 	
-	
-----------------------------------------------------------
----- Display contador
----------------------------------------------------------- 
-
--- 	process(div_out) is
---	begin
---		
---		if div_out'event and div_out = '1' then
---			if cnt_display = "1111" then
---				cnt_display <= "0000";
---			else
---				cnt_display <= cnt_display +1 ;
---			end if;
---		end if;
---	
---	end process;
---	
---	with cnt_display select 
---		display <= "0000110" when "0001",
---					  "1011011" when "0010",
---					  "1001111" when "0011",
---					  "1100110" when "0100",
---					  "1101101" when "0101",
---					  "1111101" when "0110",
---					  "0000111" when "0111",
---					  "1111111" when "1000",
---					  "1101111" when "1001",
---					  "1110111" when "1010",
---					  "1111100" when "1011",
---					  "0111001" when "1100",
---					  "1011110" when "1101",
---					  "1111001" when "1110",
---					  "1110001" when "1111",
---					  "0111111" when others;
 
 end IMP;

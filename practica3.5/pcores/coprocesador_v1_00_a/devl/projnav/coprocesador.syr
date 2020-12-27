@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: coprocesador.prj
@@ -340,6 +340,7 @@ Analyzing generic Entity <user_logic> in library <coprocesador_v1_00_a> (Archite
 	C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:2679 - Register <resul_contador> in unit <user_logic> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 
@@ -357,8 +358,9 @@ WARNING:Xst:1780 - Signal <activo_cnt> is never used or assigned. This unconnect
     Found 8-bit register for signal <leds>.
     Found 27-bit up counter for signal <cuenta>.
     Found 1-bit register for signal <div_out>.
+    Found 8-bit register for signal <maxValor>.
     Found 8-bit up counter for signal <resul_contador>.
-    Found 8-bit comparator equal for signal <resul_contador$cmp_eq0000> created at line 341.
+    Found 8-bit comparator equal for signal <resul_contador$cmp_eq0000> created at line 350.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg2>.
@@ -366,7 +368,7 @@ WARNING:Xst:1780 - Signal <activo_cnt> is never used or assigned. This unconnect
     Found 32-bit addsub for signal <slv_reg3_aux$mux0001>.
     Summary:
 	inferred   2 Counter(s).
-	inferred 137 D-type flip-flop(s).
+	inferred 145 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <user_logic> synthesized.
@@ -523,12 +525,12 @@ Macro Statistics
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
-# Registers                                            : 156
+# Registers                                            : 157
  1-bit register                                        : 143
  3-bit register                                        : 3
  32-bit register                                       : 5
  4-bit register                                        : 4
- 8-bit register                                        : 1
+ 8-bit register                                        : 2
 # Comparators                                          : 1
  8-bit comparator equal                                : 1
 # Multiplexers                                         : 1
@@ -600,8 +602,8 @@ Macro Statistics
 # Counters                                             : 2
  27-bit up counter                                     : 1
  8-bit up counter                                      : 1
-# Registers                                            : 334
- Flip-Flops                                            : 334
+# Registers                                            : 342
+ Flip-Flops                                            : 342
 # Comparators                                          : 1
  8-bit comparator equal                                : 1
 # Multiplexers                                         : 1
@@ -614,330 +616,55 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
 
-Optimizing unit <coprocesador> ...
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_cy<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_7>
+   Signal <USER_LOGIC_I/resul_contador<7>> in Unit <user_logic> is assigned to GND
 
-Optimizing unit <user_logic> ...
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_6>
+   Signal <USER_LOGIC_I/resul_contador<6>> in Unit <user_logic> is assigned to GND
 
-Optimizing unit <plb_address_decoder> ...
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_5>
+   Signal <USER_LOGIC_I/resul_contador<5>> in Unit <user_logic> is assigned to GND
 
-Optimizing unit <plb_slave_attachment> ...
-WARNING:Xst:1710 - FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_7> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_6> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_5> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_3> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_2> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_4> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_7> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_6> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_4> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_5> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_2> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_3> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <coprocesador>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_s_h_0> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_0> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_1> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_2> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_3> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_4> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_5> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_6> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_7> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_8> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_9> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_10> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_11> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_12> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_13> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_14> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_15> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <coprocesador>.
-WARNING:Xst:2677 - Node <PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <coprocesador>.
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_4>
+   Signal <USER_LOGIC_I/resul_contador<4>> in Unit <user_logic> is assigned to GND
 
-Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block coprocesador, actual ratio is 2.
-FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0 has been replicated 1 time(s)
-FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1 has been replicated 1 time(s)
-FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2 has been replicated 1 time(s)
-FlipFlop PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3 has been replicated 1 time(s)
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_3>
+   Signal <USER_LOGIC_I/resul_contador<3>> in Unit <user_logic> is assigned to GND
 
-Final Macro Processing ...
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_2>
+   Signal <USER_LOGIC_I/resul_contador<2>> in Unit <user_logic> is assigned to GND
 
-=========================================================================
-Final Register Report
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_1>
+   Signal <USER_LOGIC_I/resul_contador<1>> in Unit <user_logic> is assigned to GND
 
-Macro Statistics
-# Registers                                            : 291
- Flip-Flops                                            : 291
-
-=========================================================================
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Final Report                               *
-=========================================================================
-Final Results
-RTL Top Level Output File Name     : coprocesador.ngr
-Top Level Output File Name         : coprocesador
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : No
-
-Design Statistics
-# IOs                              : 443
-
-Cell Usage :
-# BELS                             : 463
-#      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 33
-#      LUT2                        : 52
-#      LUT3                        : 80
-#      LUT4                        : 106
-#      LUT4_D                      : 4
-#      LUT4_L                      : 1
-#      MUXCY                       : 71
-#      MUXF5                       : 44
-#      VCC                         : 1
-#      XORCY                       : 67
-# FlipFlops/Latches                : 291
-#      FD                          : 32
-#      FDC                         : 27
-#      FDE                         : 1
-#      FDR                         : 96
-#      FDRE                        : 127
-#      FDS                         : 8
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 249
-#      IBUF                        : 66
-#      OBUF                        : 183
-=========================================================================
-
-Device utilization summary:
----------------------------
-
-Selected Device : 3s1000ft256-5 
-
- Number of Slices:                      214  out of   7680     2%  
- Number of Slice Flip Flops:            291  out of  15360     1%  
- Number of 4 input LUTs:                279  out of  15360     1%  
- Number of IOs:                         443
- Number of bonded IOBs:                 250  out of    173   144% (*) 
- Number of GCLKs:                         1  out of      8    12%  
-
-WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
-
----------------------------
-Partition Resource Summary:
----------------------------
-
-  No Partitions were found in this design.
-
----------------------------
+ERROR:Xst:528 - Multi-source in Unit <user_logic> on signal <Mcount_resul_contador_lut<7>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDR instance <USER_LOGIC_I/resul_contador_0>
+   Signal <USER_LOGIC_I/resul_contador<0>> in Unit <user_logic> is assigned to GND
 
 
-=========================================================================
-TIMING REPORT
-
-NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
-      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
-      GENERATED AFTER PLACE-and-ROUTE.
-
-Clock Information:
-------------------
------------------------------------+------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)              | Load  |
------------------------------------+------------------------------------+-------+
-USER_LOGIC_I/div_out               | NONE(USER_LOGIC_I/resul_contador_0)| 8     |
-SPLB_Clk                           | BUFGP                              | 283   |
------------------------------------+------------------------------------+-------+
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
-
-Asynchronous Control Signals Information:
-----------------------------------------
------------------------------------+------------------------+-------+
-Control Signal                     | Buffer(FF name)        | Load  |
------------------------------------+------------------------+-------+
-SPLB_Rst                           | IBUF                   | 27    |
------------------------------------+------------------------+-------+
-
-Timing Summary:
----------------
-Speed Grade: -5
-
-   Minimum period: 6.532ns (Maximum Frequency: 153.093MHz)
-   Minimum input arrival time before clock: 6.286ns
-   Maximum output required time after clock: 7.081ns
-   Maximum combinational path delay: No path found
-
-Timing Detail:
---------------
-All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'USER_LOGIC_I/div_out'
-  Clock period: 5.077ns (frequency: 196.953MHz)
-  Total number of paths / destination ports: 100 / 16
--------------------------------------------------------------------------
-Delay:               5.077ns (Levels of Logic = 2)
-  Source:            USER_LOGIC_I/resul_contador_1 (FF)
-  Destination:       USER_LOGIC_I/resul_contador_0 (FF)
-  Source Clock:      USER_LOGIC_I/div_out rising
-  Destination Clock: USER_LOGIC_I/div_out rising
-
-  Data Path: USER_LOGIC_I/resul_contador_1 to USER_LOGIC_I/resul_contador_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.626   0.830  USER_LOGIC_I/resul_contador_1 (USER_LOGIC_I/resul_contador_1)
-     LUT4:I2->O            1   0.479   0.851  USER_LOGIC_I/resul_contador_cmp_eq0000853 (USER_LOGIC_I/resul_contador_cmp_eq0000853)
-     LUT4:I1->O            8   0.479   0.921  USER_LOGIC_I/resul_contador_cmp_eq00008136 (USER_LOGIC_I/resul_contador_cmp_eq0000)
-     FDR:R                     0.892          USER_LOGIC_I/resul_contador_7
-    ----------------------------------------
-    Total                      5.077ns (2.476ns logic, 2.601ns route)
-                                       (48.8% logic, 51.2% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 6.532ns (frequency: 153.093MHz)
-  Total number of paths / destination ports: 4727 / 414
--------------------------------------------------------------------------
-Delay:               6.532ns (Levels of Logic = 9)
-  Source:            USER_LOGIC_I/cuenta_7 (FF)
-  Destination:       USER_LOGIC_I/div_out (FF)
-  Source Clock:      SPLB_Clk rising
-  Destination Clock: SPLB_Clk rising
-
-  Data Path: USER_LOGIC_I/cuenta_7 to USER_LOGIC_I/div_out
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.626   1.040  USER_LOGIC_I/cuenta_7 (USER_LOGIC_I/cuenta_7)
-     LUT3:I0->O            1   0.479   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_lut<0>)
-     MUXCY:S->O            1   0.435   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<0>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<1>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5> (USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<5>)
-     MUXCY:CI->O          28   0.265   1.726  USER_LOGIC_I/cuenta_cmp_eq0000_wg_cy<6> (USER_LOGIC_I/cuenta_cmp_eq0000)
-     LUT2:I1->O            1   0.479   0.681  USER_LOGIC_I/div_out_and00001 (USER_LOGIC_I/div_out_and0000)
-     FDE:CE                    0.524          USER_LOGIC_I/div_out
-    ----------------------------------------
-    Total                      6.532ns (3.085ns logic, 3.447ns route)
-                                       (47.2% logic, 52.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 338 / 282
--------------------------------------------------------------------------
-Offset:              6.286ns (Levels of Logic = 2)
-  Source:            SPLB_Rst (PAD)
-  Destination:       PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
-  Destination Clock: SPLB_Clk rising
-
-  Data Path: SPLB_Rst to PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O           187   0.715   2.625  SPLB_Rst_IBUF (SPLB_Rst_IBUF)
-     LUT2:I0->O           32   0.479   1.575  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or00001 (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_or0000)
-     FDR:R                     0.892          PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31
-    ----------------------------------------
-    Total                      6.286ns (2.086ns logic, 4.200ns route)
-                                       (33.2% logic, 66.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
-  Total number of paths / destination ports: 150 / 150
--------------------------------------------------------------------------
-Offset:              7.081ns (Levels of Logic = 1)
-  Source:            PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy (FF)
-  Destination:       Sl_addrAck (PAD)
-  Source Clock:      SPLB_Clk rising
-
-  Data Path: PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy to Sl_addrAck
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             26   0.626   1.546  PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy (PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/set_sl_busy)
-     OBUF:I->O                 4.909          Sl_addrAck_OBUF (Sl_addrAck)
-    ----------------------------------------
-    Total                      7.081ns (5.535ns logic, 1.546ns route)
-                                       (78.2% logic, 21.8% route)
-
-=========================================================================
-
-
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.85 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.60 secs
  
 --> 
 
-Total memory usage is 4724372 kilobytes
+Total memory usage is 4724320 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :  185 (   0 filtered)
+Number of errors   :    8 (   0 filtered)
+Number of warnings :  103 (   0 filtered)
 Number of infos    :    4 (   0 filtered)
 

@@ -10,9 +10,9 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tes
 ../src/testperiph.c:71:4: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
 ../src/testperiph.c:114:3: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:150:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
-../src/testperiph.c:211:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
-../src/testperiph.c:212:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+../src/testperiph.c:156:4: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c:210:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+../src/testperiph.c:211:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
 Finished building: ../src/testperiph.c
 ' '
 Building target: peripheral_tests_1.elf
@@ -23,7 +23,7 @@ Finished building target: peripheral_tests_1.elf
 Invoking: MicroBlaze Print Size
 mb-size peripheral_tests_1.elf  |tee "peripheral_tests_1.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  12138	    368	   2182	  14688	   3960	peripheral_tests_1.elf
+  12162	    368	   2182	  14712	   3978	peripheral_tests_1.elf
 Finished building: peripheral_tests_1.elf.size
 ' '
 Invoking: Xilinx ELF Check

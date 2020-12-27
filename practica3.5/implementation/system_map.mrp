@@ -9,7 +9,7 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Sun Dec 27 07:00:08 2020
+Mapped Date    : Sun Dec 27 09:50:24 2020
 
 Design Summary
 --------------
@@ -41,9 +41,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                4.02
 
-Peak Memory Usage:  4510 MB
-Total REAL time to MAP completion:  42 secs 
-Total CPU time to MAP completion:   41 secs 
+Peak Memory Usage:  4509 MB
+Total REAL time to MAP completion:  54 secs 
+Total CPU time to MAP completion:   52 secs 
 
 Table of Contents
 -----------------

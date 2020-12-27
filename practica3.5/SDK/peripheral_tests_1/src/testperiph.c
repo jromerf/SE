@@ -118,6 +118,12 @@ int getNumber (){
 	}
 }
 
+int modifyBit(int num, int pos, int bit)
+{
+    int mask = 1 << pos;
+    return (num & ~mask) | ((bit << pos) & mask);
+}
+
 
 int main() 
 {
@@ -135,7 +141,8 @@ int main()
     * because it has been selected as the STDOUT device
     */
 
-   int exit = 0, value;
+   int exit = 0;
+   Xuint32 value;
 
     while(exit == 0){
 	    	print(" MENU: \n\r");
@@ -143,8 +150,7 @@ int main()
 			print(" 2 - Introduce first number. \n\r");
 			print(" 3 - Introduce second number. \n\r");
 			print(" 4 - Result from operation [reg3] . \n\r");
-			print(" 5 - Introduce a value to [reg3] . \n\r");
-			print(" 6 - EXIT \n\r");
+			print(" 5 - EXIT \n\r");
 
 			value = COPROCESADOR_mReadReg(XPAR_COPROCESADOR_0_BASEADDR, COPROCESADOR_SLV_REG0_OFFSET);
 			xil_printf(" read %d from register 0\n\r", value);
@@ -189,14 +195,7 @@ int main()
 				xil_printf(" Your result on Reg3: %d\n\r", value);
 				break;
 			case 5:
-				xil_printf("Introduce a number from 0 to 9: \n\r");
-				value = getNumber();
-				COPROCESADOR_mWriteReg(XPAR_COPROCESADOR_0_BASEADDR,COPROCESADOR_SLV_REG3_OFFSET,value);
-
-				value = COPROCESADOR_mReadReg(XPAR_COPROCESADOR_0_BASEADDR,COPROCESADOR_SLV_REG3_OFFSET);
-				xil_printf(" Your result on Reg3: %d\n\r", value);
-				break;
-			case 6:
+				xil_printf("Good bye\n\r");
 				exit = 1;
 				break;
 			default:
