@@ -1,0 +1,10 @@
+-batch 
+-create coprocesador 
+-ver 1.00.a 
+-dir "D:\hlocal\SE\Practicas\practica3.5" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 4 
+-xps 
+-ise 
+-driver 
