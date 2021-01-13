@@ -1,0 +1,10 @@
+-batch 
+-create pantalla 
+-ver 1.00.a 
+-dir "D:\hlocal\SE\Practicas\practica4" 
+-lang vhdl 
+-bus plbv46 s 
+-wfifo 1 512 
+-xps 
+-ise 
+-driver 
