@@ -27,9 +27,6 @@ Loading design module
 "D:/hlocal/SE/Practicas/practica4c/implementation/system_leds_gpio_wrapper.ngc".
 ..
 Loading design module
-"D:/hlocal/SE/Practicas/practica4c/implementation/system_switches_gpio_wrapper.n
-gc"...
-Loading design module
 "D:/hlocal/SE/Practicas/practica4c/implementation/system_pantalla_0_wrapper.ngc"
 ...
 Gathering constraint information from source properties...
@@ -78,10 +75,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   7
 
-Total memory usage is 4455172 kilobytes
+Total memory usage is 4455132 kilobytes
 
 Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  22 sec
+Total REAL time to NGDBUILD completion:  23 sec
 Total CPU time to NGDBUILD completion:   21 sec
 
 Writing NGDBUILD log file "system.bld"...

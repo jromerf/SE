@@ -2,15 +2,15 @@
  PARAMETER VERSION = 2.1.0
 
 
- PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
  PORT Rst_pin = plb_v46_0_SYS_Rst, DIR = I, SIGIS = RST
  PORT RX_pin = xps_uartlite_0_RX, DIR = I
  PORT TX_pin = xps_uartlite_0_TX, DIR = O
  PORT leds_pin = leds_GPIO_IO, DIR = IO, VEC = [0:7]
- PORT switches_pin = switches_GPIO_IO, DIR = IO, VEC = [0:7]
  PORT pantalla_0_hsyncb_pin = pantalla_0_hsyncb, DIR = O
  PORT pantalla_0_vsyncb_pin = pantalla_0_vsyncb, DIR = O
  PORT pantalla_0_rgb_pin = pantalla_0_rgb, DIR = O, VEC = [0:8]
+ PORT pantalla_0_switches_pin = pantalla_0_switches, DIR = I, VEC = [0:7]
+ PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
 
 
 BEGIN microblaze
@@ -66,16 +66,6 @@ BEGIN xps_gpio
  PORT GPIO_IO = leds_GPIO_IO
 END
 
-BEGIN xps_gpio
- PARAMETER INSTANCE = switches_gpio
- PARAMETER HW_VER = 2.00.a
- PARAMETER C_GPIO_WIDTH = 8
- PARAMETER C_BASEADDR = 0x81400000
- PARAMETER C_HIGHADDR = 0x8140ffff
- BUS_INTERFACE SPLB = plb_v46_0
- PORT GPIO_IO = switches_GPIO_IO
-END
-
 BEGIN pantalla
  PARAMETER INSTANCE = pantalla_0
  PARAMETER HW_VER = 1.00.a
@@ -85,5 +75,6 @@ BEGIN pantalla
  PORT hsyncb = pantalla_0_hsyncb
  PORT vsyncb = pantalla_0_vsyncb
  PORT rgb = pantalla_0_rgb
+ PORT switches = pantalla_0_switches
 END
 

@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica4c\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.23 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> 
 TABLE OF CONTENTS
@@ -466,7 +466,7 @@ Analyzing hierarchy for entity <inferred_lut4> in library <proc_common_v3_00_a> 
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <system_pantalla_0_wrapper> in library <work> (Architecture <STRUCTURE>).
-WARNING:Xst:1541 - "D:/hlocal/SE/Practicas/practica4c/hdl/system_pantalla_0_wrapper.vhd" line 132: Different binding for component: <pantalla>. Port <rgb> does not match.
+WARNING:Xst:1540 - "D:/hlocal/SE/Practicas/practica4c/hdl/system_pantalla_0_wrapper.vhd" line 134: Different binding for component: <pantalla>. Ports <rgb,switches> do not match.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <system_pantalla_0_wrapper> analyzed. Unit <system_pantalla_0_wrapper> generated.
@@ -488,13 +488,13 @@ Analyzing generic Entity <pantalla> in library <pantalla_v1_00_a> (Architecture 
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
-WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 439: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
 Entity <pantalla> analyzed. Unit <pantalla> generated.
@@ -717,8 +717,6 @@ WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/p
 Entity <user_logic> analyzed. Unit <user_logic> generated.
 
 Analyzing Entity <vgacore> in library <pantalla_v1_00_a> (Architecture <vgacore_arch>).
-WARNING:Xst:790 - "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 181: Index value(s) does not match array range, simulation mismatch.
-INFO:Xst:1607 - Contents of array <RAM> may be accessed with an index that does not cover the full array size.
 Entity <vgacore> analyzed. Unit <vgacore> generated.
 
 Analyzing generic Entity <counter2> in library <pantalla_v1_00_a> (Architecture <rtl>).
@@ -815,22 +813,27 @@ Unit <inferred_lut4> synthesized.
 
 Synthesizing Unit <vgacore>.
     Related source file is "D:/hlocal/SE/Practicas/practica4c/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd".
+WARNING:Xst:1780 - Signal <maxv> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <maxh> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 256x9-bit dual-port RAM <Mram_RAM> for signal <RAM>.
     Found 1-bit register for signal <vsyncb>.
+    Found 9-bit register for signal <rgb>.
     Found 9-bit up counter for signal <hcnt>.
-    Found 10-bit comparator less for signal <hcnt$cmp_lt0000> created at line 104.
+    Found 10-bit comparator less for signal <hcnt$cmp_lt0000> created at line 107.
     Found 1-bit register for signal <hsyncbAux>.
-    Found 10-bit comparator greatequal for signal <hsyncbAux$cmp_ge0000> created at line 136.
-    Found 10-bit comparator less for signal <hsyncbAux$cmp_lt0000> created at line 136.
+    Found 10-bit comparator greatequal for signal <hsyncbAux$cmp_ge0000> created at line 139.
+    Found 10-bit comparator less for signal <hsyncbAux$cmp_lt0000> created at line 139.
+    Found 4-bit comparator lessequal for signal <rgb$cmp_le0000> created at line 204.
+    Found 5-bit comparator lessequal for signal <rgb$cmp_le0001> created at line 204.
     Found 10-bit up counter for signal <vcnt>.
-    Found 11-bit comparator less for signal <vcnt$cmp_lt0000> created at line 120.
-    Found 11-bit comparator greatequal for signal <vsyncb$cmp_ge0000> created at line 152.
-    Found 11-bit comparator less for signal <vsyncb$cmp_lt0000> created at line 152.
+    Found 11-bit comparator less for signal <vcnt$cmp_lt0000> created at line 123.
+    Found 11-bit comparator greatequal for signal <vsyncb$cmp_ge0000> created at line 155.
+    Found 11-bit comparator less for signal <vsyncb$cmp_lt0000> created at line 155.
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Counter(s).
-	inferred   2 D-type flip-flop(s).
-	inferred   6 Comparator(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   8 Comparator(s).
 Unit <vgacore> synthesized.
 
 
@@ -1064,18 +1067,21 @@ Macro Statistics
  10-bit up counter                                     : 1
  2-bit up counter                                      : 2
  9-bit up counter                                      : 1
-# Registers                                            : 79
+# Registers                                            : 80
  1-bit register                                        : 65
  10-bit register                                       : 1
  3-bit register                                        : 1
  32-bit register                                       : 4
  4-bit register                                        : 4
  8-bit register                                        : 4
-# Comparators                                          : 6
+ 9-bit register                                        : 1
+# Comparators                                          : 8
  10-bit comparator greatequal                          : 1
  10-bit comparator less                                : 2
  11-bit comparator greatequal                          : 1
  11-bit comparator less                                : 2
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator lessequal                            : 1
 # Xors                                                 : 7
  1-bit xor2                                            : 7
 
@@ -1119,13 +1125,15 @@ Macro Statistics
  10-bit up counter                                     : 1
  2-bit up counter                                      : 2
  9-bit up counter                                      : 1
-# Registers                                            : 294
- Flip-Flops                                            : 294
-# Comparators                                          : 6
+# Registers                                            : 303
+ Flip-Flops                                            : 303
+# Comparators                                          : 8
  10-bit comparator greatequal                          : 1
  10-bit comparator less                                : 2
  11-bit comparator greatequal                          : 1
  11-bit comparator less                                : 2
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator lessequal                            : 1
 # Xors                                                 : 7
  1-bit xor2                                            : 7
 
@@ -1135,78 +1143,6 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <addr_cntl_cs_0> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
-WARNING:Xst:2677 - Node <Mram_RAM10> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM9> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM11> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM12> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM15> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM13> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM14> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM16> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM25> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM26> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM27> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM30> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM28> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM29> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM31> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM32> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM41> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM42> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM45> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM43> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM44> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM46> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM47> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM48> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM57> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM60> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM58> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM59> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM61> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM62> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM63> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM64> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM75> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM73> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM74> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM78> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM76> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM77> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM79> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM80> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM91> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM89> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM90> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM92> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM93> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM96> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM94> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM95> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM106> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM105> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM107> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM108> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM111> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM109> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM110> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM112> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM121> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM122> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM123> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM126> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM124> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM125> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM127> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM128> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM137> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM138> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM141> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM139> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM140> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM142> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM143> of sequential type is unconnected in block <vgacore>.
-WARNING:Xst:2677 - Node <Mram_RAM144> of sequential type is unconnected in block <vgacore>.
 INFO:Xst:1901 - Instance WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
 
 Optimizing unit <system_pantalla_0_wrapper> ...
@@ -1325,8 +1261,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 231
- Flip-Flops                                            : 231
+# Registers                                            : 240
+ Flip-Flops                                            : 240
 
 =========================================================================
 
@@ -1351,37 +1287,38 @@ Optimization Goal                  : speed
 Keep Hierarchy                     : no
 
 Design Statistics
-# IOs                              : 212
+# IOs                              : 220
 
 Cell Usage :
-# BELS                             : 373
+# BELS                             : 466
 #      GND                         : 2
 #      INV                         : 5
-#      LUT2                        : 57
+#      LUT2                        : 52
 #      LUT2_L                      : 1
-#      LUT3                        : 73
-#      LUT3_L                      : 1
-#      LUT4                        : 88
-#      LUT4_D                      : 6
-#      LUT4_L                      : 3
+#      LUT3                        : 110
+#      LUT3_L                      : 2
+#      LUT4                        : 104
+#      LUT4_D                      : 7
+#      LUT4_L                      : 5
 #      MUXCY                       : 53
-#      MUXF5                       : 27
-#      MUXF6                       : 9
+#      MUXF5                       : 53
+#      MUXF6                       : 18
+#      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 47
-# FlipFlops/Latches                : 231
+# FlipFlops/Latches                : 240
 #      FDC                         : 21
 #      FDCE                        : 2
 #      FDE                         : 1
 #      FDP                         : 2
-#      FDR                         : 99
+#      FDR                         : 102
 #      FDRE                        : 100
-#      FDRS                        : 2
+#      FDRS                        : 8
 #      FDRSE                       : 1
 #      FDS                         : 2
 #      FDSE                        : 1
-# RAMS                             : 73
-#      RAM16X1D                    : 72
+# RAMS                             : 145
+#      RAM16X1D                    : 144
 #      RAMB16                      : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
@@ -1392,12 +1329,12 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      179  out of   7680     2%  
- Number of Slice Flip Flops:            231  out of  15360     1%  
- Number of 4 input LUTs:                378  out of  15360     2%  
-    Number used as logic:               234
-    Number used as RAMs:                144
- Number of IOs:                         212
+ Number of Slices:                      213  out of   7680     2%  
+ Number of Slice Flip Flops:            240  out of  15360     1%  
+ Number of 4 input LUTs:                574  out of  15360     3%  
+    Number used as logic:               286
+    Number used as RAMs:                288
+ Number of IOs:                         220
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
  Number of GCLKs:                         1  out of      8    12%  
@@ -1424,7 +1361,7 @@ Clock Information:
 Clock Signal                         | Clock buffer(FF name)                                                  | Load  |
 -------------------------------------+------------------------------------------------------------------------+-------+
 SPLB_Clk                             | NONE(pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/valid_read)| 211   |
-pantalla_0/USER_LOGIC_I/clock1       | BUFG                                                                   | 82    |
+pantalla_0/USER_LOGIC_I/clock1       | BUFG                                                                   | 163   |
 pantalla_0/USER_LOGIC_I/vga/hsyncbAux| NONE(pantalla_0/USER_LOGIC_I/vga/vcnt_9)                               | 11    |
 -------------------------------------+------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1442,8 +1379,8 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 8.611ns (Maximum Frequency: 116.135MHz)
-   Minimum input arrival time before clock: 2.621ns
-   Maximum output required time after clock: 6.166ns
+   Minimum input arrival time before clock: 6.177ns
+   Maximum output required time after clock: 0.626ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1489,21 +1426,21 @@ Delay:               8.611ns (Levels of Logic = 16)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pantalla_0/USER_LOGIC_I/clock1'
-  Clock period: 6.631ns (frequency: 150.804MHz)
-  Total number of paths / destination ports: 422 / 10
+  Clock period: 6.811ns (frequency: 146.815MHz)
+  Total number of paths / destination ports: 773 / 34
 -------------------------------------------------------------------------
-Delay:               6.631ns (Levels of Logic = 12)
-  Source:            pantalla_0/USER_LOGIC_I/vga/hcnt_3 (FF)
+Delay:               6.811ns (Levels of Logic = 12)
+  Source:            pantalla_0/USER_LOGIC_I/vga/hcnt_2 (FF)
   Destination:       pantalla_0/USER_LOGIC_I/vga/hcnt_8 (FF)
   Source Clock:      pantalla_0/USER_LOGIC_I/clock1 rising
   Destination Clock: pantalla_0/USER_LOGIC_I/clock1 rising
 
-  Data Path: pantalla_0/USER_LOGIC_I/vga/hcnt_3 to pantalla_0/USER_LOGIC_I/vga/hcnt_8
+  Data Path: pantalla_0/USER_LOGIC_I/vga/hcnt_2 to pantalla_0/USER_LOGIC_I/vga/hcnt_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             40   0.626   1.637  pantalla_0/USER_LOGIC_I/vga/hcnt_3 (pantalla_0/USER_LOGIC_I/vga/hcnt_3)
-     LUT4_D:I3->LO         1   0.479   0.123  pantalla_0/USER_LOGIC_I/vga/hcnt_not0001_inv1_SW0 (N48)
+     FDC:C->Q             77   0.626   1.817  pantalla_0/USER_LOGIC_I/vga/hcnt_2 (pantalla_0/USER_LOGIC_I/vga/hcnt_2)
+     LUT4_D:I3->LO         1   0.479   0.123  pantalla_0/USER_LOGIC_I/vga/hcnt_not0001_inv1_SW0 (N53)
      LUT4:I3->O            6   0.479   1.023  pantalla_0/USER_LOGIC_I/vga/hcnt_not00011 (pantalla_0/USER_LOGIC_I/vga/hcnt_not0001)
      LUT2:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt_lut<0> (pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt_lut<0>)
      MUXCY:S->O            1   0.435   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt_cy<0> (pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt_cy<0>)
@@ -1517,15 +1454,15 @@ Delay:               6.631ns (Levels of Logic = 12)
      XORCY:CI->O           1   0.786   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt_xor<8> (pantalla_0/USER_LOGIC_I/vga/Mcount_hcnt8)
      FDC:D                     0.176          pantalla_0/USER_LOGIC_I/vga/hcnt_8
     ----------------------------------------
-    Total                      6.631ns (3.849ns logic, 2.783ns route)
-                                       (58.0% logic, 42.0% route)
+    Total                      6.811ns (3.849ns logic, 2.963ns route)
+                                       (56.5% logic, 43.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'pantalla_0/USER_LOGIC_I/vga/hsyncbAux'
-  Clock period: 7.420ns (frequency: 134.766MHz)
+  Clock period: 7.785ns (frequency: 128.444MHz)
   Total number of paths / destination ports: 702 / 11
 -------------------------------------------------------------------------
-Delay:               7.420ns (Levels of Logic = 8)
+Delay:               7.785ns (Levels of Logic = 8)
   Source:            pantalla_0/USER_LOGIC_I/vga/vcnt_7 (FF)
   Destination:       pantalla_0/USER_LOGIC_I/vga/vcnt_9 (FF)
   Source Clock:      pantalla_0/USER_LOGIC_I/vga/hsyncbAux rising
@@ -1535,8 +1472,8 @@ Delay:               7.420ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             76   0.626   2.084  pantalla_0/USER_LOGIC_I/vga/vcnt_7 (pantalla_0/USER_LOGIC_I/vga/vcnt_7)
-     LUT4_D:I0->O          2   0.479   0.768  pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv251_SW0 (N27)
+     FDC:C->Q            151   0.626   2.450  pantalla_0/USER_LOGIC_I/vga/vcnt_7 (pantalla_0/USER_LOGIC_I/vga/vcnt_7)
+     LUT4_D:I0->O          2   0.479   0.768  pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv251_SW0 (N29)
      LUT4:I3->O            3   0.479   0.941  pantalla_0/USER_LOGIC_I/vga/vcnt_not00011 (pantalla_0/USER_LOGIC_I/vga/vcnt_not0001)
      LUT2:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<5> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<5>)
      MUXCY:S->O            1   0.435   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<5> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<5>)
@@ -1546,8 +1483,8 @@ Delay:               7.420ns (Levels of Logic = 8)
      XORCY:CI->O           1   0.786   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_xor<9> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt9)
      FDC:D                     0.176          pantalla_0/USER_LOGIC_I/vga/vcnt_9
     ----------------------------------------
-    Total                      7.420ns (3.627ns logic, 3.794ns route)
-                                       (48.9% logic, 51.1% route)
+    Total                      7.785ns (3.627ns logic, 4.159ns route)
+                                       (46.6% logic, 53.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
@@ -1569,6 +1506,29 @@ Offset:              2.621ns (Levels of Logic = 1)
                                        (63.6% logic, 36.4% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pantalla_0/USER_LOGIC_I/clock1'
+  Total number of paths / destination ports: 162 / 9
+-------------------------------------------------------------------------
+Offset:              6.177ns (Levels of Logic = 5)
+  Source:            switches<4> (PAD)
+  Destination:       pantalla_0/USER_LOGIC_I/vga/rgb_5 (FF)
+  Destination Clock: pantalla_0/USER_LOGIC_I/clock1 rising
+
+  Data Path: switches<4> to pantalla_0/USER_LOGIC_I/vga/rgb_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I1->O            1   0.479   0.976  pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>197_SW0 (N44)
+     LUT4:I0->O            1   0.479   0.740  pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>197 (pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>197)
+     LUT3:I2->O            2   0.479   0.915  pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>1112 (pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>1112)
+     LUT4_D:I1->O          2   0.479   0.804  pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<2>1179 (pantalla_0/USER_LOGIC_I/vga/N22)
+     LUT4:I2->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<5>1 (pantalla_0/USER_LOGIC_I/vga/rgb_mux0003<5>)
+     FDR:D                     0.176          pantalla_0/USER_LOGIC_I/vga/rgb_5
+    ----------------------------------------
+    Total                      6.177ns (2.741ns logic, 3.436ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
@@ -1588,60 +1548,51 @@ Offset:              0.626ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/USER_LOGIC_I/vga/hsyncbAux'
-  Total number of paths / destination ports: 307 / 10
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.166ns (Levels of Logic = 5)
-  Source:            pantalla_0/USER_LOGIC_I/vga/vcnt_5 (FF)
-  Destination:       rgb<0> (PAD)
+Offset:              0.626ns (Levels of Logic = 0)
+  Source:            pantalla_0/USER_LOGIC_I/vga/vsyncb (FF)
+  Destination:       vsyncb (PAD)
   Source Clock:      pantalla_0/USER_LOGIC_I/vga/hsyncbAux rising
 
-  Data Path: pantalla_0/USER_LOGIC_I/vga/vcnt_5 to rgb<0>
+  Data Path: pantalla_0/USER_LOGIC_I/vga/vsyncb to vsyncb
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             76   0.626   1.789  pantalla_0/USER_LOGIC_I/vga/vcnt_5 (pantalla_0/USER_LOGIC_I/vga/vcnt_5)
-     RAM16X1D:DPRA1->DPO    1   0.479   0.851  pantalla_0/USER_LOGIC_I/vga/Mram_RAM1 (pantalla_0/USER_LOGIC_I/vga/N19)
-     LUT3:I1->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_6 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_6)
-     MUXF5:I0->O           1   0.314   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4_f5 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4_f5)
-     MUXF6:I0->O           1   0.298   0.851  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_2_f6 (pantalla_0/USER_LOGIC_I/vga/_varindex0000<0>)
-     LUT2:I1->O            0   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/rgb<0>1 (rgb<8>)
+     FDP:C->Q              0   0.626   0.000  pantalla_0/USER_LOGIC_I/vga/vsyncb (pantalla_0/USER_LOGIC_I/vga/vsyncb)
     ----------------------------------------
-    Total                      6.166ns (2.675ns logic, 3.491ns route)
-                                       (43.4% logic, 56.6% route)
+    Total                      0.626ns (0.626ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/USER_LOGIC_I/clock1'
-  Total number of paths / destination ports: 154 / 10
+  Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              4.956ns (Levels of Logic = 4)
-  Source:            pantalla_0/USER_LOGIC_I/vga/hcnt_3 (FF)
-  Destination:       rgb<0> (PAD)
+Offset:              0.626ns (Levels of Logic = 0)
+  Source:            pantalla_0/USER_LOGIC_I/vga/hsyncbAux (FF)
+  Destination:       hsyncb (PAD)
   Source Clock:      pantalla_0/USER_LOGIC_I/clock1 rising
 
-  Data Path: pantalla_0/USER_LOGIC_I/vga/hcnt_3 to rgb<0>
+  Data Path: pantalla_0/USER_LOGIC_I/vga/hsyncbAux to hsyncb
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             40   0.626   1.909  pantalla_0/USER_LOGIC_I/vga/hcnt_3 (pantalla_0/USER_LOGIC_I/vga/hcnt_3)
-     LUT3:I0->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_4)
-     MUXF5:I1->O           1   0.314   0.000  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_3_f5 (pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_3_f5)
-     MUXF6:I1->O           1   0.298   0.851  pantalla_0/USER_LOGIC_I/vga/inst_LPM_MUX_2_f6 (pantalla_0/USER_LOGIC_I/vga/_varindex0000<0>)
-     LUT2:I1->O            0   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/rgb<0>1 (rgb<8>)
+     FDP:C->Q             11   0.626   0.000  pantalla_0/USER_LOGIC_I/vga/hsyncbAux (pantalla_0/USER_LOGIC_I/vga/hsyncbAux)
     ----------------------------------------
-    Total                      4.956ns (2.196ns logic, 2.760ns route)
-                                       (44.3% logic, 55.7% route)
+    Total                      0.626ns (0.626ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 39.72 secs
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 37.56 secs
  
 --> 
 
-Total memory usage is 4901428 kilobytes
+Total memory usage is 4901476 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  257 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  186 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

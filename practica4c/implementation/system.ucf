@@ -24,14 +24,14 @@ NET "Rst_pin" FLOAT;
 
 	#switches placa extendida
 
-NET switches_pin<0> LOC=P12;
-NET switches_pin<1> LOC=J1;
-NET switches_pin<2> LOC=H1;
-NET switches_pin<3> LOC=H3;
-NET switches_pin<4> LOC=G2;
-NET switches_pin<5> LOC=K15;
-NET switches_pin<6> LOC=K16;
-NET switches_pin<7> LOC=F15;
+NET pantalla_0_switches_pin<0> LOC=P12;
+NET pantalla_0_switches_pin<1> LOC=J1;
+NET pantalla_0_switches_pin<2> LOC=H1;
+NET pantalla_0_switches_pin<3> LOC=H3;
+NET pantalla_0_switches_pin<4> LOC=G2;
+NET pantalla_0_switches_pin<5> LOC=K15;
+NET pantalla_0_switches_pin<6> LOC=K16;
+NET pantalla_0_switches_pin<7> LOC=F15;
 
 #
 	#push buttons placa superior

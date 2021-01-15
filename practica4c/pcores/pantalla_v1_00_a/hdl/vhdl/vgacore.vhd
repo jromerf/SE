@@ -36,6 +36,7 @@ entity vgacore is
 		load: in std_logic;
 		color: in std_logic_vector(8 downto 0); -- color
 		rectangulo: in std_logic_vector(7 downto 0); -- rectangulo a borrar
+		switches: in std_logic_vector(7 downto 0);
 		vsyncb: out std_logic;	-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
 	);
@@ -88,6 +89,8 @@ signal RAM : ram_type :=
 
 
 signal hsyncbAux : std_logic;
+
+signal maxh,maxv : std_logic_vector(3 downto 0);
 
 begin
 
@@ -165,25 +168,52 @@ process(clock, load, rectangulo)
 begin
 		if clock'event and clock='1' then
 			if load='1' then 
+				--Aqui tiene q haber un if para ver si hay valores nuevos sobre la fila columna o colores
 				RAM(conv_integer(rectangulo))<= color;
 			end if;
 		end if;
 end process;
 
-process(vcnt, hcnt, RAM)
-begin
-	--if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
-		--if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
-		--	rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
-		--end if;
-	if vcnt(9 downto 8)="00" and hcnt(8 downto 7)="00" then
-		--if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
-			rgb<=RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));--cambie de 7-3
---		end if;
-	else
-		rgb<="000000000";
+-- process(vcnt, hcnt, RAM,switches)
+-- begin
+-- 	--if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
+-- 		--if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
+-- 		--	rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+-- 		--end if;
+-- 	if vcnt(9 downto 8)="00" and hcnt(8 downto 7)="00" then
+-- 		--if (conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)) < 256) then --tengo q cambiar 256 por el num max q viene desde el switch
+-- 		if (conv_integer(hcnt(5 downto 2)) < conv_integer(switches(7 downto 4))) and (conv_integer(vcnt(7 downto 4)) < conv_integer(switches(3 downto 0))) then--cambio > por <
+-- 			rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+-- 		else
+-- 			rgb<="111111111";
+-- 		end if;
+-- 	else
+-- 		rgb<="000000000";
+-- 	end if;
+-- end process;
+
+process(clock,switches,vcnt, hcnt, RAM)
+begin 
+	if clock'event and clock ='1' then
+
+		if vcnt(9 downto 7)="000" and hcnt(8 downto 6)="000" then --he cambiado 9-7 de v 
+			if switches(7 downto 0) = "0000" and switches(3 downto 0) = "0000" then
+				--if (conv_integer(hcnt(5 downto 3)) < conv_integer(maxh)) and (conv_integer(vcnt(7 downto 4)) < conv_integer(maxv)) then
+				rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+			else
+				if (conv_integer(hcnt(5 downto 2)) <= conv_integer(switches(7 downto 4))) and (vcnt(7 downto 4) <= conv_integer(switches(3 downto 0))) then
+					rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+				else
+					rgb<="011011011";
+				end if;
+			end if;
+		else 
+			rgb<="000000000";
+		end if;
 	end if;
 end process;
+
+
 
 ---------------------------------------------------------------------
 end vgacore_arch;

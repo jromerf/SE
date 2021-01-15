@@ -138,7 +138,6 @@ implementation/system_bram_block_0_wrapper.ngc \
 implementation/system_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/system_xps_uartlite_0_wrapper.ngc \
 implementation/system_leds_gpio_wrapper.ngc \
-implementation/system_switches_gpio_wrapper.ngc \
 implementation/system_pantalla_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc

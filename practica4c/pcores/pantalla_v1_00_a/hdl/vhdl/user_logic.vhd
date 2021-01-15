@@ -107,6 +107,7 @@ entity user_logic is
 		hsyncb: out std_logic;
 		vsyncb: out std_logic;							-- vertical (frame) sync
 		rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
+		switches: in std_logic_vector(7 downto 0);
     -- DO NOT EDIT BELOW THIS LINE ---------------------
     -- Bus protocol ports, do not add to or delete
     Bus2IP_Clk                     : in  std_logic;
@@ -151,6 +152,7 @@ architecture IMP of user_logic is
 			load: in std_logic;
 			color: in std_logic_vector(8 downto 0); -- color
 			rectangulo: in std_logic_vector(7 downto 0); -- rectangulo a borrar
+			switches: in std_logic_vector(7 downto 0);
 			vsyncb: out std_logic;	-- vertical (frame) sync
 			rgb: out std_logic_vector(8 downto 0)	-- red,green,blue colors
 		);
@@ -225,6 +227,7 @@ timeOut <= "11"; -- 12,5 MHz
 			load => load,
 			color => color,
 			rectangulo => rectangulo,
+			switches => switches,
 			vsyncb => vsyncb,
 			rgb => rgb
 		);

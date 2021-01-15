@@ -168,7 +168,8 @@ entity pantalla is
     --USER ports added here
 	hsyncb: out std_logic;
 	vsyncb: out std_logic;							-- vertical (frame) sync
-	rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
+  rgb: out std_logic_vector(8 downto 0);	-- red,green,blue colors
+  switches: in std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -503,7 +504,8 @@ begin
       --USER ports mapped here
 	  hsyncb => hsyncb,
 	  vsyncb => vsyncb,
-	  rgb => rgb,
+    rgb => rgb,
+    switches => switches,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
