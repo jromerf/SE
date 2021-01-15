@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Jan 13 06:04:16 2021">
+  <application stringID="NgdBuild" timeStamp="Fri Jan 15 06:00:53 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -90,21 +90,20 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="260"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="24"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="851"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="815"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="26"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="28"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1062"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1054"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="28"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="40"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT18X18S" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT_AND" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="174"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="161"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="420"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="18"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="9"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="393"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="9"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_RAM16X1D" value="336"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAM16X1D" value="264"/>
         <item dataType="int" stringID="NGDBUILD_NUM_SRL16" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="84"/>
         <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="7"/>
@@ -131,19 +130,18 @@
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="260"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="24"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="851"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="815"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="26"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="28"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1062"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1054"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="28"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="40"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT18X18S" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT_AND" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="174"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="161"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="420"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="18"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="9"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="393"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF6" value="9"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S2_S2" value="16"/>

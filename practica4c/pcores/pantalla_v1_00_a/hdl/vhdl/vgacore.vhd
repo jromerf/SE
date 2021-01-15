@@ -172,10 +172,14 @@ end process;
 
 process(vcnt, hcnt, RAM)
 begin
-	if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
-		if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
-			rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
-		end if;
+	--if vcnt(9 downto 8)="00" and hcnt(8 downto 6)="000" then
+		--if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
+		--	rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+		--end if;
+	if vcnt(9 downto 8)="00" and hcnt(8 downto 7)="00" then
+		--if (conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)) < 256) then
+			rgb<=RAM(conv_integer(hcnt(5 downto 3)&vcnt(7 downto 4)));--cambie de 7-3
+--		end if;
 	else
 		rgb<="000000000";
 	end if;
