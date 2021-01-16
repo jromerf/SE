@@ -45,15 +45,15 @@ Setup/Hold to clock Clk_pin
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
 RX_pin      |    3.342(R)|   -1.221(R)|Clk_pin_BUFGP     |   0.000|
-Rst_pin     |    3.329(R)|   -0.675(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<0> |    1.897(R)|   -0.838(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<1> |    1.290(R)|   -0.308(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<2> |    1.145(R)|   -0.200(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<3> |    1.296(R)|   -0.321(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<4> |    1.779(R)|   -0.762(R)|Clk_pin_BUFGP     |   0.000|
+Rst_pin     |    3.895(R)|   -0.223(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<0> |    0.794(R)|    0.087(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<1> |    1.269(R)|   -0.282(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<2> |    1.426(R)|   -0.416(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<3> |    1.536(R)|   -0.496(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<4> |    1.670(R)|   -0.670(R)|Clk_pin_BUFGP     |   0.000|
 leds_pin<5> |    1.457(R)|   -0.491(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<6> |    0.903(R)|   -0.009(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<7> |    1.168(R)|   -0.217(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<6> |    0.584(R)|    0.249(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<7> |    1.123(R)|   -0.178(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk_pin to Pad
@@ -62,14 +62,14 @@ Clock Clk_pin to Pad
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
 TX_pin      |    6.523(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<0> |    8.913(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<1> |    9.453(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<2> |    9.532(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<3> |    9.295(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<4> |    9.626(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<5> |    9.895(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<6> |    9.332(R)|Clk_pin_BUFGP     |   0.000|
-leds_pin<7> |    9.255(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<0> |    9.178(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<1> |    9.322(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<2> |    9.322(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<3> |    9.416(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<4> |    9.901(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<5> |    9.954(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<6> |    9.726(R)|Clk_pin_BUFGP     |   0.000|
+leds_pin<7> |    9.329(R)|Clk_pin_BUFGP     |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk_pin
@@ -77,11 +77,11 @@ Clock to Setup on destination clock Clk_pin
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk_pin        |   10.614|         |         |         |
+Clk_pin        |    9.323|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Jan 16 00:03:29 2021 
+Analysis completed Sat Jan 16 04:39:52 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

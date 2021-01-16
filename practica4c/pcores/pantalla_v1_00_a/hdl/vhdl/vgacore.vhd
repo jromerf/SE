@@ -21,6 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
 
 ---- Uncomment the following library declaration if instantiating
 ---- any Xilinx primitives in this code.
@@ -90,7 +91,7 @@ signal RAM : ram_type :=
 
 signal hsyncbAux : std_logic;
 
-signal maxh,maxv : std_logic_vector(3 downto 0);
+signal i : integer range 0 to 256;
 
 begin
 
@@ -196,24 +197,21 @@ process(clock,switches,vcnt, hcnt, RAM)
 begin 
 	if clock'event and clock ='1' then
 
-		if vcnt(9 downto 7)="000" and hcnt(8 downto 6)="000" then --he cambiado 9-7 de v 
+		if vcnt(9 downto 8)="00" and hcnt(8 downto 7)="00" then --estos 00 no se pueden mover 
 			if switches(7 downto 0) = "0000" and switches(3 downto 0) = "0000" then
 				--if (conv_integer(hcnt(5 downto 3)) < conv_integer(maxh)) and (conv_integer(vcnt(7 downto 4)) < conv_integer(maxv)) then
-				rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+				--rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
+				rgb<=RAM(conv_integer(hcnt(6 downto 3)&vcnt(7 downto 4)));--esto no mover
 			else
-				if (conv_integer(hcnt(5 downto 2)) <= conv_integer(switches(7 downto 4))) and (vcnt(7 downto 4) <= conv_integer(switches(3 downto 0))) then
-					rgb<=RAM(conv_integer(hcnt(5 downto 2)&vcnt(7 downto 4)));
-				else
-					rgb<="011011011";
+				if (conv_integer(hcnt(6 downto 3)) < conv_integer(switches(7 downto 4))) and (conv_integer(vcnt(7 downto 4)) < conv_integer(switches(3 downto 0))) then
+					rgb<=RAM(conv_integer(hcnt(6 downto 3)&vcnt(7 downto 4)));
 				end if;
 			end if;
 		else 
-			rgb<="000000000";
+			rgb<="111111111";
 		end if;
 	end if;
 end process;
-
-
 
 ---------------------------------------------------------------------
 end vgacore_arch;
