@@ -1,0 +1,80 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT Rst_pin = plb_v46_0_SYS_Rst, DIR = I, SIGIS = RST
+ PORT RX_pin = xps_uartlite_0_RX, DIR = I
+ PORT TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT leds_pin = leds_GPIO_IO, DIR = IO, VEC = [0:7]
+ PORT lcd_pantalla_0_rw_pin = lcd_pantalla_0_rw, DIR = O
+ PORT lcd_pantalla_0_rs_pin = lcd_pantalla_0_rs, DIR = O
+ PORT lcd_pantalla_0_e_pin = lcd_pantalla_0_e, DIR = O
+ PORT lcd_pantalla_0_lcd_data_pin = lcd_pantalla_0_lcd_data, DIR = O, VEC = [0:7]
+ PORT Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.30.a
+ BUS_INTERFACE DPLB = plb_v46_0
+ BUS_INTERFACE IPLB = plb_v46_0
+ PORT MB_RESET = plb_v46_0_PLB_Rst
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = plb_v46_0_PLB_Clk
+ PORT SYS_Rst = plb_v46_0_SYS_Rst
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_bram_if_cntlr
+ PARAMETER INSTANCE = xps_bram_if_cntlr_0
+ PARAMETER HW_VER = 1.00.b
+ PARAMETER C_SPLB_NATIVE_DWIDTH = 32
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_BASEADDR = 0x84000000
+ PARAMETER C_HIGHADDR = 0x8400ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = xps_uartlite_0_RX
+ PORT TX = xps_uartlite_0_TX
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = leds_gpio
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x81400000
+ PARAMETER C_HIGHADDR = 0x8140ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO = leds_GPIO_IO
+END
+
+BEGIN lcd_pantalla
+ PARAMETER INSTANCE = lcd_pantalla_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xc7000000
+ PARAMETER C_HIGHADDR = 0xc700ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT rw = lcd_pantalla_0_rw
+ PORT rs = lcd_pantalla_0_rs
+ PORT e = lcd_pantalla_0_e
+ PORT lcd_data = lcd_pantalla_0_lcd_data
+END
+
