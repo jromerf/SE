@@ -17,31 +17,23 @@
 
 /******************************************************************/
 
-/* Definitions for driver GPIO */
-#define XPAR_XGPIO_NUM_INSTANCES 2
 
-/* Definitions for peripheral LEDS_GPIO */
-#define XPAR_LEDS_GPIO_BASEADDR 0x81420000
-#define XPAR_LEDS_GPIO_HIGHADDR 0x8142FFFF
-#define XPAR_LEDS_GPIO_DEVICE_ID 0
-#define XPAR_LEDS_GPIO_INTERRUPT_PRESENT 0
-#define XPAR_LEDS_GPIO_IS_DUAL 0
-
-
-/* Definitions for peripheral SWITCHES_GPIO */
-#define XPAR_SWITCHES_GPIO_BASEADDR 0x81400000
-#define XPAR_SWITCHES_GPIO_HIGHADDR 0x8140FFFF
-#define XPAR_SWITCHES_GPIO_DEVICE_ID 1
-#define XPAR_SWITCHES_GPIO_INTERRUPT_PRESENT 0
-#define XPAR_SWITCHES_GPIO_IS_DUAL 0
+/* Definitions for peripheral LCD_PANTALLA_0 */
+#define XPAR_LCD_PANTALLA_0_BASEADDR 0xC7000000
+#define XPAR_LCD_PANTALLA_0_HIGHADDR 0xC700FFFF
 
 
 /******************************************************************/
 
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
 
-/* Definitions for peripheral PANTALLA_0 */
-#define XPAR_PANTALLA_0_BASEADDR 0xCD400000
-#define XPAR_PANTALLA_0_HIGHADDR 0xCD40FFFF
+/* Definitions for peripheral LEDS_GPIO */
+#define XPAR_LEDS_GPIO_BASEADDR 0x81400000
+#define XPAR_LEDS_GPIO_HIGHADDR 0x8140FFFF
+#define XPAR_LEDS_GPIO_DEVICE_ID 0
+#define XPAR_LEDS_GPIO_INTERRUPT_PRESENT 0
+#define XPAR_LEDS_GPIO_IS_DUAL 0
 
 
 /******************************************************************/

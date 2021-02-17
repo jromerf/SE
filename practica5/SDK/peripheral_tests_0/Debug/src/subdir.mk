@@ -4,8 +4,8 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/pantalla.c \
-../src/pantalla_selftest.c \
+../src/lcd_pantalla.c \
+../src/lcd_pantalla_selftest.c \
 ../src/testperiph.c \
 ../src/xbram_example.c \
 ../src/xgpio_tapp_example.c 
@@ -14,15 +14,15 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
-./src/pantalla.o \
-./src/pantalla_selftest.o \
+./src/lcd_pantalla.o \
+./src/lcd_pantalla_selftest.o \
 ./src/testperiph.o \
 ./src/xbram_example.o \
 ./src/xgpio_tapp_example.o 
 
 C_DEPS += \
-./src/pantalla.d \
-./src/pantalla_selftest.d \
+./src/lcd_pantalla.d \
+./src/lcd_pantalla_selftest.d \
 ./src/testperiph.d \
 ./src/xbram_example.d \
 ./src/xgpio_tapp_example.d 
