@@ -154,6 +154,8 @@ Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
 D:\hlocal\SE\Practicas\practica5\system.mhs line 16 - Copying cache
 implementation netlist
+IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica5\system.mhs
+line 24 - Copying cache implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
 D:\hlocal\SE\Practicas\practica5\system.mhs line 31 - Copying cache
 implementation netlist
@@ -176,7 +178,7 @@ D:\hlocal\SE\Practicas\practica5\system.mhs line 31 - elaborating IP
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -192,8 +194,6 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\practica5\system.mhs line 24 -
-Running XST synthesis
 INSTANCE:lcd_pantalla_0 - D:\hlocal\SE\Practicas\practica5\system.mhs line 69 -
 Running XST synthesis
 
@@ -204,4 +204,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 56.00 seconds
+Total run time: 39.00 seconds

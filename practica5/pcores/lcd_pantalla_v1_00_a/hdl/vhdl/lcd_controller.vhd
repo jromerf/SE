@@ -81,7 +81,8 @@ BEGIN
             clk_count := 0;
             rs <= '0';
             rw <= '0';
-            lcd_data <= "00110000";
+            --lcd_data <= "00110000"; --"00111000" 2 lineas MODF
+            lcd_data <= "00111000";
             state <= initialize;
           END IF;
           
@@ -101,7 +102,7 @@ BEGIN
             e <= '0';
             state <= initialize;
           ELSIF(clk_count < (70 * freq)) THEN    --display on/off control
-            lcd_data <= "00001100";      --display on, cursor off, blink off
+            lcd_data <= "00001100";      --display on, cursor off, blink off --modif
             --lcd_data <= "00001101";    --display on, cursor off, blink on
             --lcd_data <= "00001110";    --display on, cursor on, blink off
             --lcd_data <= "00001111";    --display on, cursor on, blink on
@@ -124,7 +125,7 @@ BEGIN
             e <= '0';
             state <= initialize;
           ELSIF(clk_count < (2140 * freq)) THEN  --entry mode set
-            lcd_data <= "00000110";      --increment mode, entire shift off
+            lcd_data <= "00000110";      --increment mode, entire shift off --modificado
             --lcd_data <= "00000111";    --increment mode, entire shift on
             --lcd_data <= "00000100";    --decrement mode, entire shift off
             --lcd_data <= "00000101";    --decrement mode, entire shift on
@@ -144,8 +145,8 @@ BEGIN
         WHEN ready =>
           IF(lcd_enable = '1') THEN
             busy <= '1';
-            rs <= lcd_bus(9);
-            rw <= lcd_bus(8);
+            rs <= lcd_bus(9);--escritura en reg datos 1 0 0 0 0 0 0 0 0 
+            rw <= lcd_bus(8);--escritura en reg datos
             lcd_data <= lcd_bus(7 DOWNTO 0);
             clk_count := 0;            
             state <= send;

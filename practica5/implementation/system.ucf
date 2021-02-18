@@ -127,7 +127,7 @@ NET leds_pin<7> LOC=H15;
 
 #### LCD
 
-#NET lcd_rs LOC=P12;
+NET lcd_pantalla_0_rs_pin LOC=P12;
 #Este no se usa en la placa nueva. Sólo se escribe en el lcd.
 NET lcd_pantalla_0_rw_pin LOC=J1; 
 NET lcd_pantalla_0_e_pin LOC=H1;

@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Feb 17 21:27:19 2021">
+  <application stringID="NgdBuild" timeStamp="Thu Feb 18 17:09:08 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt64;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt64\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt64;C:\Xilinx\14.1\ISE_DS\common\lib\nt64;C:\app\Javier\product\18.0.0\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Xilinx\XSTOOLs_v2\XSTOOLs;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Javier\AppData\Local\Programs\Python\Python39\;C:\Users\Javier\AppData\Local\Microsoft\WindowsApps;C:\Users\Javier\AppData\Local\atom\bin;C:\Users\Javier\.dotnet\tools;C:\Users\Javier\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Javier\AppData\Roaming\npm;C:\Users\Javier\AppData\Local\GitHubDesktop\bin;C:\Users\Javier\AppData\Local\Programs\Python\Python39;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Lib\site-packages;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Scripts"/>
+          <item stringID="value" value="C:\Xilinx\14.1\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.1\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.1\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.1\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.1\ISE_DS\ISE\lib\nt64;C:\Xilinx\Vivado\2012.1\bin;C:\Xilinx\14.1\ISE_DS\PlanAhead\bin;C:\Xilinx\14.1\ISE_DS\EDK\gnu\arm\nt64\bin;C:\Xilinx\14.1\ISE_DS\common\bin\nt64;C:\Xilinx\14.1\ISE_DS\common\lib\nt64;C:\app\Javier\product\18.0.0\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Xilinx\XSTOOLs_v2\XSTOOLs;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Javier\AppData\Local\Programs\Python\Python39\;C:\Users\Javier\AppData\Local\Microsoft\WindowsApps;C:\Users\Javier\AppData\Local\atom\bin;C:\Users\Javier\.dotnet\tools;C:\Users\Javier\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Javier\AppData\Roaming\npm;C:\Users\Javier\AppData\Local\GitHubDesktop\bin;C:\Users\Javier\AppData\Local\Programs\Python\Python39;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Lib\site-packages;C:\Users\Javier\AppData\Local\Programs\Python\Python39\Scripts"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -83,20 +83,20 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="60"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IOBUF" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="122"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="290"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="289"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="21"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="789"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="23"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="795"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="28"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="31"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1070"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="29"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="39"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="36"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1077"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="37"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT18X18S" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT_AND" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="326"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="161"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="319"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="322"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAM16X1D" value="192"/>
         <item dataType="int" stringID="NGDBUILD_NUM_SRL16" value="8"/>
@@ -119,20 +119,20 @@
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INV" value="60"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="122"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="290"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="289"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2_D" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="21"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="789"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="23"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="795"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="28"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="31"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1070"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="29"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="39"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_L" value="36"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="1077"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="37"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT18X18S" value="3"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MULT_AND" value="34"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="326"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY_L" value="161"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="319"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="322"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="12"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_RAMB16_S2_S2" value="16"/>

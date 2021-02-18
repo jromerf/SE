@@ -42,9 +42,16 @@
 
 #define lcd_screen 0xC7000000
 
+#define CLEAR_DATA_BUS 0x00000000
+#define TWO_LINES_AND_ON 0x0000003c
+#define DON_COFF_BLON 0x0000000d
+#define INCREASE_MODE_SHIFTOFF 0x00000006
+#define INCREASE_MODE_SHIFTON 0x00000007
+
 #define CLEAR_DISPLAY_CMD 0x00000001
 #define RETURN_HOME 0x00000002
 #define WRITE_CMD 0X00000200 // 10 0000 0000 escribe en el reg de datos
+#define WRITE 0X00000300
 #define FIRST_ROW 0x00000080 // 00 1000 0000
 #define SECOND_ROW 0x000000c0 //00 1100 0000
 
@@ -54,17 +61,23 @@ void LCD_send(Xuint32 cmd){
 
 	xil_printf("%04X\n", cmd);
 	while((stat = LCD_PANTALLA_mWriteFIFOFull(XPAR_LCD_PANTALLA_0_BASEADDR)) == true){
-		xil_printf("%d\n", stat);
+		xil_printf("dentrp while %d\n", stat);
 		stat = LCD_PANTALLA_mWriteFIFOFull(XPAR_LCD_PANTALLA_0_BASEADDR);
+		//LCD_PANTALLA_mWriteToFIFO(XPAR_LCD_PANTALLA_0_BASEADDR,0,cmd);
 	}
 	LCD_PANTALLA_mWriteToFIFO(XPAR_LCD_PANTALLA_0_BASEADDR,0,cmd);
 }
 
 void LCD_start(){
-	LCD_PANTALLA_mResetWriteFIFO(lcd_screen);
+	LCD_PANTALLA_mResetWriteFIFO(lcd_screen);//libera la fifo
+	LCD_send(CLEAR_DATA_BUS);
+	LCD_send(TWO_LINES_AND_ON);//inicializa 2 lines y enciende display
+	//LCD_send(DON_COFF_BLON);
+	LCD_send(INCREASE_MODE_SHIFTON);
 	LCD_send(CLEAR_DISPLAY_CMD);
 	LCD_send(RETURN_HOME);
 	LCD_send(WRITE_CMD);
+	//LCD_send(WRITE);
 }
 
 void LCD_begin(){
@@ -95,13 +108,39 @@ int main() {
 */
 //las letras están en codigo ascii -> codigo ascii dec a hex
 	LCD_start();
-	LCD_send(WRITE_CMD + 'J');
+
+/*
+	LCD_send(WRITE + 'J');
+	LCD_send(WRITE + 'A');
+	LCD_send(WRITE + 'B');
+	LCD_send(WRITE + 'C');
+	LCD_send(WRITE + 'J');
+	LCD_send(WRITE + 'A');
+
+*/
+	/*
+	LCD_send(WRITE_CMD + 'B');
+	LCD_send(WRITE_CMD + 'C');
+*/
+	LCD_send(SECOND_ROW);
+
+	LCD_send(WRITE + 'A');
+	LCD_send(WRITE + 'B');
+	LCD_send(WRITE + 'C');
+	LCD_send(WRITE + 'D');
+	LCD_send(WRITE + 'E');
+
 	LCD_send(WRITE_CMD + 'A');
-	LCD_send(WRITE_CMD + 'J');
-	LCD_send(WRITE_CMD + 'A');
-	LCD_send(WRITE_CMD + 'J');
+	LCD_send(WRITE_CMD + 'B');
+	LCD_send(WRITE_CMD + 'C');
+	LCD_send(WRITE_CMD + 'D');
+	LCD_send(WRITE_CMD + 'E');
+
+	//LCD_send(WRITE + 'A');
+	/*
 	LCD_send(WRITE_CMD + 'A');
 
+	/*
 	{
 		u32 status;
 
@@ -130,7 +169,7 @@ int main() {
 			print("Bram Example FAILED.\r\n");
 		}
 	}
-
+*/
 	/*
 	 * Peripheral SelfTest will not be run for xps_uartlite_0
 	 * because it has been selected as the STDOUT device

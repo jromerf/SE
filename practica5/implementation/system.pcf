@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.15xf on Wed Feb 17 21:28:08 2021
+// Written by: Map P.15xf on Thu Feb 18 17:10:10 2021
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -23,6 +23,7 @@ COMP "leds_pin<6>" LOCATE = SITE "J13" LEVEL 1;
 COMP "leds_pin<7>" LOCATE = SITE "H15" LEVEL 1;
 COMP "RX_pin" LOCATE = SITE "G5" LEVEL 1;
 COMP "TX_pin" LOCATE = SITE "J2" LEVEL 1;
+COMP "lcd_pantalla_0_rs_pin" LOCATE = SITE "P12" LEVEL 1;
 COMP "lcd_pantalla_0_rw_pin" LOCATE = SITE "J1" LEVEL 1;
 COMP "lcd_pantalla_0_e_pin" LOCATE = SITE "H1" LEVEL 1;
 NET "Clk_pin_BUFGP/IBUFG" BEL "Clk_pin_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;

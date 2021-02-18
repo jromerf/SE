@@ -4,7 +4,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> 
 TABLE OF CONTENTS
@@ -823,19 +823,19 @@ Synthesizing Unit <lcd_controller>.
     Found 1-bit register for signal <rs>.
     Found 1-bit register for signal <rw>.
     Found 32-bit register for signal <clk_count>.
-    Found 32-bit comparator less for signal <e$cmp_lt0000> created at line 166.
-    Found 32-bit comparator less for signal <e$cmp_lt0001> created at line 167.
-    Found 32-bit adder for signal <state$add0000> created at line 91.
+    Found 32-bit comparator less for signal <e$cmp_lt0000> created at line 167.
+    Found 32-bit comparator less for signal <e$cmp_lt0001> created at line 168.
+    Found 32-bit adder for signal <state$add0000> created at line 92.
     Found 32-bit comparator less for signal <state$cmp_lt0000> created at line 77.
-    Found 32-bit comparator less for signal <state$cmp_lt0001> created at line 92.
-    Found 32-bit comparator less for signal <state$cmp_lt0002> created at line 98.
-    Found 32-bit comparator less for signal <state$cmp_lt0003> created at line 102.
-    Found 32-bit comparator less for signal <state$cmp_lt0004> created at line 113.
-    Found 32-bit comparator less for signal <state$cmp_lt0005> created at line 117.
-    Found 32-bit comparator less for signal <state$cmp_lt0006> created at line 121.
-    Found 32-bit comparator less for signal <state$cmp_lt0007> created at line 125.
-    Found 32-bit comparator less for signal <state$cmp_lt0008> created at line 132.
-    Found 32-bit comparator less for signal <state$cmp_lt0009> created at line 164.
+    Found 32-bit comparator less for signal <state$cmp_lt0001> created at line 93.
+    Found 32-bit comparator less for signal <state$cmp_lt0002> created at line 99.
+    Found 32-bit comparator less for signal <state$cmp_lt0003> created at line 103.
+    Found 32-bit comparator less for signal <state$cmp_lt0004> created at line 114.
+    Found 32-bit comparator less for signal <state$cmp_lt0005> created at line 118.
+    Found 32-bit comparator less for signal <state$cmp_lt0006> created at line 122.
+    Found 32-bit comparator less for signal <state$cmp_lt0007> created at line 126.
+    Found 32-bit comparator less for signal <state$cmp_lt0008> created at line 133.
+    Found 32-bit comparator less for signal <state$cmp_lt0009> created at line 165.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  44 D-type flip-flop(s).
@@ -1254,20 +1254,21 @@ Design Statistics
 # IOs                              : 212
 
 Cell Usage :
-# BELS                             : 685
+# BELS                             : 703
 #      GND                         : 2
 #      INV                         : 36
 #      LUT1                        : 53
-#      LUT2                        : 98
+#      LUT2                        : 97
 #      LUT2_D                      : 1
-#      LUT3                        : 58
+#      LUT2_L                      : 2
+#      LUT3                        : 64
 #      LUT3_D                      : 2
-#      LUT3_L                      : 3
-#      LUT4                        : 138
-#      LUT4_D                      : 10
-#      LUT4_L                      : 4
+#      LUT3_L                      : 8
+#      LUT4                        : 145
+#      LUT4_D                      : 8
+#      LUT4_L                      : 2
 #      MUXCY                       : 213
-#      MUXF5                       : 6
+#      MUXF5                       : 9
 #      VCC                         : 1
 #      XORCY                       : 60
 # FlipFlops/Latches                : 253
@@ -1287,9 +1288,9 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                      267  out of   7680     3%  
+ Number of Slices:                      273  out of   7680     3%  
  Number of Slice Flip Flops:            253  out of  15360     1%  
- Number of 4 input LUTs:                403  out of  15360     2%  
+ Number of 4 input LUTs:                418  out of  15360     2%  
  Number of IOs:                         212
  Number of bonded IOBs:                   0  out of    173     0%  
  Number of BRAMs:                         1  out of     24     4%  
@@ -1327,7 +1328,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 11.910ns (Maximum Frequency: 83.963MHz)
+   Minimum period: 11.883ns (Maximum Frequency: 84.151MHz)
    Minimum input arrival time before clock: 2.621ns
    Maximum output required time after clock: 0.626ns
    Maximum combinational path delay: No path found
@@ -1338,10 +1339,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SPLB_Clk'
-  Clock period: 11.910ns (frequency: 83.963MHz)
-  Total number of paths / destination ports: 192692 / 413
+  Clock period: 11.883ns (frequency: 84.151MHz)
+  Total number of paths / destination ports: 192772 / 413
 -------------------------------------------------------------------------
-Delay:               11.910ns (Levels of Logic = 35)
+Delay:               11.883ns (Levels of Logic = 34)
   Source:            lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
   Destination:       lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_0 (FF)
   Source Clock:      SPLB_Clk rising
@@ -1379,18 +1380,17 @@ Delay:               11.910ns (Levels of Logic = 35)
      MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
      MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
      MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
-     XORCY:CI->O           9   0.786   1.250  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
-     LUT2:I0->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4)
-     MUXCY:S->O            1   0.435   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_3 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>4)
-     MUXCY:CI->O           4   0.265   1.074  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_3 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>4)
-     LUT4_D:I0->O          2   0.479   0.804  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114)
+     XORCY:CI->O           9   0.786   1.250  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<28> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/state_add0000<28>)
+     LUT3:I0->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>6 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>6)
+     MUXCY:S->O            1   0.435   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_5 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>6)
+     MUXCY:CI->O           5   0.265   1.078  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_5 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>6)
+     LUT4:I0->O            3   0.479   0.830  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114)
      LUT4_D:I2->O         15   0.479   1.180  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/N01)
      LUT2:I1->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>1 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>)
      FD:D                      0.176          lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_9
     ----------------------------------------
-    Total                     11.910ns (6.561ns logic, 5.350ns route)
-                                       (55.1% logic, 44.9% route)
+    Total                     11.883ns (6.505ns logic, 5.378ns route)
+                                       (54.7% logic, 45.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
@@ -1432,12 +1432,12 @@ Offset:              0.626ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.88 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.90 secs
  
 --> 
 
-Total memory usage is 4906584 kilobytes
+Total memory usage is 4867620 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  181 (   0 filtered)

@@ -6,9 +6,10 @@ Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_0/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
 ../src/testperiph.c: In function 'LCD_send':
-../src/testperiph.c:55:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+../src/testperiph.c:62:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:85:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:98:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:143:2: warning: "/*" within comment [-Wcomment]
 Finished building: ../src/testperiph.c
 ' '
 Building target: peripheral_tests_0.elf
@@ -19,7 +20,7 @@ Finished building target: peripheral_tests_0.elf
 Invoking: MicroBlaze Print Size
 mb-size peripheral_tests_0.elf  |tee "peripheral_tests_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  12598	    384	   2208	  15190	   3b56	peripheral_tests_0.elf
+  12310	    384	   2208	  14902	   3a36	peripheral_tests_0.elf
 Finished building: peripheral_tests_0.elf.size
 ' '
 Invoking: Xilinx ELF Check

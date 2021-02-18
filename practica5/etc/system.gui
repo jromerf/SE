@@ -9,31 +9,27 @@
       <VARIABLE COL_INDEX="1" COL_WIDTH="789" IS_VISIBLE="TRUE" VIEWDISP="Bus Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Bus Standard" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="3" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="IP Type" VIEWTYPE="HEADER"/>
-      <VARIABLE COL_INDEX="4" COL_WIDTH="732" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
+      <VARIABLE COL_INDEX="4" COL_WIDTH="189" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="5" IS_VISIBLE="FALSE" VIEWDISP="IP Classification" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="6" IS_VISIBLE="FALSE" VIEWDISP="Type" VIEWTYPE="HEADER"/>
     </HEADERS>
-    <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="62,1449,200" VERSION="0"/>
+    <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="62,1340,200" VERSION="0"/>
     <SET ID="microblaze_0" IS_EXPANDED="TRUE"/>
     <SET ID="bram_block_0" IS_EXPANDED="TRUE"/>
     <SET ID="xps_bram_if_cntlr_0" IS_EXPANDED="TRUE"/>
     <SET ID="xps_uartlite_0" IS_EXPANDED="TRUE"/>
     <SET ID="leds_gpio" IS_EXPANDED="TRUE"/>
-    <SET ID="pantalla_0" IS_EXPANDED="TRUE"/>
     <SET ID="lcd_pantalla_0" IS_EXPANDED="TRUE"/>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="SPLB" PARENT="lcd_pantalla_0"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="microblaze_0" IS_EXPANDED="TRUE" ROW_INDEX="1"/>
       <VARIABLE ID="plb_v46_0" ROW_INDEX="0"/>
       <VARIABLE ID="bram_block_0" IS_EXPANDED="TRUE" ROW_INDEX="2"/>
       <VARIABLE ID="xps_bram_if_cntlr_0" IS_EXPANDED="TRUE" ROW_INDEX="3"/>
-      <VARIABLE ID="xps_uartlite_0" IS_EXPANDED="TRUE" ROW_INDEX="7"/>
-      <VARIABLE ID="leds_gpio" IS_EXPANDED="TRUE" ROW_INDEX="6"/>
-      <VARIABLE ID="pantalla_0" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
+      <VARIABLE ID="xps_uartlite_0" IS_EXPANDED="TRUE" ROW_INDEX="6"/>
+      <VARIABLE ID="leds_gpio" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
       <VARIABLE ID="lcd_pantalla_0" IS_EXPANDED="TRUE" ROW_INDEX="4"/>
     </SEQUENCES>
   </SET>
@@ -100,9 +96,7 @@
     <SET ID="plb_v46_0" IS_EXPANDED="TRUE"/>
     <SET ID="lcd_pantalla_0" IS_EXPANDED="TRUE"/>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="lcd_pantalla_0_lcd_data_pin" PARENT="ExternalPorts"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="ExternalPorts" IS_EXPANDED="TRUE" ROW_INDEX="0"/>
@@ -110,9 +104,8 @@
       <VARIABLE ID="plb_v46_0" IS_EXPANDED="TRUE" ROW_INDEX="1"/>
       <VARIABLE ID="bram_block_0" ROW_INDEX="3"/>
       <VARIABLE ID="xps_bram_if_cntlr_0" ROW_INDEX="4"/>
-      <VARIABLE ID="xps_uartlite_0" ROW_INDEX="8"/>
-      <VARIABLE ID="leds_gpio" ROW_INDEX="7"/>
-      <VARIABLE ID="pantalla_0" ROW_INDEX="6"/>
+      <VARIABLE ID="xps_uartlite_0" ROW_INDEX="7"/>
+      <VARIABLE ID="leds_gpio" ROW_INDEX="6"/>
       <VARIABLE ID="lcd_pantalla_0" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
     </SEQUENCES>
   </SET>

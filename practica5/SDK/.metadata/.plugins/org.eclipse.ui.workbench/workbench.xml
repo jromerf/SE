@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="577" y="-21">
+<window height="768" maximized="true" width="1024" x="2259" y="-25">
 <fastViewData fastViewLocation="1024"/>
 <intro standby="true"/>
 <perspectiveBar>
@@ -37,32 +37,27 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/hlocal/SE/Practicas/practica4/SDK/practica2_hw_platform/system.xml" title="system.xml" tooltip="practica2_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/hlocal/SE/Practicas/practica5/SDK/practica2_hw_platform/system.xml" title="system.xml" tooltip="practica2_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica2_hw_platform/system.xml"/>
 </editor>
-<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_bsp_0/system.mss" title="system.mss" tooltip="peripheral_tests_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/hlocal/SE/Practicas/practica5/SDK/peripheral_tests_bsp_0/system.mss" title="system.mss" tooltip="peripheral_tests_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/system.mss"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.c" partName="pantalla.c" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla.c" title="pantalla.c" tooltip="peripheral_tests_0/src/pantalla.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.h" partName="pantalla.h" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla.h" title="pantalla.h" tooltip="peripheral_tests_0/src/pantalla.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="1301" selectionTopPixel="357"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla_selftest.c" partName="pantalla_selftest.c" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla_selftest.c" title="pantalla_selftest.c" tooltip="peripheral_tests_0/src/pantalla_selftest.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla_selftest.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="348"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="D:/hlocal/SE/Practicas/practica4c/SDK/peripheral_tests_0/src/testperiph.c" title="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="D:/hlocal/SE/Practicas/practica5/SDK/peripheral_tests_0/src/testperiph.c" title="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/testperiph.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3956" selectionTopPixel="2184"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1520" selectionTopPixel="902"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="lcd_pantalla.h" partName="lcd_pantalla.h" path="D:/hlocal/SE/Practicas/practica5/SDK/peripheral_tests_0/src/lcd_pantalla.h" title="lcd_pantalla.h" tooltip="peripheral_tests_0/src/lcd_pantalla.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/lcd_pantalla.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4220" selectionTopPixel="1434"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="D:/hlocal/SE/Practicas/practica5/SDK/peripheral_tests_bsp_0/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/microblaze_0/include/xparameters.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="609" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -158,6 +153,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -273,7 +271,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.77873254" ratioLeft="725" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -307,158 +305,155 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/testperiph.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica2_hw_platform/system.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/peripheral_tests_bsp_0/system.mss"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla_selftest.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/lcd_pantalla_selftest.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/lcd_pantalla.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/include/xparameters.h"/>
 </editors>
-<item historyLabel="xuartlite_l.c" index="1">
-<position info="not_deleted" x="4692" y="18"/>
-</item>
 <item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="1984" y="0"/>
+<position/>
 </item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3062" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3064" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3256" y="0"/>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="775" y="34"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="system.xml" index="2"/>
-<item historyLabel="system.mss" index="3"/>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1495" y="10"/>
 </item>
-<item historyLabel="system.mss" index="3"/>
-<item historyLabel="pantalla.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="5046" y="0"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="5197" y="0"/>
-</item>
-<item historyLabel="xuartlite.h" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="5180" y="21"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="2961" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="5808" y="0"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="755" y="30"/>
-</item>
-<item historyLabel="pantalla.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="xuartlite_l.c" index="8">
-<position info="not_deleted" x="4692" y="18"/>
-</item>
-<item historyLabel="pantalla.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="755" y="30"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="5046" y="0"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3911" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="5180" y="21"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="5278" y="0"/>
-</item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="755" y="30"/>
-</item>
-<item historyLabel="pantalla_selftest.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="3029" y="11"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="pantalla.h" index="5">
-<position info="not_deleted" x="1301" y="27"/>
-</item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3403" y="0"/>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1820" y="10"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
-<item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3459" y="0"/>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1820" y="10"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="811" y="10"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3739" y="0"/>
+<position/>
+</item>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1837" y="0"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="811" y="10"/>
+</item>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1835" y="156"/>
+</item>
+<item historyLabel="system.xml" index="1"/>
+<item historyLabel="system.mss" index="2"/>
+<item historyLabel="system.xml" index="1"/>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2781" y="329"/>
+</item>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1835" y="156"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="3006" y="22"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3695" y="0"/>
+<position/>
+</item>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="1835" y="156"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="3006" y="22"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3720" y="0"/>
+<position info="not_deleted" x="1628" y="10"/>
+</item>
+<item historyLabel="lcd_pantalla_selftest.c" index="3">
+<position info="not_deleted" x="757" y="0"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="3333" y="0"/>
+<position info="not_deleted" x="2465" y="0"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="3006" y="22"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2465" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2033" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="1720" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2857" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2884" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2402" y="0"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="3006" y="22"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="4201" y="0"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="2255" y="12"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="2704" y="9"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="4418" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="580" y="28"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="xparameters.h" index="5">
+<position info="not_deleted" x="609" y="10"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="4524" y="50"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="1739" y="0"/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="4524" y="50"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="lcd_pantalla.h" index="4">
+<position info="not_deleted" x="4220" y="0"/>
 </item>
 <item historyLabel="testperiph.c" index="0">
 <position/>
 </item>
 <item active="true" historyLabel="testperiph.c" index="0">
-<position info="not_deleted" x="6125" y="0"/>
+<position info="not_deleted" x="3049" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -477,11 +472,20 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h">
-<persistable path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xparameters.h">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/include/xparameters.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd_pantalla.h" tooltip="peripheral_tests_0/src/lcd_pantalla.h">
+<persistable path="/peripheral_tests_0/src/lcd_pantalla.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lcd_pantalla_selftest.c" tooltip="peripheral_tests_0/src/lcd_pantalla_selftest.c">
+<persistable path="/peripheral_tests_0/src/lcd_pantalla_selftest.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c">
 <persistable path="/peripheral_tests_0/src/testperiph.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla_selftest.c" tooltip="peripheral_tests_0/src/pantalla_selftest.c">
 <persistable path="/peripheral_tests_0/src/pantalla_selftest.c"/>

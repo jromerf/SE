@@ -3,8 +3,8 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:\hlocal\SE\Practicas\practica5\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> 
 TABLE OF CONTENTS
@@ -556,23 +556,23 @@ Design Statistics
 # IOs                              : 23
 
 Cell Usage :
-# BELS                             : 3567
+# BELS                             : 3585
 #      GND                         : 24
 #      INV                         : 60
 #      LUT1                        : 122
-#      LUT2                        : 290
+#      LUT2                        : 289
 #      LUT2_D                      : 13
-#      LUT2_L                      : 21
-#      LUT3                        : 789
+#      LUT2_L                      : 23
+#      LUT3                        : 795
 #      LUT3_D                      : 28
-#      LUT3_L                      : 31
-#      LUT4                        : 1070
-#      LUT4_D                      : 29
-#      LUT4_L                      : 39
+#      LUT3_L                      : 36
+#      LUT4                        : 1077
+#      LUT4_D                      : 27
+#      LUT4_L                      : 37
 #      MULT_AND                    : 34
 #      MUXCY                       : 326
 #      MUXCY_L                     : 161
-#      MUXF5                       : 319
+#      MUXF5                       : 322
 #      VCC                         : 6
 #      XORCY                       : 205
 # FlipFlops/Latches                : 2042
@@ -605,10 +605,10 @@ Device utilization summary:
 
 Selected Device : 3s1000ft256-5 
 
- Number of Slices:                     1970  out of   7680    25%  
+ Number of Slices:                     1982  out of   7680    25%  
  Number of Slice Flip Flops:           2042  out of  15360    13%  
- Number of 4 input LUTs:               2968  out of  15360    19%  
-    Number used as logic:              2492
+ Number of 4 input LUTs:               2983  out of  15360    19%  
+    Number used as logic:              2507
     Number used as Shift registers:      92
     Number used as RAMs:                384
  Number of IOs:                          23
@@ -656,7 +656,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 11.910ns (Maximum Frequency: 83.963MHz)
+   Minimum period: 11.888ns (Maximum Frequency: 84.119MHz)
    Minimum input arrival time before clock: 4.387ns
    Maximum output required time after clock: 6.491ns
    Maximum combinational path delay: No path found
@@ -667,59 +667,30 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk_pin'
-  Clock period: 11.910ns (frequency: 83.963MHz)
-  Total number of paths / destination ports: 369695 / 7536
+  Clock period: 11.888ns (frequency: 84.119MHz)
+  Total number of paths / destination ports: 369775 / 7536
 -------------------------------------------------------------------------
-Delay:               11.910ns (Levels of Logic = 35)
-  Source:            lcd_pantalla_0/lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
-  Destination:       lcd_pantalla_0/lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_0 (FF)
+Delay:               11.888ns (Levels of Logic = 6)
+  Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (FF)
+  Destination:       microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/keep_jump_taken_with_ds_0 (FF)
   Source Clock:      Clk_pin rising
   Destination Clock: Clk_pin rising
 
-  Data Path: lcd_pantalla_0/lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 to lcd_pantalla_0/lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_0
+  Data Path: microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF to microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/keep_jump_taken_with_ds_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.626   1.040  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count<2>)
-     LUT1:I0->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt)
-     MUXCY:S->O            1   0.435   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
-     MUXCY:CI->O           1   0.056   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
-     XORCY:CI->O           9   0.786   1.250  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
-     LUT2:I0->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4)
-     MUXCY:S->O            1   0.435   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_3 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>4)
-     MUXCY:CI->O           4   0.265   1.074  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_3 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>4)
-     LUT4_D:I0->O          2   0.479   0.804  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114)
-     LUT4_D:I2->O         15   0.479   1.180  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/N01)
-     LUT2:I1->O            1   0.479   0.000  lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>1 (lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>)
-     FD:D                      0.176          lcd_pantalla_0/USER_LOGIC_I/lcd_controller_i/clk_count_9
+     FDR:C->Q             71   0.626   1.824  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_FPGA_Buffers_Mux.Instruction_Prefetch_Mux[7].Gen_Instr_DFF (microblaze_0/MicroBlaze_Core_I/of_gpr_op3_rd_addr<1>)
+     LUT4:I2->O            1   0.479   0.740  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_mem_write_op3_conflict_0_and000075_SW0 (N321)
+     LUT4_L:I2->LO         1   0.479   0.123  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_mem_write_op3_conflict_0_and000088_SW0 (N403)
+     LUT4:I3->O            3   0.479   0.830  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_mem_write_op3_conflict_0_and000088 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_read_mem_write_op3_conflict)
+     LUT3:I2->O            1   0.479   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl_9_mux00001 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl<9>)
+     MUXCY_L:S->LO       360   0.435   3.342  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[9].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_OF_PipeRun)
+     LUT2:I1->O            1   0.479   0.681  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/keep_jump_taken_with_ds_0_or00001 (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/keep_jump_taken_with_ds_0_or0000)
+     FDRE:R                    0.892          microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/keep_jump_taken_with_ds_0
     ----------------------------------------
-    Total                     11.910ns (6.561ns logic, 5.350ns route)
-                                       (55.1% logic, 44.9% route)
+    Total                     11.888ns (4.348ns logic, 7.540ns route)
+                                       (36.6% logic, 63.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
@@ -764,12 +735,12 @@ Offset:              6.491ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 118.00 secs
-Total CPU time to Xst completion: 117.93 secs
+Total REAL time to Xst completion: 127.00 secs
+Total CPU time to Xst completion: 126.33 secs
  
 --> 
 
-Total memory usage is 4584300 kilobytes
+Total memory usage is 4561492 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  359 (   0 filtered)
