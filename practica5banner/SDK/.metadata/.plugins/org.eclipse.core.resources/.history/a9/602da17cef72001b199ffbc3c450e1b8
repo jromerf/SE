@@ -1,0 +1,283 @@
+
+/**
+ * Author: Javier Romero Flores
+ * Description:
+ * Llamadas a caracteres más comunes en la matriz de 8 displays
+ * */
+
+#ifndef CARACTERES_H
+#define CARACTERES_H
+
+#include "banner_pantalla.h"
+
+void BANNER_enviar(Xuint32 baseaddr,Xuint32 col, Xuint32 fil,Xuint32 dato){
+
+	while(BANNER_PANTALLA_mWriteFIFOFull(baseaddr)){}
+
+	Xuint32 data;
+
+	data = ((fil & 0xff)<< (31-7)) + ((col & 0xff) << (31-15)) + ((dato & 0xff)<< (31-23));
+
+	BANNER_PANTALLA_mWriteToFIFO(baseaddr,0,data);
+}
+
+
+void write_A(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x1F);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_B(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1C);
+	BANNER_enviar(baseaddr,col,1,0x12);
+	BANNER_enviar(baseaddr,col,2,0x12);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x1F);
+}
+
+void write_C(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x10);
+	BANNER_enviar(baseaddr,col,4,0x10);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_D(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x1E);
+}
+
+void write_E(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x10);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x0C);
+	BANNER_enviar(baseaddr,col,4,0x10);
+	BANNER_enviar(baseaddr,col,5,0x10);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_F(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1F);
+	BANNER_enviar(baseaddr,col,1,0x10);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x10);
+	BANNER_enviar(baseaddr,col,5,0x10);
+	BANNER_enviar(baseaddr,col,6,0x10);
+}
+
+void write_G(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x10);
+	BANNER_enviar(baseaddr,col,4,0x17);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_H(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x1F);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_I(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x04);
+	BANNER_enviar(baseaddr,col,2,0x04);
+	BANNER_enviar(baseaddr,col,3,0x04);
+	BANNER_enviar(baseaddr,col,4,0x04);
+	BANNER_enviar(baseaddr,col,5,0x04);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_J(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0F);
+	BANNER_enviar(baseaddr,col,1,0x02);
+	BANNER_enviar(baseaddr,col,2,0x02);
+	BANNER_enviar(baseaddr,col,3,0x02);
+	BANNER_enviar(baseaddr,col,4,0x12);
+	BANNER_enviar(baseaddr,col,5,0x12);
+	BANNER_enviar(baseaddr,col,6,0x0C);
+}
+
+void write_K(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x12);
+	BANNER_enviar(baseaddr,col,2,0x14);
+	BANNER_enviar(baseaddr,col,3,0x18);
+	BANNER_enviar(baseaddr,col,4,0x14);
+	BANNER_enviar(baseaddr,col,5,0x12);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_L(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x10);
+	BANNER_enviar(baseaddr,col,1,0x10);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x10);
+	BANNER_enviar(baseaddr,col,4,0x10);
+	BANNER_enviar(baseaddr,col,5,0x10);
+	BANNER_enviar(baseaddr,col,6,0x1E);
+}
+
+void write_M(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x1B);
+	BANNER_enviar(baseaddr,col,2,0x15);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_N(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x19);
+	BANNER_enviar(baseaddr,col,3,0x15);
+	BANNER_enviar(baseaddr,col,4,0x13);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+void write_O(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_P(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x10);
+	BANNER_enviar(baseaddr,col,5,0x10);
+	BANNER_enviar(baseaddr,col,6,0x10);
+}
+
+void write_Q(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x15);
+	BANNER_enviar(baseaddr,col,5,0x12);
+	BANNER_enviar(baseaddr,col,6,0x0D);
+}
+
+void write_R(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x14);
+	BANNER_enviar(baseaddr,col,5,0x12);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_S(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x10);
+	BANNER_enviar(baseaddr,col,3,0x0E);
+	BANNER_enviar(baseaddr,col,4,0x01);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_T(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1F);
+	BANNER_enviar(baseaddr,col,1,0x04);
+	BANNER_enviar(baseaddr,col,2,0x04);
+	BANNER_enviar(baseaddr,col,3,0x04);
+	BANNER_enviar(baseaddr,col,4,0x04);
+	BANNER_enviar(baseaddr,col,5,0x04);
+	BANNER_enviar(baseaddr,col,6,0x04);
+}
+
+void write_U(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x0E);
+}
+
+void write_V(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x0A);
+	BANNER_enviar(baseaddr,col,6,0x04);
+}
+
+void write_W(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x11);
+	BANNER_enviar(baseaddr,col,4,0x15);
+	BANNER_enviar(baseaddr,col,5,0x1B);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_X(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x0A);
+	BANNER_enviar(baseaddr,col,3,0x04);
+	BANNER_enviar(baseaddr,col,4,0x0A);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void write_Y(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x11);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x0A);
+	BANNER_enviar(baseaddr,col,3,0x04);
+	BANNER_enviar(baseaddr,col,4,0x04);
+	BANNER_enviar(baseaddr,col,5,0x04);
+	BANNER_enviar(baseaddr,col,6,0x04);
+}
+
+void write_Z(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1C);
+	BANNER_enviar(baseaddr,col,1,0x12);
+	BANNER_enviar(baseaddr,col,2,0x12);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x1F);
+}
+#endif /** BANNER_PANTALLA_H */

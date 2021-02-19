@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\hlocal\SE\Practicas\practica5banner\pcores\banner_pantalla_v1_00_a\devl\synthesis\banner_pantalla_xst.prj"
+-top banner_pantalla
+-p virtex6
+-ofn "D:\hlocal\SE\Practicas\practica5banner\pcores\banner_pantalla_v1_00_a\devl\synthesis\banner_pantalla_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib banner_pantalla_v1_00_a

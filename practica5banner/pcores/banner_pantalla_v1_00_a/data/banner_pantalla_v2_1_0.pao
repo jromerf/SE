@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          D:/hlocal/SE/Practicas/practica5banner/pcores/banner_pantalla_v1_00_a/data/banner_pantalla_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 19 19:44:15 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib wrpfifo_v5_01_a  all 
+lib banner_pantalla_v1_00_a user_logic vhdl
+lib banner_pantalla_v1_00_a banner_pantalla vhdl
+lib banner_pantalla_v1_00_a bannerDesp vhdl

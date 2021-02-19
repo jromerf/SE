@@ -1,0 +1,45 @@
+
+/**
+ * Author: Javier Romero Flores
+ * Description:
+ * Llamadas a caracteres más comunes en la matriz de 8 displays
+ * */
+
+#ifndef CARACTERES_H
+#define CARACTERES_H
+
+#include "banner_pantalla.h"
+
+void BANNER_enviar(Xuint32 baseaddr,Xuint32 col, Xuint32 fil,Xuint32 dato){
+
+	while(BANNER_PANTALLA_mWriteFIFOFull(baseaddr)){}
+
+	Xuint32 data;
+
+	data = ((fil & 0xff)<< (31-7)) + ((col & 0xff) << (31-15)) + ((dato & 0xff)<< (31-23));
+
+	BANNER_PANTALLA_mWriteToFIFO(baseaddr,0,data);
+}
+
+
+void A(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x0E);
+	BANNER_enviar(baseaddr,col,1,0x11);
+	BANNER_enviar(baseaddr,col,2,0x11);
+	BANNER_enviar(baseaddr,col,3,0x1F);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x11);
+}
+
+void B(Xuint32 baseaddr,Xuint32 col){
+	BANNER_enviar(baseaddr,col,0,0x1C);
+	BANNER_enviar(baseaddr,col,1,0x12);
+	BANNER_enviar(baseaddr,col,2,0x12);
+	BANNER_enviar(baseaddr,col,3,0x1E);
+	BANNER_enviar(baseaddr,col,4,0x11);
+	BANNER_enviar(baseaddr,col,5,0x11);
+	BANNER_enviar(baseaddr,col,6,0x1F);
+}
+
+#endif /** BANNER_PANTALLA_H */

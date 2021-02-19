@@ -1,0 +1,24 @@
+/**
+ * Author: Javier Romero Flores
+ * Description:
+ * Composicion de frases completas para la matriz de 8 displays
+ * */
+
+#ifndef FRASES_COMPUESTAS_H
+#define FRASES_COMPUESTAS_H
+
+#include "caracteres.h"
+
+void write_winner(Xuint32 baseaddr){
+	write_W(baseaddr,0);
+	write_I(baseaddr,1);
+	write_N(baseaddr,2);
+	write_N(baseaddr,3);
+	write_E(baseaddr,4);
+	write_R(baseaddr,5);
+	write_smile(baseaddr,6);
+	write_espacio(baseaddr,7);
+}
+
+
+#endif /** FRASES_COMPUESTAS_H */

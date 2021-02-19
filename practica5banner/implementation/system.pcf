@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.15xf on Fri Feb 19 20:07:47 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Clk_pin" LOCATE = SITE "P8" LEVEL 1;
+COMP "banner_pantalla_0_row_serial_out_pin" LOCATE = SITE "H3" LEVEL 1;
+COMP "banner_pantalla_0_col_clk_pin" LOCATE = SITE "J1" LEVEL 1;
+COMP "Rst_pin" LOCATE = SITE "K4" LEVEL 1;
+COMP "RX_pin" LOCATE = SITE "G5" LEVEL 1;
+COMP "TX_pin" LOCATE = SITE "J2" LEVEL 1;
+COMP "banner_pantalla_0_reset_out_pin" LOCATE = SITE "H1" LEVEL 1;
+COMP "banner_pantalla_0_col_serial_out_pin" LOCATE = SITE "P12" LEVEL 1;
+COMP "banner_pantalla_0_reset2_out_pin" LOCATE = SITE "K15" LEVEL 1;
+COMP "banner_pantalla_0_row_clk_pin" LOCATE = SITE "G2" LEVEL 1;
+NET "Clk_pin_BUFGP/IBUFG" BEL "Clk_pin_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
