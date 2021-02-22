@@ -1,0 +1,123 @@
+/*
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+/*
+ * 
+ *
+ * This file is a generated sample test application.
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * SDK application project when you run the "Generate Libraries" menu item.
+ *
+ */
+
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xbram.h"
+#include "bram_header.h"
+#include "pantallas.h"
+#include "keypad.h"
+
+#define CLEAR_DISPLAY_CMD 0X00000001
+#define RETURN_HOME_CMD 0X00000002
+#define WRITE_CMD 0X00000200
+#define FIRST_ROW 0X00000080
+#define SECOND_ROW 0X000000C0
+
+
+void LCD_enviarCMD(Xuint32 cmd){
+
+	while(PANTALLAS_mWriteFIFOFull(XPAR_PANTALLAS_0_BASEADDR)){}
+	PANTALLAS_mWriteToFIFO(XPAR_PANTALLAS_0_BASEADDR,0,cmd);
+}
+
+void LCD_inicializa(){
+	PANTALLAS_mResetWriteFIFO(XPAR_PANTALLAS_0_BASEADDR);
+	LCD_enviarCMD(CLEAR_DISPLAY_CMD);
+	LCD_enviarCMD(RETURN_HOME_CMD);
+	LCD_enviarCMD(WRITE_CMD);
+}
+
+int main() 
+{
+
+	Xuint32 baseaddr,value,dato,oldValue;
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+
+   print("---Entering main---\n\r");
+
+   
+
+   {
+      int status;
+      
+      print("\r\nRunning Bram Example() for xps_bram_if_cntlr_0...\r\n");
+
+      status = BramExample(XPAR_XPS_BRAM_IF_CNTLR_0_DEVICE_ID);
+
+      if (status == 0) {
+         xil_printf("Bram Example PASSED.\r\n");
+      }
+      else {
+         print("Bram Example FAILED.\r\n");
+      }
+   }
+
+   baseaddr =  XPAR_KEYPAD_0_BASEADDR;
+	xil_printf("Pulsar una tecla:\n\r");
+	value = KEYPAD_mReadReg(baseaddr,0);
+	xil_printf("se ha leido: %04x el reg \n\r",value);
+	KEYPAD_mWriteReg(baseaddr,0,0);
+	oldValue =  value;
+
+	while(1){
+	   if(value != oldValue){
+		   dato = (value>>28) & 0xF;
+		   xil_printf("se ha leido %01x \n\r",dato);
+		   oldValue = value;
+	   }
+	   value = KEYPAD_mReadReg(baseaddr,0);
+	   KEYPAD_mWriteReg(baseaddr,0,value);
+	}
+   /*
+      	xil_printf("Inicializando lcd\n\r");
+   	LCD_inicializa();
+   	LCD_enviarCMD(WRITE_CMD + 'H');
+   	LCD_enviarCMD(WRITE_CMD + 'O');
+   	LCD_enviarCMD(WRITE_CMD + 'L');
+   	LCD_enviarCMD(WRITE_CMD + 'A');
+   	LCD_enviarCMD(0x00000000);
+   /*
+    * Peripheral SelfTest will not be run for xps_uartlite_0
+    * because it has been selected as the STDOUT device
+    */
+
+
+   print("---Exiting main---\n\r");
+
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+
+   return 0;
+}
+

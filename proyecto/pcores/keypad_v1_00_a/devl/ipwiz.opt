@@ -1,0 +1,10 @@
+-batch 
+-create keypad 
+-ver 1.00.a 
+-dir "D:\hlocal\SE\Practicas\proyecto" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 1 
+-xps 
+-ise 
+-driver 

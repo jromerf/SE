@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\hlocal\SE\Practicas\proyecto\pcores\pantallas_v1_00_a\devl\synthesis\pantallas_xst.prj"
+-top pantallas
+-p virtex6
+-ofn "D:\hlocal\SE\Practicas\proyecto\pcores\pantallas_v1_00_a\devl\synthesis\pantallas_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib pantallas_v1_00_a
