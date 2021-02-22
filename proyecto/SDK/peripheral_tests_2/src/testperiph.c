@@ -1,17 +1,8 @@
 /*
  *
- * Xilinx, Inc.
- * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A 
- * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
- * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR 
- * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION 
- * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE 
- * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION
- * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO 
- * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO 
- * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE 
- * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY 
- * AND FITNESS FOR A PARTICULAR PURPOSE.
+ * Autor: Javier Romero Flores
+ * Asignatura: Sistemas Empotrados
+ * Temática: Juego de Tutti frutti/Stop/Alto al lápiz con una cuenta regresiva de 4s
  */
 
 /*
@@ -52,17 +43,21 @@ Xuint32 getOption(Xuint32 baseaddr){
 int main() 
 {
 
+   Xuint32 baseaddr,value,dato,oldValue;
 
    Xil_ICacheEnable();
    Xil_DCacheEnable();
 
-   print("---Entering main---\n\r");
+   print("---Comezamos el juego---\n\r");
+   startGame();
+   print("---Selecciona el nº de jugadores (max 4)---\n\r");
+   print("---                    				  ---\n\r");
+   xil_printf("Cómo jugar: \n");
+   xil_printf("1- Elige una carta para mostrarte una letra\n");
+   xil_printf("2- Menciona el nombre de lo que ves en la pantalla que inicie por dicha letra \n");
+   xil_printf("3- Empieza la cuenta atrás , presiona 0 para detener la cuenta (si llegas a 0 pierdes)\n");
+   xil_printf("4- Gana el que más puntos tenga\n");
 
-   Xuint32 baseaddr,value,dato,oldValue;
-      	Xil_ICacheEnable();
-      	Xil_DCacheEnable();
-
-      	print("---Entering main---\n\r");
 
       	baseaddr =  XPAR_KEYPAD_0_BASEADDR;
       	xil_printf("Pulsar una tecla:\n\r");
@@ -74,10 +69,10 @@ int main()
 
       	xil_printf("Escritura de banner\n\r");
       	BANNER_inicializa();
-      	//write_A_DIR(XPAR_BANNER_0_BASEADDR,1,TURN_QUIET);
-      	mostrarCartasNumeros(XPAR_BANNER_0_BASEADDR,TURN_QUIET);
+      	//write_A_DIR(1,TURN_QUIET);
+      	mostrarCartasNumeros(TURN_QUIET);
 
-      	cuentaAtras(XPAR_BANNER_0_BASEADDR);
+      	cuentaAtras();
       	//varios(baseaddr);
       	//write_winner(XPAR_BANNER_0_BASEADDR);
 
