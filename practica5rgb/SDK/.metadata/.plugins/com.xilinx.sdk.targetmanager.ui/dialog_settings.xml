@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\hlocal\SE\Practicas\practica5rgb\SDK\practica2_hw_platform\system.bit" key="practica2_hw_platform-bitFile"/>
+	<item value="D:\hlocal\SE\Practicas\practica5rgb\SDK\practica2_hw_platform\system_bd.bmm" key="practica2_hw_platform-bmmFile"/>
+	<item value="D:\hlocal\SE\Practicas\practica5rgb\SDK\peripheral_tests_0\Debug\peripheral_tests_0.elf" key="practica2_hw_platform-microblaze_0-initElf"/>
+</section>

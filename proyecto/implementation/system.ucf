@@ -51,14 +51,15 @@ NET banner_0_switch_pin LOC=F15;
 #NET leds_pin<0> LOC=L5;
 #NET leds_pin<1> LOC=N2;
 #NET leds_pin<2> LOC=M3;
-#NET leds_pin<3> LOC=N1;
+NET banner_0_led_pin LOC=N1;
 #NET leds_pin<4> LOC=T13;
 #NET leds_pin<5> LOC=L15;
 #NET leds_pin<6> LOC=J13;
 #NET leds_pin<7> LOC=H15;
 #NET leds<8> LOC=J16;
 #NET banner_0_led_pin<9> LOC=J14;
-NET banner_0_led_pin LOC=L5;
+#NET banner_0_led_pin LOC=J14;
+#NET banner_0_led_pin LOC=L5;
 
  
 
@@ -192,3 +193,24 @@ NET banner_0_reset2_out_pin loc=K15;
 NET banner_0_reset2_out_pin 	 iostandard=LVCMOS25;
 
 
+####LEDS COLORES
+
+#NET leds_rgb_0_red_pin LOC=P12;
+#NET leds_rgb_0_green_pin LOC=H1;
+#NET leds_rgb_0_blue_pin LOC=J1;
+
+NET led_rgb_0_red_pin LOC=E15;
+NET led_rgb_0_green_pin LOC=D16;
+NET led_rgb_0_blue_pin LOC=J16;
+
+#NET leds_rgb_2_red_pin LOC=J14;
+#NET leds_rgb_2_green_pin LOC=N15;
+#NET leds_rgb_2_blue_pin LOC=G16;
+
+
+###### Motor
+#
+NET motor_0_pin<0> LOC=L15;
+NET motor_0_pin<1> LOC=L5;
+NET motor_0_pin<2> LOC=N2;
+NET motor_0_pin<3> LOC=M3;

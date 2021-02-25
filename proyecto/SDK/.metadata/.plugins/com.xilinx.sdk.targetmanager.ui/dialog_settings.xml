@@ -2,5 +2,5 @@
 <section name="Workbench">
 	<item value="D:\hlocal\SE\Practicas\proyecto\SDK\practica2_hw_platform\system.bit" key="practica2_hw_platform-bitFile"/>
 	<item value="D:\hlocal\SE\Practicas\proyecto\SDK\practica2_hw_platform\system_bd.bmm" key="practica2_hw_platform-bmmFile"/>
-	<item value="D:\hlocal\SE\Practicas\proyecto\SDK\peripheral_tests_2\Debug\peripheral_tests_2.elf" key="practica2_hw_platform-microblaze_0-initElf"/>
+	<item value="D:\hlocal\SE\Practicas\proyecto\SDK\peripheral_tests_3\Debug\peripheral_tests_3.elf" key="practica2_hw_platform-microblaze_0-initElf"/>
 </section>

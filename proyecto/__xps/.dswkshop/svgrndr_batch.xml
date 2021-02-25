@@ -15,6 +15,10 @@
 
   <RENDERIMG RASNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\banner_0.jpg" SVGNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\banner_0.svg" TMPSVGFN="D:\hlocal\SE\Practicas\proyecto\__xps\.dswkshop\banner_0.svg"/>
 
+  <RENDERIMG RASNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\led_rgb_0.jpg" SVGNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\led_rgb_0.svg" TMPSVGFN="D:\hlocal\SE\Practicas\proyecto\__xps\.dswkshop\led_rgb_0.svg"/>
+
+  <RENDERIMG RASNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\motor_0.jpg" SVGNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\motor_0.svg" TMPSVGFN="D:\hlocal\SE\Practicas\proyecto\__xps\.dswkshop\motor_0.svg"/>
+
   <RENDERIMG RASNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="D:\hlocal\SE\Practicas\proyecto\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="D:\hlocal\SE\Practicas\proyecto\__xps\.dswkshop\system_blkd.svg"/>
 
 </RENDERBATCH>

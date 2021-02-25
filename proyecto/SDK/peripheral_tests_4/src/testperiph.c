@@ -1,0 +1,191 @@
+/*
+ *
+ * Autor: Javier Romero Flores
+ * Asignatura: Sistemas Empotrados
+ * Temática: Juego de Tutti frutti/Stop/Alto al lápiz con una cuenta regresiva de 4s
+ */
+
+/*
+ * 
+ *
+ * This file is a generated sample test application.
+ *
+ * This application is intended to test and/or illustrate some 
+ * functionality of your system.  The contents of this file may
+ * vary depending on the IP in your system and may use existing
+ * IP driver functions.  These drivers will be generated in your
+ * SDK application project when you run the "Generate Libraries" menu item.
+ *
+ */
+
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xbasic_types.h"
+#include "xbram.h"
+#include "bram_header.h"
+#include "banner.h"
+#include "frases_compuestas.h"
+#include "keypad.h"
+#include "caracteres.h"
+#include "movimientosled.h"
+#include "motor.h"
+
+#define PLAYER1 0
+#define PLAYER2 1
+#define PLAYER3 2
+#define PLAYER4 3
+#define MAX_SCORE 7
+#define data_motor 0x9e000000
+
+Xuint8 carta1,carta2,carta3,carta4,cartaElegida,numPlayers;
+int puntaje[4] = {0};
+
+Xuint32 getNumber(){
+
+	Xuint32 value,dato,oldValue;
+	value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR,0);
+	dato = (value>>28) & 0xF;
+	KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR,0,value);
+
+	while(dato != 0x1 && dato != 0x2 && dato != 0x3 && dato != 0x4 && dato != 0xC){
+	   if(value != oldValue){
+		   dato = (value>>28) & 0xF;
+		   //xil_printf("se ha leido %01x \n\r",dato);
+		   oldValue = value;
+	   }
+	   value = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR,0);
+	   //dato = KEYPAD_mReadReg(XPAR_KEYPAD_0_BASEADDR,0);
+	   KEYPAD_mWriteReg(XPAR_KEYPAD_0_BASEADDR,0,0);
+	}
+	return dato;
+}
+
+
+void showCards(){
+	//xil_printf("carta show cards %d\n",cartaElegida);
+	BANNER_inicializa();
+	switch(cartaElegida){
+	case 1:
+		showCard(carta1,3);
+		break;
+	case 2:
+		showCard(carta2,3);
+		break;
+	case 3:
+		showCard(carta3,3);
+		break;
+	case 4:
+		showCard(carta4,3);
+		break;
+	}
+}
+
+int addScore(Xuint8 player,Xuint8 score){
+	int tot;
+	switch(player){
+	case PLAYER1:
+		tot = puntaje[0]+=score;
+		break;
+	case PLAYER2:
+		tot =puntaje[1]+=score;
+		break;
+	case PLAYER3:
+		tot = puntaje[2]+=score;
+		break;
+	case PLAYER4:
+		tot = puntaje[3]+=score;
+		break;
+	}
+	return tot;
+}
+Xuint8 nextPlayer(Xuint8 actualPlayer){
+	if(actualPlayer == PLAYER1)
+		return PLAYER2;
+	else if(actualPlayer == PLAYER2){
+		if(numPlayers == 2)
+			return PLAYER1;
+		else
+			return PLAYER3;
+	}
+	else if(actualPlayer == PLAYER3){
+		if(numPlayers == 3)
+			return PLAYER1;
+		else
+			return PLAYER4;
+	}
+	else
+		return PLAYER1;
+}
+int main() 
+{
+	srand48(time(NULL));
+	Xuint32 pnt=0,nextP = PLAYER1;
+	Xuint32 dato,vueltas = 8;
+	int totalScore = 0;
+
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
+	startGame();
+	//print("---Selecciona el nº de jugadores (max 4)---\n\r");
+
+	numPlayers = getNumber();
+	//xil_printf("Num jugadores: %01x \n",numPlayers);
+	/*
+	xil_printf("Cómo jugar: \n");
+	xil_printf("1- Elige una carta para mostrarte una letra\n");
+	xil_printf("2- Menciona el nombre de lo que ves en la pantalla que inicie por dicha letra \n");
+	xil_printf("3- Empieza la cuenta atrás , presiona 0 para detener la cuenta (si llegas a 0 pierdes)\n");
+	xil_printf("4- Gana el que más puntos tenga\n");
+	xil_printf("Presiona C para salir \n");
+	*/
+	while(cartaElegida!= 0xC){
+
+	   mostrarCartasNumeros(TURN_QUIET);
+
+	   carta1 = 1 +rand()%5; /*se puede modificar a 26*/
+	   carta2 = 1 +rand()%5;
+	   carta3 = 1 +rand()%5;
+	   carta4 = 1 +rand()%5;
+
+	   cartaElegida = getNumber();
+	   if(cartaElegida != 0xC){
+
+		   //xil_printf("cartaElegida: %01x \n",cartaElegida);
+		   showCards();
+		   slowDelay();
+		   showRandomQuestion(TURN_LEFT);
+		   aSecondDelay();
+		   pnt = cuentaAtras();
+		   totalScore =  addScore(nextP,pnt);
+		   if(totalScore >= MAX_SCORE)
+			   break;
+		   nextP = nextPlayer(nextP);
+		   pnt=0;
+	   }
+	}
+
+	//nextP es el winner
+	write_phrase(winner,TURN_RIGHT);
+	for (i = 0; i < 5; i++)
+	   arcoiris(LED_0);//cuando gana
+
+	/*Motor para la ruleta de premios*/
+	MOTOR_mWriteReg(XPAR_MOTOR_0_BASEADDR,0,data_motor);
+	while(vueltas>0){
+	   dato = MOTOR_mReadReg(XPAR_MOTOR_0_BASEADDR,0);
+	   if( dato == 0xD0000000){
+		   MOTOR_mWriteReg(XPAR_MOTOR_0_BASEADDR,0,data_motor);
+		   vueltas--;
+		   dato = MOTOR_mReadReg(XPAR_MOTOR_0_BASEADDR,0);
+	   }
+	}
+
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+
+   return 0;
+}
+

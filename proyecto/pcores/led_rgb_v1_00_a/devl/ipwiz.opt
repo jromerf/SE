@@ -1,0 +1,10 @@
+-batch 
+-create led_rgb 
+-ver 1.00.a 
+-dir "D:\hlocal\SE\Practicas\proyecto" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-ise 
+-driver 

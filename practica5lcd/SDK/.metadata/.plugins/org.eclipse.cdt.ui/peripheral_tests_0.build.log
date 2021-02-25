@@ -18,7 +18,7 @@ Finished building target: peripheral_tests_0.elf
 Invoking: MicroBlaze Print Size
 mb-size peripheral_tests_0.elf  |tee "peripheral_tests_0.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   9474	    368	   2182	  12024	   2ef8	peripheral_tests_0.elf
+   9534	    368	   2176	  12078	   2f2e	peripheral_tests_0.elf
 Finished building: peripheral_tests_0.elf.size
 ' '
 Invoking: Xilinx ELF Check

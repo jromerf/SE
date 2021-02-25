@@ -22,7 +22,11 @@ entity system_stub is
     banner_0_col_serial_out_pin : out std_logic;
     banner_0_row_serial_out_pin : out std_logic;
     banner_0_switch_pin : in std_logic;
-    banner_0_led_pin : out std_logic
+    banner_0_led_pin : out std_logic;
+    led_rgb_0_red_pin : out std_logic;
+    led_rgb_0_blue_pin : out std_logic;
+    led_rgb_0_green_pin : out std_logic;
+    motor_0_pin : out std_logic_vector(3 downto 0)
   );
 end system_stub;
 
@@ -43,7 +47,11 @@ architecture STRUCTURE of system_stub is
       banner_0_col_serial_out_pin : out std_logic;
       banner_0_row_serial_out_pin : out std_logic;
       banner_0_switch_pin : in std_logic;
-      banner_0_led_pin : out std_logic
+      banner_0_led_pin : out std_logic;
+      led_rgb_0_red_pin : out std_logic;
+      led_rgb_0_blue_pin : out std_logic;
+      led_rgb_0_green_pin : out std_logic;
+      motor_0_pin : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -67,7 +75,11 @@ begin
       banner_0_col_serial_out_pin => banner_0_col_serial_out_pin,
       banner_0_row_serial_out_pin => banner_0_row_serial_out_pin,
       banner_0_switch_pin => banner_0_switch_pin,
-      banner_0_led_pin => banner_0_led_pin
+      banner_0_led_pin => banner_0_led_pin,
+      led_rgb_0_red_pin => led_rgb_0_red_pin,
+      led_rgb_0_blue_pin => led_rgb_0_blue_pin,
+      led_rgb_0_green_pin => led_rgb_0_green_pin,
+      motor_0_pin => motor_0_pin
     );
 
 end architecture STRUCTURE;

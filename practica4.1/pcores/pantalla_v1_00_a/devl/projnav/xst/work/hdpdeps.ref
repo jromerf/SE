@@ -1,0 +1,24 @@
+V3 10
+FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd 2014/07/18.18:26:22 P.15xf
+EN work/counter2 1610501803 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/counter2/rtl 1610501804 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd \
+      EN work/counter2 1610501803 CP d_out
+FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd 2014/07/18.18:26:22 P.15xf
+EN work/debouncer 1610501799 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1610501800 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd \
+      EN work/debouncer 1610501799
+FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd 2021/01/13.02:32:06 P.15xf
+EN work/vgacore 1610501801 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 PB ieee/NUMERIC_STD 1335251627
+AR work/vgacore/vgacore_arch 1610501802 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd \
+      EN work/vgacore 1610501801

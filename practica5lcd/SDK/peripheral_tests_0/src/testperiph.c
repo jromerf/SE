@@ -88,6 +88,11 @@ int main()
 	LCD_enviarCMD(WRITE_CMD + 'O');
 	LCD_enviarCMD(WRITE_CMD + 'L');
 	LCD_enviarCMD(WRITE_CMD + 'A');
+	LCD_enviarCMD(WRITE_CMD + ' ');
+	LCD_enviarCMD(WRITE_CMD + 'u');
+	LCD_enviarCMD(WRITE_CMD + 'n');
+	LCD_enviarCMD(WRITE_CMD + 'o');
+	LCD_enviarCMD(WRITE_CMD + 'X');
 	LCD_enviarCMD(SECOND_ROW);
 	LCD_enviarCMD(WRITE_CMD + 'J');
 	LCD_enviarCMD(WRITE_CMD + 'A');

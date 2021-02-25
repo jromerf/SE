@@ -132,7 +132,13 @@ C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhd
 C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd \
 pcores/banner_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/banner_v1_00_a/hdl/vhdl/banner.vhd \
-pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd
+pcores/banner_v1_00_a/hdl/vhdl/bannerDesp.vhd \
+pcores/led_rgb_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/led_rgb_v1_00_a/hdl/vhdl/led_rgb.vhd \
+pcores/motor_v1_00_a/hdl/vhdl/user_logic.vhd \
+pcores/motor_v1_00_a/hdl/vhdl/motor.vhd \
+pcores/motor_v1_00_a/hdl/vhdl/100_k_counter.vhd \
+pcores/motor_v1_00_a/hdl/vhdl/motorstep.vhd
 
 WRAPPER_NGC_FILES = implementation/system_microblaze_0_wrapper.ngc \
 implementation/system_plb_v46_0_wrapper.ngc \
@@ -140,7 +146,9 @@ implementation/system_bram_block_0_wrapper.ngc \
 implementation/system_xps_bram_if_cntlr_0_wrapper.ngc \
 implementation/system_xps_uartlite_0_wrapper.ngc \
 implementation/system_keypad_0_wrapper.ngc \
-implementation/system_banner_0_wrapper.ngc
+implementation/system_banner_0_wrapper.ngc \
+implementation/system_led_rgb_0_wrapper.ngc \
+implementation/system_motor_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

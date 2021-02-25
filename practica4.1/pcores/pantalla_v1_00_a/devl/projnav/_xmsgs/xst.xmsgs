@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="821" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd</arg>&quot; line <arg fmt="%d" index="2">272</arg>: Loop body will iterate zero times
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="821" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd</arg>&quot; line <arg fmt="%d" index="2">272</arg>: Loop body will iterate zero times
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WFIFO2IP_Occupancy</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WFIFO2DMA_AlmostFull</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WFIFO2DMA_Full</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WFIFO2DMA_Vacancy</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FIFO2IRPT_DeadLock</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FIFO2Bus_Retry</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd</arg>&quot; line <arg fmt="%d" index="2">440</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FIFO2Bus_ToutSup</arg>&apos; of component &apos;<arg fmt="%s" index="4">wrpfifo_top</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="old" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">SIGIS</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd</arg>&quot; line <arg fmt="%d" index="2">535</arg>: Mux is complete : default of case is discarded
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd</arg>&quot; line <arg fmt="%d" index="2">207</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">MUXCY</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd</arg>&quot; line <arg fmt="%d" index="2">235</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">MUXCY</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd</arg>&quot; line <arg fmt="%d" index="2">243</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">MUXCY</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd</arg>&quot; line <arg fmt="%d" index="2">250</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">XORCY</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd</arg>&quot; line <arg fmt="%d" index="2">256</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">FDRE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">221</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">douta</arg>&apos; of component &apos;<arg fmt="%s" index="4">blk_mem_gen_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">221</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">dbiterr</arg>&apos; of component &apos;<arg fmt="%s" index="4">blk_mem_gen_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">221</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">sbiterr</arg>&apos; of component &apos;<arg fmt="%s" index="4">blk_mem_gen_wrapper</arg>&apos;.
+</msg>
+
+<msg type="error" file="Xst" num="779" delta="old" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd</arg>&quot; line <arg fmt="%d" index="2">561</arg>: &apos;Others&apos; is in unconstrained array aggregate.
+</msg>
+
+</messages>
+

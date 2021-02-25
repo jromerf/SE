@@ -1,0 +1,25 @@
+V3 16
+FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd 2021/01/12.21:36:52 P.15xf
+EN pantalla_v1_00_a/pantalla 1610501819 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1610501769 \
+      PB proc_common_v3_00_a/ipif_pkg 1610501794 LB wrpfifo_v5_01_a \
+      EN wrpfifo_v5_01_a/wrpfifo_top 1610501813 LB plbv46_slave_single_v1_01_a \
+      EN plbv46_slave_single_v1_01_a/plbv46_slave_single 1610501815 \
+      LB pantalla_v1_00_a EN pantalla_v1_00_a/user_logic 1610501817
+AR pantalla_v1_00_a/pantalla/IMP 1610501820 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd \
+      EN pantalla_v1_00_a/pantalla 1610501819 \
+      CP plbv46_slave_single_v1_01_a/plbv46_slave_single \
+      CP wrpfifo_v5_01_a/wrpfifo_top CP pantalla_v1_00_a/user_logic
+FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/user_logic.vhd 2021/01/13.02:35:56 P.15xf
+EN pantalla_v1_00_a/user_logic 1610501817 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1610501769
+AR pantalla_v1_00_a/user_logic/IMP 1610501818 \
+      FL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN pantalla_v1_00_a/user_logic 1610501817 CP debouncer CP vgacore CP counter2

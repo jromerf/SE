@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="21" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="577" y="-21">
+<fastViewData fastViewLocation="1024"/>
+<intro standby="true"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1606517685235" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/hlocal/SE/Practicas/practica4/SDK/practica2_hw_platform/system.xml" title="system.xml" tooltip="practica2_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/practica2_hw_platform/system.xml"/>
+</editor>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_bsp_0/system.mss" title="system.mss" tooltip="peripheral_tests_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_bsp_0/system.mss"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.c" partName="pantalla.c" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla.c" title="pantalla.c" tooltip="peripheral_tests_0/src/pantalla.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.h" partName="pantalla.h" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla.h" title="pantalla.h" tooltip="peripheral_tests_0/src/pantalla.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="1301" selectionTopPixel="357"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla_selftest.c" partName="pantalla_selftest.c" path="D:/hlocal/SE/Practicas/practica4/SDK/peripheral_tests_0/src/pantalla_selftest.c" title="pantalla_selftest.c" tooltip="peripheral_tests_0/src/pantalla_selftest.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/pantalla_selftest.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="348"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" partName="testperiph.c" path="D:/hlocal/SE/Practicas/practica4c/SDK/peripheral_tests_0/src/testperiph.c" title="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/peripheral_tests_0/src/testperiph.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3956" selectionTopPixel="2184"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal 1">
+<viewState ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" Title="Terminal 1" _keys_="ConnectionType,Title,connectionManageractive,connectionManagerconnection0ConnectionType,connectionManagerconnection0HasCommandInputField,connectionManagerconnection0PartName,connectionManagerconnection0Summary,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection0org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagerconnection1ConnectionType,connectionManagerconnection1HasCommandInputField,connectionManagerconnection1PartName,connectionManagerconnection1Summary,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection1org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection2ConnectionType,connectionManagerconnection2HasCommandInputField,connectionManagerconnection2PartName,connectionManagerconnection2Summary,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection2org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection3ConnectionType,connectionManagerconnection3HasCommandInputField,connectionManagerconnection3PartName,connectionManagerconnection3Summary,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection3org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection3org.eclipse.tm.internal.terminal.telnet.TelnetConnector.NetworkPort,connectionManagerconnection3org.eclipse.tm.internal.terminal.telnet.TelnetConnector.Timeout,connectionManagerconnection4ConnectionType,connectionManagerconnection4HasCommandInputField,connectionManagerconnection4PartName,connectionManagerconnection4Summary,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection4org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection5ConnectionType,connectionManagerconnection5HasCommandInputField,connectionManagerconnection5PartName,connectionManagerconnection5Summary,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection5org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection6ConnectionType,connectionManagerconnection6HasCommandInputField,connectionManagerconnection6PartName,connectionManagerconnection6Summary,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection6org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection7ConnectionType,connectionManagerconnection7HasCommandInputField,connectionManagerconnection7PartName,connectionManagerconnection7Summary,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection7org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection8ConnectionType,connectionManagerconnection8HasCommandInputField,connectionManagerconnection8PartName,connectionManagerconnection8Summary,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection8org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagerconnection9ConnectionType,connectionManagerconnection9HasCommandInputField,connectionManagerconnection9PartName,connectionManagerconnection9Summary,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,connectionManagerconnection9org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits,connectionManagersize,org.eclipse.tm.internal.terminal.serial.SerialConnector.BaudRate,org.eclipse.tm.internal.terminal.serial.SerialConnector.DataBits,org.eclipse.tm.internal.terminal.serial.SerialConnector.FlowControl,org.eclipse.tm.internal.terminal.serial.SerialConnector.Parity,org.eclipse.tm.internal.terminal.serial.SerialConnector.SerialPort,org.eclipse.tm.internal.terminal.serial.SerialConnector.StopBits" connectionManageractive="connection9" connectionManagerconnection0ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection0HasCommandInputField="false" connectionManagerconnection0PartName="Terminal 1" connectionManagerconnection0Summary="COM4, 9600, 8, 1, None, None" connectionManagerconnection1ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection1HasCommandInputField="false" connectionManagerconnection1PartName="Terminal 1" connectionManagerconnection1Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection2ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection2HasCommandInputField="false" connectionManagerconnection2PartName="Terminal 1" connectionManagerconnection2Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection3ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection3HasCommandInputField="false" connectionManagerconnection3PartName="Terminal 1" connectionManagerconnection3Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection4ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection4HasCommandInputField="false" connectionManagerconnection4PartName="Terminal 1" connectionManagerconnection4Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection5ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection5HasCommandInputField="false" connectionManagerconnection5PartName="Terminal 1" connectionManagerconnection5Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection6ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection6HasCommandInputField="false" connectionManagerconnection6PartName="Terminal 1" connectionManagerconnection6Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection7ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection7HasCommandInputField="false" connectionManagerconnection7PartName="Terminal 1" connectionManagerconnection7Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection8ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection8HasCommandInputField="false" connectionManagerconnection8PartName="Terminal 1" connectionManagerconnection8Summary="COM9, 9600, 8, 1, None, None" connectionManagerconnection9ConnectionType="org.eclipse.tm.internal.terminal.serial.SerialConnector" connectionManagerconnection9HasCommandInputField="false" connectionManagerconnection9PartName="Terminal 1" connectionManagerconnection9Summary="COM9, 9600, 8, 1, None, None" connectionManagersize="10">
+<connectionManagerconnection0org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM4" StopBits="1"/>
+</serial>
+<telnet>&#x0A;<TelnetConnector NetworkPort="23" Timeout="10"/>
+</telnet>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection0org>
+<connectionManagerconnection1org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection1org>
+<connectionManagerconnection2org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection2org>
+<connectionManagerconnection3org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+<telnet>&#x0A;<TelnetConnector NetworkPort="23" Timeout="10"/>
+</telnet>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection3org>
+<connectionManagerconnection4org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection4org>
+<connectionManagerconnection5org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection5org>
+<connectionManagerconnection6org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection6org>
+<connectionManagerconnection7org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection7org>
+<connectionManagerconnection8org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection8org>
+<connectionManagerconnection9org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</connectionManagerconnection9org>
+<org>&#x0A;<eclipse>&#x0A;<tm>&#x0A;<internal>&#x0A;<terminal>&#x0A;<serial>&#x0A;<SerialConnector BaudRate="9600" DataBits="8" FlowControl="None" Parity="None" SerialPort="COM9" StopBits="1"/>
+</serial>
+</terminal>
+</internal>
+</tm>
+</eclipse>
+</org>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="file:///C:/Xilinx/14.1/ISE_DS/EDK/eclipse/nt64/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="304" org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.priorityField="20" org.eclipse.ui.ide.resourceField="94"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.CAppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.CCAppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.hw.newHwWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@465f3bad" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/testperiph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/practica2_hw_platform/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/peripheral_tests_bsp_0/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_0/src/pantalla_selftest.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+</editors>
+<item historyLabel="xuartlite_l.c" index="1">
+<position info="not_deleted" x="4692" y="18"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="1984" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3062" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3064" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3256" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="system.xml" index="2"/>
+<item historyLabel="system.mss" index="3"/>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.mss" index="3"/>
+<item historyLabel="pantalla.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="5046" y="0"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="5197" y="0"/>
+</item>
+<item historyLabel="xuartlite.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="5180" y="21"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="2961" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="5808" y="0"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="755" y="30"/>
+</item>
+<item historyLabel="pantalla.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="xuartlite_l.c" index="8">
+<position info="not_deleted" x="4692" y="18"/>
+</item>
+<item historyLabel="pantalla.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="755" y="30"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="5046" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3911" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="5180" y="21"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="5278" y="0"/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="755" y="30"/>
+</item>
+<item historyLabel="pantalla_selftest.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="pantalla.h" index="5">
+<position info="not_deleted" x="1301" y="27"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3403" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3459" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3739" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3695" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3720" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="testperiph.c" index="0">
+<position/>
+</item>
+<item active="true" historyLabel="testperiph.c" index="0">
+<position info="not_deleted" x="6125" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite.h" tooltip="peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/include/xuartlite.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="testperiph.c" tooltip="peripheral_tests_0/src/testperiph.c">
+<persistable path="/peripheral_tests_0/src/testperiph.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla_selftest.c" tooltip="peripheral_tests_0/src/pantalla_selftest.c">
+<persistable path="/peripheral_tests_0/src/pantalla_selftest.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.h" tooltip="peripheral_tests_0/src/pantalla.h">
+<persistable path="/peripheral_tests_0/src/pantalla.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pantalla.c" tooltip="peripheral_tests_0/src/pantalla.c">
+<persistable path="/peripheral_tests_0/src/pantalla.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xuartlite_l.c" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/libsrc/uartlite_v2_00_a/src/xuartlite_l.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio_sinit.c" tooltip="peripheral_tests_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c">
+<persistable path="/peripheral_tests_bsp_0/microblaze_0/libsrc/gpio_v3_00_a/src/xgpio_sinit.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="peripheral_tests_bsp_0/system.mss">
+<persistable path="/peripheral_tests_bsp_0/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="practica2_hw_platform/system.xml">
+<persistable path="/practica2_hw_platform/system.xml"/>
+</file>
+</mruList>
+</workbench>

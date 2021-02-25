@@ -1,0 +1,6 @@
+AR vgacore vgacore_arch D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl03 1610501802
+AR debouncer debouncerarch D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl01 1610501800
+AR counter2 rtl D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl05 1610501804
+EN debouncer NULL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl00 1610501799
+EN vgacore NULL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl02 1610501801
+EN counter2 NULL D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd sub00/vhpl04 1610501803

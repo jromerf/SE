@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/devl/projnav/pantalla.xst" -ofn "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/devl/projnav/pantalla.syr" 
+xst -intstyle ise -ifn "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/devl/projnav/pantalla.xst" -ofn "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/devl/projnav/pantalla.syr" 

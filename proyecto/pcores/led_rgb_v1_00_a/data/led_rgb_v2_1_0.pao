@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          D:/hlocal/SE/Practicas/proyecto/pcores/led_rgb_v1_00_a/data/led_rgb_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Feb 24 23:04:06 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib led_rgb_v1_00_a user_logic vhdl
+lib led_rgb_v1_00_a led_rgb vhdl

@@ -19,13 +19,23 @@
 
 
 /* Definitions for peripheral BANNER_0 */
-#define XPAR_BANNER_0_BASEADDR 0xC5800000
-#define XPAR_BANNER_0_HIGHADDR 0xC5807FFF
+#define XPAR_BANNER_0_BASEADDR 0x84020000
+#define XPAR_BANNER_0_HIGHADDR 0x84027FFF
 
 
 /* Definitions for peripheral KEYPAD_0 */
 #define XPAR_KEYPAD_0_BASEADDR 0x84018000
 #define XPAR_KEYPAD_0_HIGHADDR 0x8401BFFF
+
+
+/* Definitions for peripheral LED_RGB_0 */
+#define XPAR_LED_RGB_0_BASEADDR 0x84028000
+#define XPAR_LED_RGB_0_HIGHADDR 0x8402FFFF
+
+
+/* Definitions for peripheral MOTOR_0 */
+#define XPAR_MOTOR_0_BASEADDR 0xCF200000
+#define XPAR_MOTOR_0_HIGHADDR 0xCF207FFF
 
 
 /******************************************************************/

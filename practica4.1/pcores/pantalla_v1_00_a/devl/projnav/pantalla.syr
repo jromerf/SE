@@ -1,0 +1,677 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: pantalla.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pantalla.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pantalla"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : pantalla
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity inferred_lut4 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter_bit is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_adder_bit is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_occ_counter is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Architecture proc_common_pkg of Entity proc_common_pkg is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity or_muxcy is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Architecture family_support of Entity family_support is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_occ_counter_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_counter_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_adder is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity counter_f is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity blk_mem_gen_wrapper is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity srl16_fifo is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Architecture implementation of Entity pf_dpram_select is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity pselect_f is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Architecture imp of Entity or_gate128 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Architecture ipif_pkg of Entity ipif_pkg is up to date.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd" in Library work.
+Architecture debouncerarch of Entity debouncer is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture imp of Entity plb_address_decoder is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/pf_dly1_mux.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity pf_dly1_mux is up to date.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" in Library work.
+Architecture vgacore_arch of Entity vgacore is up to date.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/counter2.vhd" in Library work.
+Architecture rtl of Entity counter2 is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture implementation of Entity plb_slave_attachment is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/ipif_control_wr_dre.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity ipif_control_wr_dre is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_dp_cntl.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity wrpfifo_dp_cntl is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity blkmem_wrapper is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/wrpfifo_top.vhd" in Library wrpfifo_v5_01_a.
+Architecture implementation of Entity wrpfifo_top is up to date.
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
+Architecture implementation of Entity plbv46_slave_single is up to date.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/user_logic.vhd" in Library pantalla_v1_00_a.
+Architecture imp of Entity user_logic is up to date.
+Compiling vhdl file "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" in Library pantalla_v1_00_a.
+Architecture imp of Entity pantalla is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <pantalla> in library <pantalla_v1_00_a> (architecture <imp>) with generics.
+	C_BASEADDR = "11111111111111111111111111111111"
+	C_FAMILY = "virtex6"
+	C_HIGHADDR = "00000000000000000000000000000000"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 10000
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 3
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 32
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+
+Analyzing hierarchy for entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "virtex6"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 3
+	C_SPLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <wrpfifo_top> in library <wrpfifo_v5_01_a> (architecture <implementation>) with generics.
+	C_BLOCK_ID = 0
+	C_FAMILY = "virtex6"
+	C_FIFO_DEPTH_LOG2X = 9
+	C_FIFO_WIDTH = 32
+	C_INCLUDE_PACKET_MODE = false
+	C_INCLUDE_VACANCY = false
+	C_IPIF_DBUS_WIDTH = 32
+	C_MIR_ENABLE = false
+	C_NUM_REG_CE = 4
+	C_OPB_PROTOCOL = false
+	C_SUPPORT_BURST = false
+
+Analyzing hierarchy for entity <user_logic> in library <pantalla_v1_00_a> (architecture <IMP>) with generics.
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+
+Analyzing hierarchy for entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "virtex6"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 3
+	C_PLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <ipif_control_wr_dre> in library <wrpfifo_v5_01_a> (architecture <implementation>) with generics.
+	C_BLOCK_ID = 0
+	C_DP_ADDRESS_WIDTH = 9
+	C_FAMILY = "virtex6"
+	C_FIFO_WIDTH = 32
+	C_INTFC_TYPE = 3
+	C_IPIF_DBUS_WIDTH = 32
+	C_MIR_ENABLE = false
+	C_NUM_REG_CE = 4
+	C_OPB_PROTOCOL = false
+	C_SUPPORT_BURST = false
+	C_VERSION_MAJOR = 5
+	C_VERSION_MINOR = 1
+	C_VERSION_REV = 0
+
+Analyzing hierarchy for entity <wrpfifo_dp_cntl> in library <wrpfifo_v5_01_a> (architecture <implementation>) with generics.
+	C_DP_ADDRESS_WIDTH = 9
+	C_INCLUDE_PACKET_MODE = false
+	C_INCLUDE_VACANCY = false
+
+Analyzing hierarchy for entity <blkmem_wrapper> in library <wrpfifo_v5_01_a> (architecture <implementation>) with generics.
+	C_ADDR_WIDTH = 9
+	C_DATA_WIDTH = 32
+	C_FAMILY = "virtex6"
+
+Analyzing hierarchy for entity <vgacore> in library <work> (architecture <vgacore_arch>).
+
+Analyzing hierarchy for entity <counter2> in library <work> (architecture <rtl>) with generics.
+	numBits_g = 2
+
+Analyzing hierarchy for entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (architecture <IMP>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+
+Analyzing hierarchy for entity <pf_dly1_mux> in library <wrpfifo_v5_01_a> (architecture <implementation>) with generics.
+	C_MUX_WIDTH = 12
+
+Analyzing hierarchy for entity <pf_occ_counter_top> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_COUNT_WIDTH = 10
+
+Analyzing hierarchy for entity <pf_counter_top> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_COUNT_WIDTH = 9
+
+Analyzing hierarchy for entity <blk_mem_gen_wrapper> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	c_addra_width = 9
+	c_addrb_width = 9
+	c_algorithm = 1
+	c_byte_size = 8
+	c_common_clk = 1
+	c_default_data = "0"
+	c_disable_warn_bhv_coll = 0
+	c_disable_warn_bhv_range = 0
+	c_family = "virtex6"
+	c_has_ena = 1
+	c_has_enb = 1
+	c_has_mem_output_regs_a = 0
+	c_has_mem_output_regs_b = 0
+	c_has_mux_output_regs_a = 0
+	c_has_mux_output_regs_b = 0
+	c_has_regcea = 0
+	c_has_regceb = 0
+	c_has_ssra = 0
+	c_has_ssrb = 0
+	c_init_file_name = "no_coe_file_loaded"
+	c_load_init_file = 0
+	c_mem_type = 2
+	c_mux_pipeline_stages = 0
+	c_prim_type = 5
+	c_read_depth_a = 512
+	c_read_depth_b = 512
+	c_read_width_a = 32
+	c_read_width_b = 32
+	c_sim_collision_check = "All"
+	c_sinita_val = "0"
+	c_sinitb_val = "0"
+	c_use_byte_wea = 0
+	c_use_byte_web = 0
+	c_use_default_data = 0
+	c_use_ecc = 0
+	c_use_ramb16bwer_rst_bhv = 0
+	c_wea_width = 1
+	c_web_width = 1
+	c_write_depth_a = 512
+	c_write_depth_b = 512
+	c_write_mode_a = "WRITE_FIRST"
+	c_write_mode_b = "WRITE_FIRST"
+	c_write_width_a = 32
+	c_write_width_b = 32
+	c_xdevicefamily = "virtex6"
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <debouncerarch>).
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 32
+	C_AW = 32
+	C_BAR = "11111111111111111111111111111111"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "00"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "01"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "10"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <pselect_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "11"
+	C_FAMILY = "nofamily"
+
+Analyzing hierarchy for entity <or_gate128> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 3
+	C_USE_LUT_OR = false
+
+Analyzing hierarchy for entity <pf_occ_counter> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_COUNT_WIDTH = 10
+
+Analyzing hierarchy for entity <pf_counter> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_COUNT_WIDTH = 9
+
+Analyzing hierarchy for entity <or_muxcy> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	C_NUM_BITS = 3
+
+Analyzing hierarchy for entity <pf_counter_bit> in library <proc_common_v3_00_a> (architecture <implementation>).
+
+Analyzing hierarchy for entity <inferred_lut4> in library <proc_common_v3_00_a> (architecture <implementation>) with generics.
+	INIT = "0011011011000110"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <pantalla> in library <pantalla_v1_00_a> (Architecture <imp>).
+	C_BASEADDR = "11111111111111111111111111111111"
+	C_FAMILY = "virtex6"
+	C_HIGHADDR = "00000000000000000000000000000000"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_SPLB_AWIDTH = 32
+	C_SPLB_CLK_PERIOD_PS = 10000
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 3
+	C_SPLB_NATIVE_DWIDTH = 32
+	C_SPLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 32
+	C_SPLB_SUPPORT_BURSTS = 0
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:821 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" line 272: Loop body will iterate zero times
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2IP_Occupancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_AlmostFull' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_Full' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'WFIFO2DMA_Vacancy' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2IRPT_DeadLock' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2Bus_Retry' of component 'wrpfifo_top'.
+WARNING:Xst:753 - "D:/hlocal/SE/Practicas/practica4.1/pcores/pantalla_v1_00_a/hdl/vhdl/pantalla.vhd" line 440: Unconnected output port 'FIFO2Bus_ToutSup' of component 'wrpfifo_top'.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <pantalla> analyzed. Unit <pantalla> generated.
+
+Analyzing generic Entity <plbv46_slave_single> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_FAMILY = "virtex6"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_SIPIF_DWIDTH = 32
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 3
+	C_SPLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+INFO:Xst:1561 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" line 535: Mux is complete : default of case is discarded
+Entity <plbv46_slave_single> analyzed. Unit <plbv46_slave_single> generated.
+
+Analyzing generic Entity <plb_slave_attachment> in library <plbv46_slave_single_v1_01_a> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS2CORE_CLK_RATIO = 1
+	C_DPHASE_TIMEOUT = 128
+	C_FAMILY = "virtex6"
+	C_INCLUDE_DPHASE_TIMER = 0
+	C_IPIF_ABUS_WIDTH = 32
+	C_IPIF_DBUS_WIDTH = 32
+	C_PLB_MID_WIDTH = 3
+	C_PLB_NUM_MASTERS = 8
+	C_SPLB_P2P = 0
+Entity <plb_slave_attachment> analyzed. Unit <plb_slave_attachment> generated.
+
+Analyzing generic Entity <plb_address_decoder> in library <plbv46_slave_single_v1_01_a> (Architecture <IMP>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_ARD_NUM_CE_ARRAY = (1,4,1)
+	C_BUS_AWIDTH = 32
+	C_FAMILY = "nofamily"
+	C_SPLB_P2P = 0
+Entity <plb_address_decoder> analyzed. Unit <plb_address_decoder> generated.
+
+Analyzing generic Entity <pselect_f.1> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 32
+	C_AW = 32
+	C_BAR = "11111111111111111111111111111111"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.1> analyzed. Unit <pselect_f.1> generated.
+
+Analyzing generic Entity <pselect_f.2> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "00"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.2> analyzed. Unit <pselect_f.2> generated.
+
+Analyzing generic Entity <pselect_f.3> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "01"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.3> analyzed. Unit <pselect_f.3> generated.
+
+Analyzing generic Entity <pselect_f.4> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "10"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.4> analyzed. Unit <pselect_f.4> generated.
+
+Analyzing generic Entity <pselect_f.5> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_AB = 2
+	C_AW = 2
+	C_BAR = "11"
+	C_FAMILY = "nofamily"
+Entity <pselect_f.5> analyzed. Unit <pselect_f.5> generated.
+
+Analyzing generic Entity <or_gate128> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_BUS_WIDTH = 1
+	C_OR_WIDTH = 3
+	C_USE_LUT_OR = false
+Entity <or_gate128> analyzed. Unit <or_gate128> generated.
+
+Analyzing generic Entity <or_muxcy> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_NUM_BITS = 3
+Entity <or_muxcy> analyzed. Unit <or_muxcy> generated.
+
+Analyzing generic Entity <wrpfifo_top> in library <wrpfifo_v5_01_a> (Architecture <implementation>).
+	C_BLOCK_ID = 0
+	C_FAMILY = "virtex6"
+	C_FIFO_DEPTH_LOG2X = 9
+	C_FIFO_WIDTH = 32
+	C_INCLUDE_PACKET_MODE = false
+	C_INCLUDE_VACANCY = false
+	C_IPIF_DBUS_WIDTH = 32
+	C_MIR_ENABLE = false
+	C_NUM_REG_CE = 4
+	C_OPB_PROTOCOL = false
+	C_SUPPORT_BURST = false
+Entity <wrpfifo_top> analyzed. Unit <wrpfifo_top> generated.
+
+Analyzing generic Entity <ipif_control_wr_dre> in library <wrpfifo_v5_01_a> (Architecture <implementation>).
+	C_BLOCK_ID = 0
+	C_DP_ADDRESS_WIDTH = 9
+	C_FAMILY = "virtex6"
+	C_FIFO_WIDTH = 32
+	C_INTFC_TYPE = 3
+	C_IPIF_DBUS_WIDTH = 32
+	C_MIR_ENABLE = false
+	C_NUM_REG_CE = 4
+	C_OPB_PROTOCOL = false
+	C_SUPPORT_BURST = false
+	C_VERSION_MAJOR = 5
+	C_VERSION_MINOR = 1
+	C_VERSION_REV = 0
+Entity <ipif_control_wr_dre> analyzed. Unit <ipif_control_wr_dre> generated.
+
+Analyzing generic Entity <wrpfifo_dp_cntl> in library <wrpfifo_v5_01_a> (Architecture <implementation>).
+	C_DP_ADDRESS_WIDTH = 9
+	C_INCLUDE_PACKET_MODE = false
+	C_INCLUDE_VACANCY = false
+Entity <wrpfifo_dp_cntl> analyzed. Unit <wrpfifo_dp_cntl> generated.
+
+Analyzing generic Entity <pf_dly1_mux> in library <wrpfifo_v5_01_a> (Architecture <implementation>).
+	C_MUX_WIDTH = 12
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[0].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[0].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[1].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[1].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[2].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[2].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[3].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[3].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[4].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[4].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[5].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[5].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[6].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[6].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[7].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[7].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[8].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[8].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[9].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[9].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[10].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[10].FDRE_I> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  FE10" for instance <MAKE_DLY_MUX[11].I_SEL_LUT> in unit <pf_dly1_mux>.
+    Set user-defined property "INIT =  0" for instance <MAKE_DLY_MUX[11].FDRE_I> in unit <pf_dly1_mux>.
+Entity <pf_dly1_mux> analyzed. Unit <pf_dly1_mux> generated.
+
+Analyzing generic Entity <pf_occ_counter_top> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_COUNT_WIDTH = 10
+Entity <pf_occ_counter_top> analyzed. Unit <pf_occ_counter_top> generated.
+
+Analyzing generic Entity <pf_occ_counter> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_COUNT_WIDTH = 10
+WARNING:Xst:2211 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" line 207: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" line 235: Instantiating black box module <MUXCY>.
+Entity <pf_occ_counter> analyzed. Unit <pf_occ_counter> generated.
+
+Analyzing Entity <pf_counter_bit> in library <proc_common_v3_00_a> (Architecture <implementation>).
+WARNING:Xst:2211 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" line 243: Instantiating black box module <MUXCY>.
+WARNING:Xst:2211 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" line 250: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" line 256: Instantiating black box module <FDRE>.
+Entity <pf_counter_bit> analyzed. Unit <pf_counter_bit> generated.
+
+Analyzing generic Entity <inferred_lut4> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	INIT = "0011011011000110"
+Entity <inferred_lut4> analyzed. Unit <inferred_lut4> generated.
+
+Analyzing generic Entity <pf_counter_top> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_COUNT_WIDTH = 9
+Entity <pf_counter_top> analyzed. Unit <pf_counter_top> generated.
+
+Analyzing generic Entity <pf_counter> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	C_COUNT_WIDTH = 9
+    Set user-defined property "INIT =  0" for instance <I_CARRY_OUT> in unit <pf_counter>.
+Entity <pf_counter> analyzed. Unit <pf_counter> generated.
+
+Analyzing generic Entity <blkmem_wrapper> in library <wrpfifo_v5_01_a> (Architecture <implementation>).
+	C_ADDR_WIDTH = 9
+	C_DATA_WIDTH = 32
+	C_FAMILY = "virtex6"
+WARNING:Xst:753 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd" line 221: Unconnected output port 'douta' of component 'blk_mem_gen_wrapper'.
+WARNING:Xst:753 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd" line 221: Unconnected output port 'dbiterr' of component 'blk_mem_gen_wrapper'.
+WARNING:Xst:753 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vhdl/blkmem_wrapper.vhd" line 221: Unconnected output port 'sbiterr' of component 'blk_mem_gen_wrapper'.
+Entity <blkmem_wrapper> analyzed. Unit <blkmem_wrapper> generated.
+
+Analyzing generic Entity <blk_mem_gen_wrapper> in library <proc_common_v3_00_a> (Architecture <implementation>).
+	c_addra_width = 9
+	c_addrb_width = 9
+	c_algorithm = 1
+	c_byte_size = 8
+	c_common_clk = 1
+	c_default_data = "0"
+	c_disable_warn_bhv_coll = 0
+	c_disable_warn_bhv_range = 0
+	c_family = "virtex6"
+	c_has_ena = 1
+	c_has_enb = 1
+	c_has_mem_output_regs_a = 0
+	c_has_mem_output_regs_b = 0
+	c_has_mux_output_regs_a = 0
+	c_has_mux_output_regs_b = 0
+	c_has_regcea = 0
+	c_has_regceb = 0
+	c_has_ssra = 0
+	c_has_ssrb = 0
+	c_init_file_name = "no_coe_file_loaded"
+	c_load_init_file = 0
+	c_mem_type = 2
+	c_mux_pipeline_stages = 0
+	c_prim_type = 5
+	c_read_depth_a = 512
+	c_read_depth_b = 512
+	c_read_width_a = 32
+	c_read_width_b = 32
+	c_sim_collision_check = "All"
+	c_sinita_val = "0"
+	c_sinitb_val = "0"
+	c_use_byte_wea = 0
+	c_use_byte_web = 0
+	c_use_default_data = 0
+	c_use_ecc = 0
+	c_use_ramb16bwer_rst_bhv = 0
+	c_wea_width = 1
+	c_web_width = 1
+	c_write_depth_a = 512
+	c_write_depth_b = 512
+	c_write_mode_a = "WRITE_FIRST"
+	c_write_mode_b = "WRITE_FIRST"
+	c_write_width_a = 32
+	c_write_width_b = 32
+	c_xdevicefamily = "virtex6"
+ERROR:Xst:779 - "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" line 561: 'Others' is in unconstrained array aggregate.
+--> 
+
+Total memory usage is 4772868 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

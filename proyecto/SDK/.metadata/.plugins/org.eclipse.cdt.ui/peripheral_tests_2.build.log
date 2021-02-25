@@ -5,35 +5,29 @@ make all
 Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -Wl,--no-relax -I../../peripheral_tests_bsp_2/microblaze_0/include -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o"src/testperiph.o" "../src/testperiph.c"
-In file included from ../src/frases_compuestas.h:10:0,
-                 from ../src/testperiph.c:38:
-../src/caracteres.h: In function 'BANNER_enviarcondireccion':
-../src/caracteres.h:25:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+In file included from ../src/frases_compuestas.h:11:0,
+                 from ../src/testperiph.c:30:
+../src/caracteres.h: In function 'BANNER_enviar':
+../src/caracteres.h:94:2: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+In file included from ../src/testperiph.c:30:0:
+../src/frases_compuestas.h: At top level:
+../src/frases_compuestas.h:84:1: warning: "/*" within comment [-Wcomment]
+In file included from ../src/testperiph.c:33:0:
+../src/movimientosled.h: In function 'arcoiris3':
+../src/movimientosled.h:110:2: error: 'XPAR_LED_RGB_0_BASEADDR' undeclared (first use in this function)
+../src/movimientosled.h:110:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/movimientosled.h: In function 'alerta':
+../src/movimientosled.h:124:2: error: 'XPAR_LED_RGB_0_BASEADDR' undeclared (first use in this function)
+../src/testperiph.c: In function 'getNumber':
+../src/testperiph.c:41:10: warning: unused variable 'baseaddr' [-Wunused-variable]
 ../src/testperiph.c: In function 'main':
-../src/testperiph.c:59:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-Finished building: ../src/testperiph.c
-' '
-Building target: peripheral_tests_2.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,--no-relax -Wl,-T -Wl,../src/lscript.ld -L../../peripheral_tests_bsp_2/microblaze_0/lib -mxl-pattern-compare -mcpu=v8.30.a -mno-xl-soft-mul -o"peripheral_tests_2.elf"  ./src/testperiph.o ./src/xbram_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: peripheral_tests_2.elf
-' '
-Invoking: MicroBlaze Print Size
-mb-size peripheral_tests_2.elf  |tee "peripheral_tests_2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  22362	    368	   2182	  24912	   6150	peripheral_tests_2.elf
-Finished building: peripheral_tests_2.elf.size
-' '
-Invoking: Xilinx ELF Check
-elfcheck peripheral_tests_2.elf -hw ../../practica2_hw_platform/system.xml -pe microblaze_0  |tee "peripheral_tests_2.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.1 Build EDK_P.15xf
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../practica2_hw_platform/system.xml -pe
-microblaze_0 peripheral_tests_2.elf 
-
-ELF file	: peripheral_tests_2.elf
-elfcheck passed.
-Finished building: peripheral_tests_2.elf.elfcheck
-' '
+../src/testperiph.c:89:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+../src/testperiph.c:85:32: warning: unused variable 'score4' [-Wunused-variable]
+../src/testperiph.c:85:25: warning: unused variable 'score3' [-Wunused-variable]
+../src/testperiph.c:85:18: warning: unused variable 'score2' [-Wunused-variable]
+../src/testperiph.c:85:11: warning: unused variable 'score1' [-Wunused-variable]
+../src/testperiph.c:84:35: warning: unused variable 'player4' [-Wunused-variable]
+../src/testperiph.c:84:27: warning: unused variable 'player3' [-Wunused-variable]
+../src/testperiph.c:84:19: warning: unused variable 'player2' [-Wunused-variable]
+../src/testperiph.c:84:11: warning: unused variable 'player1' [-Wunused-variable]
+make: *** [src/testperiph.o] Error 1

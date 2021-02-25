@@ -24,13 +24,15 @@ Address Map for Processor microblaze_0
   (0000000000-0x00007fff) xps_bram_if_cntlr_0	plb_v46_0
   (0x84000000-0x8400ffff) xps_uartlite_0	plb_v46_0
   (0x84018000-0x8401bfff) keypad_0	plb_v46_0
-  (0xc5800000-0xc5807fff) banner_0	plb_v46_0
+  (0x84020000-0x84027fff) banner_0	plb_v46_0
+  (0x84028000-0x8402ffff) led_rgb_0	plb_v46_0
+  (0xcf200000-0xcf207fff) motor_0	plb_v46_0
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
    PARAMETER C_PLBV46_NUM_MASTERS value to 2 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 78 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
-   PARAMETER C_PLBV46_NUM_SLAVES value to 4 -
+   PARAMETER C_PLBV46_NUM_SLAVES value to 6 -
    C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1_05_a\data
    \plb_v46_v2_1_0.mpd line 79 
 INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:plb_v46_0 - tool is overriding
@@ -73,11 +75,35 @@ INFO:EDK:4130 - IPNAME: banner, INSTANCE:banner_0 - tool is overriding PARAMETER
    C_SPLB_MID_WIDTH value to 1 -
    D:\hlocal\SE\Practicas\proyecto\pcores\banner_v1_00_a\data\banner_v2_1_0.mpd
    line 29 
+INFO:EDK:4130 - IPNAME: led_rgb, INSTANCE:led_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\led_rgb_v1_00_a\data\led_rgb_v2_1_0.mp
+   d line 27 
+INFO:EDK:4130 - IPNAME: led_rgb, INSTANCE:led_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\led_rgb_v1_00_a\data\led_rgb_v2_1_0.mp
+   d line 28 
+INFO:EDK:4130 - IPNAME: led_rgb, INSTANCE:led_rgb_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\led_rgb_v1_00_a\data\led_rgb_v2_1_0.mp
+   d line 29 
+INFO:EDK:4130 - IPNAME: motor, INSTANCE:motor_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 32 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\motor_v1_00_a\data\motor_v2_1_0.mpd
+   line 27 
+INFO:EDK:4130 - IPNAME: motor, INSTANCE:motor_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\motor_v1_00_a\data\motor_v2_1_0.mpd
+   line 28 
+INFO:EDK:4130 - IPNAME: motor, INSTANCE:motor_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   D:\hlocal\SE\Practicas\proyecto\pcores\motor_v1_00_a\data\motor_v2_1_0.mpd
+   line 29 
 
 Checking platform address map ...
 
 Checking platform configuration ...
-IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 4 slave(s) 
+IPNAME: plb_v46, INSTANCE: plb_v46_0 - 2 master(s) : 6 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4180 - PORT: EXT_BRK, CONNECTOR: Ext_BRK - No driver found. Port
@@ -103,6 +129,14 @@ INFO:EDK:4060 - INSTANCE: keypad_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
 INFO:EDK:4060 - INSTANCE: banner_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
+   implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: led_rgb_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
+   implement clock DRCs for the parameter. Top-level frequency could not be
+   propagated to this IP. Please make sure that you have specified the frequency
+   of the top-level clock port, and that the clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: motor_0, PARAMETER: C_SPLB_CLK_PERIOD_PS - Did not
    implement clock DRCs for the parameter. Top-level frequency could not be
    propagated to this IP. Please make sure that you have specified the frequency
    of the top-level clock port, and that the clocks are properly connected.
@@ -164,25 +198,21 @@ Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
 IPNAME:microblaze INSTANCE:microblaze_0 -
-D:\hlocal\SE\Practicas\proyecto\system.mhs line 21 - Copying cache
+D:\hlocal\SE\Practicas\proyecto\system.mhs line 25 - Copying cache
 implementation netlist
-IPNAME:plb_v46 INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs
-line 29 - Copying cache implementation netlist
 IPNAME:bram_block INSTANCE:bram_block_0 -
-D:\hlocal\SE\Practicas\proyecto\system.mhs line 36 - Copying cache
+D:\hlocal\SE\Practicas\proyecto\system.mhs line 40 - Copying cache
 implementation netlist
 IPNAME:xps_bram_if_cntlr INSTANCE:xps_bram_if_cntlr_0 -
-D:\hlocal\SE\Practicas\proyecto\system.mhs line 42 - Copying cache
+D:\hlocal\SE\Practicas\proyecto\system.mhs line 46 - Copying cache
 implementation netlist
 IPNAME:xps_uartlite INSTANCE:xps_uartlite_0 -
-D:\hlocal\SE\Practicas\proyecto\system.mhs line 52 - Copying cache
+D:\hlocal\SE\Practicas\proyecto\system.mhs line 56 - Copying cache
 implementation netlist
-IPNAME:keypad INSTANCE:keypad_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs
-line 64 - Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:bram_block_0 -
-D:\hlocal\SE\Practicas\proyecto\system.mhs line 36 - elaborating IP
+D:\hlocal\SE\Practicas\proyecto\system.mhs line 40 - elaborating IP
 
 Writing HDL for elaborated instances ...
 
@@ -190,7 +220,7 @@ Inserting wrapper level ...
 Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Writing (top-level) BMM ...
 
@@ -203,9 +233,15 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:keypad_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 64 - Running
+INSTANCE:plb_v46_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 33 -
+Running XST synthesis
+INSTANCE:keypad_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 68 - Running
 XST synthesis
-INSTANCE:banner_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 74 - Running
+INSTANCE:banner_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 78 - Running
+XST synthesis
+INSTANCE:led_rgb_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 94 -
+Running XST synthesis
+INSTANCE:motor_0 - D:\hlocal\SE\Practicas\proyecto\system.mhs line 105 - Running
 XST synthesis
 
 Running NGCBUILD ...
@@ -215,4 +251,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 35.00 seconds
+Total run time: 96.00 seconds

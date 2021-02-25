@@ -17,7 +17,8 @@ src/testperiph.d: ../src/testperiph.c \
  ../../peripheral_tests_bsp_2/microblaze_0/include/xstatus.h \
  ../src/banner.h \
  ../../peripheral_tests_bsp_2/microblaze_0/include/xil_io.h \
- ../src/frases_compuestas.h ../src/caracteres.h ../src/keypad.h
+ ../src/frases_compuestas.h ../src/keypad.h ../src/caracteres.h \
+ ../src/led_rgb.h
 
 ../../peripheral_tests_bsp_2/microblaze_0/include/xparameters.h:
 
@@ -57,6 +58,8 @@ src/testperiph.d: ../src/testperiph.c \
 
 ../src/frases_compuestas.h:
 
+../src/keypad.h:
+
 ../src/caracteres.h:
 
-../src/keypad.h:
+../src/led_rgb.h:

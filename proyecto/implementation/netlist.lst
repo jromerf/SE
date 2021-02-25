@@ -1,9 +1,11 @@
-D:\hlocal\SE\Practicas\proyecto\implementation\system.ngc 1613977660
-D:/hlocal/SE/Practicas/proyecto/implementation/system_microblaze_0_wrapper.ngc 1613977544
-D:/hlocal/SE/Practicas/proyecto/implementation/system_plb_v46_0_wrapper.ngc 1613977544
-D:/hlocal/SE/Practicas/proyecto/implementation/system_bram_block_0_wrapper.ngc 1613977544
-D:/hlocal/SE/Practicas/proyecto/implementation/system_xps_bram_if_cntlr_0_wrapper.ngc 1613977544
-D:/hlocal/SE/Practicas/proyecto/implementation/system_xps_uartlite_0_wrapper.ngc 1613977544
-D:/hlocal/SE/Practicas/proyecto/implementation/system_keypad_0_wrapper.ngc 1613977556
-D:/hlocal/SE/Practicas/proyecto/implementation/system_banner_0_wrapper.ngc 1613977574
+D:\hlocal\SE\Practicas\proyecto\implementation\system.ngc 1614216898
+D:/hlocal/SE/Practicas/proyecto/implementation/system_microblaze_0_wrapper.ngc 1614216698
+D:/hlocal/SE/Practicas/proyecto/implementation/system_plb_v46_0_wrapper.ngc 1614216722
+D:/hlocal/SE/Practicas/proyecto/implementation/system_bram_block_0_wrapper.ngc 1614216698
+D:/hlocal/SE/Practicas/proyecto/implementation/system_xps_bram_if_cntlr_0_wrapper.ngc 1614216698
+D:/hlocal/SE/Practicas/proyecto/implementation/system_xps_uartlite_0_wrapper.ngc 1614216698
+D:/hlocal/SE/Practicas/proyecto/implementation/system_keypad_0_wrapper.ngc 1614216736
+D:/hlocal/SE/Practicas/proyecto/implementation/system_banner_0_wrapper.ngc 1614216760
+D:/hlocal/SE/Practicas/proyecto/implementation/system_led_rgb_0_wrapper.ngc 1614216774
+D:/hlocal/SE/Practicas/proyecto/implementation/system_motor_0_wrapper.ngc 1614216788
 OK

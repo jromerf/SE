@@ -141,8 +141,8 @@ begin
 
   banner_0 : banner
     generic map (
-      C_BASEADDR => X"C5800000",
-      C_HIGHADDR => X"C5807FFF",
+      C_BASEADDR => X"84020000",
+      C_HIGHADDR => X"84027fff",
       C_SPLB_AWIDTH => 32,
       C_SPLB_DWIDTH => 32,
       C_SPLB_NUM_MASTERS => 2,

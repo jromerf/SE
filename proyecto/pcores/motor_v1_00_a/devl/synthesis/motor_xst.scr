@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\hlocal\SE\Practicas\proyecto\pcores\motor_v1_00_a\devl\synthesis\motor_xst.prj"
+-top motor
+-p virtex6
+-ofn "D:\hlocal\SE\Practicas\proyecto\pcores\motor_v1_00_a\devl\synthesis\motor_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib motor_v1_00_a

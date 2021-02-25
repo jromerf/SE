@@ -16,6 +16,10 @@
  PORT banner_0_row_serial_out_pin = banner_0_row_serial_out, DIR = O
  PORT banner_0_switch_pin = banner_0_switch, DIR = I
  PORT banner_0_led_pin = banner_0_led, DIR = O
+ PORT led_rgb_0_red_pin = led_rgb_0_red, DIR = O
+ PORT led_rgb_0_blue_pin = led_rgb_0_blue, DIR = O
+ PORT led_rgb_0_green_pin = led_rgb_0_green, DIR = O
+ PORT motor_0_pin = motor_0_control_motor, DIR = O, VEC = [3:0]
 
 
 BEGIN microblaze
@@ -74,8 +78,8 @@ END
 BEGIN banner
  PARAMETER INSTANCE = banner_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_BASEADDR = 0xC5800000
- PARAMETER C_HIGHADDR = 0xC5807FFF
+ PARAMETER C_BASEADDR = 0x84020000
+ PARAMETER C_HIGHADDR = 0x84027fff
  BUS_INTERFACE SPLB = plb_v46_0
  PORT reset2_out = banner_0_reset2_out
  PORT reset_out = banner_0_reset_out
@@ -85,5 +89,25 @@ BEGIN banner
  PORT row_serial_out = banner_0_row_serial_out
  PORT switch = banner_0_switch
  PORT led = banner_0_led
+END
+
+BEGIN led_rgb
+ PARAMETER INSTANCE = led_rgb_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x84028000
+ PARAMETER C_HIGHADDR = 0x8402ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT red = led_rgb_0_red
+ PORT blue = led_rgb_0_blue
+ PORT green = led_rgb_0_green
+END
+
+BEGIN motor
+ PARAMETER INSTANCE = motor_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xCF200000
+ PARAMETER C_HIGHADDR = 0xCF207FFF
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT control_motor = motor_0_control_motor
 END
 
